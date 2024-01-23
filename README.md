@@ -1,4 +1,4 @@
-# transportation_networks_of_china
+# Transportation Networks of China
 This data repository hosts datasets covering China's road and rail transportation networks. These datasets are compiled in *The Distributional Impacts of Transportation Networks in China* by Lin Ma and Yang Tang, published in the *Journal of International Economics*. To use the data, please cite:
 
 "Lin Ma and Yang Tang. *The Distributional Impacts of Transportation Networks in China.* Journal of International Economics vol xxx (2024): 103873."
