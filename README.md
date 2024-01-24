@@ -4,8 +4,8 @@ This data repository hosts datasets covering China's road and rail transportatio
 "Lin Ma and Yang Tang. *The Distributional Impacts of Transportation Networks in China.* Journal of International Economics (2024): 103873."
 
 This dataset contains three components: 
-  1) [Prefecture-to-Prefecture Travel Time](https://github.com/malin84/transportation_networks_of_china/blob/main/README.md#prefecture-to-prefecture-travel-time),
-  2) [Year of Construction and Applicable Design Code](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#year-of-construction-and-applicable-design-code)
+  1) [Prefecture-to-Prefecture Travel Time](https://github.com/malin84/transportation_networks_of_china/blob/main/README.md#prefecture-to-prefecture-travel-time);
+  2) [Year of Construction and Applicable Design Code](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#year-of-construction-and-applicable-design-code);
   3) [Pixel-Level Design Speed and Travel Time](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#pixel-level-design-speed-and-travel-time).
    
 The authors are still in the process of cleaning up parts (2) and (3), and you can access the raw data via the [Dropbox Link](https://www.dropbox.com/scl/fo/6cey5kdtqsfqyatn6xa43/h?rlkey=ycklu6jgstjlkiu2fa740iv21&dl=0) 
