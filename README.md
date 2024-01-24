@@ -18,9 +18,9 @@ The travel time is computed using the Fast Marching algorithm based on the pixel
 
 The dataset contains the following files.
 1. `cityinfo.csv` is the file that contains the basic information about the 279 prefectures.
-2. `pref_to_pref/time_cost_prefecture_pair_rail_good.csv` is the travel time for **freight** transportation on the **rail network**.
-3. `pref_to_pref/time_cost_prefecture_pair_rail_pass.csv` is the travel time for **passenger** transportation on the **rail network**.
-4. `pref_to_pref/time_cost_prefecture_pair_road.csv` is the travel time for both **freight** and **passenger** transportation on the **road network**.
+2. `pref_pair/time_cost_prefecture_pair_rail_good.csv` is the travel time for **freight** transportation on the **rail network**.
+3. `pref_pair/time_cost_prefecture_pair_rail_pass.csv` is the travel time for **passenger** transportation on the **rail network**.
+4. `pref_pair/time_cost_prefecture_pair_road.csv` is the travel time for both **freight** and **passenger** transportation on the **road network**.
 
 
 
