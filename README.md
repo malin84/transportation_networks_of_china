@@ -4,7 +4,7 @@ This data repository hosts datasets covering China's road and rail transportatio
 "Lin Ma and Yang Tang. *The Distributional Impacts of Transportation Networks in China.* Journal of International Economics (2024): 103873."
 
 This dataset contains three components: 
-  1) prefecture-to-prefecture commuting time,
+  1) [Prefecture-to-Prefecture Travel Time](https://github.com/malin84/transportation_networks_of_china/blob/main/README.md#prefecture-to-prefecture-travel-time),
   2) year of construction and design codes for each road and railroad and
   3) pixel-level design speed and travel time data.
    
