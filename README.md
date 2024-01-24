@@ -12,9 +12,15 @@ The authors are still in the process of cleaning up parts (2) and (3), and you c
 
 ## Prefecture-to-Prefecture Travel Time
 
-This data set records the prefecture-to-prefecture travel time in units of hours for three modes of transportation: road, railroad (freight), and railroad (passenger). The current version covers the years 1994 to 2017. The travel time is computed using the Fast Marching algorithm based on the pixel-level design speed. Ma and Tang (2024) provide more details on how to infer the pixel-level design speed and prefecture-to-prefecture travel time. 
+This data set records the prefecture-to-prefecture travel time in units of hours for three modes of transportation: road, railroad (freight), and railroad (passenger). The current version covers the years 1994 to 2017 and contains 279 prefectures. 
+
+The travel time is computed using the Fast Marching algorithm based on the pixel-level design speed. Ma and Tang (2024) provide more details on how to infer the pixel-level design speed and prefecture-to-prefecture travel time. 
 
 The dataset contains the following files.
+1. `cityinfo.csv`: the file contains the basic information about the 279 prefectures.
+2. 
+
+
 
 
 ## Year of Construction and Applicable Design Code
