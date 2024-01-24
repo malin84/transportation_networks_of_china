@@ -26,11 +26,10 @@ The travel time data files share the same structure. Each file contains 38781 ro
 1. The first two columns, `origin` and `destination,` are the four-digit admin codes of the origin and destination prefectures.
 2. `year_yyyy`: the travel time between the two prefectures in the year `yyyy` in hours.
 
-
-
-
 ## Year of Construction and Applicable Design Code
 
 This data set records the years of construction and the applicable design codes for all segments of roads and railroads in the dataset. In addition, the dataset also contains the coordinates of the roads and railroads.
 
 ## Pixel-Level Design Speed and Travel Time
+
+This data set contains the design speed and the travel time to trespass each pixel in the $12669\times 8829$ raster map of China by year and transportation mode. The prefecture-to-prefecture travel time is computed based on this data set.
