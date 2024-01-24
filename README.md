@@ -23,8 +23,6 @@ The dataset contains the following files.
 `cityinfo.csv` is the file that contains the basic information about the 279 prefectures.
 <details> 
 <summary>Variable Definisions</summary>
-1. test
-  2.2132
   
 1. `id`: the index of a prefecture.
 2. `dzcode`: the four-digit administrative division code.
