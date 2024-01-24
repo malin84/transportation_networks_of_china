@@ -22,10 +22,13 @@ The dataset contains the following files.
 ### Prefecture Information
 `cityinfo.csv` is the file that contains the basic information about the 279 prefectures.
 <details> 
-  <summary>Variable Definisions</summary>
-  1. `id`: the index of a prefecture.
-  2. `dzcode`: the four-digit administrative division code.
-  3. `coord_long`: the longitude.
+<summary>Variable Definisions</summary>
+1. test
+  2.2132
+  
+1. `id`: the index of a prefecture.
+2. `dzcode`: the four-digit administrative division code.
+3. `coord_long`: the longitude.
   4. `coord_lat`: the latitude.
   5. `pos_x`: the $x$ index in the 12669-by-8829 pixel-level matrix dataset.
   6. `pos_y`: the $y$ index in the 12669-by-8829 pixel-level matrix dataset.
