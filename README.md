@@ -17,7 +17,7 @@ This data set records the prefecture-to-prefecture travel time in units of hours
 The travel time is computed using the Fast Marching algorithm based on the pixel-level design speed. Ma and Tang (2024) provide more details on how to infer the pixel-level design speed and prefecture-to-prefecture travel time. 
 
 The dataset contains the following files.
-1. `cityinfo.csv` is the file that contains the basic information about the 279 prefectures.
+1. `cityinfo.csv` is the file that contains the basic information about the 279 prefectures. The detailed explanation of variables in here.
 2. `pref_pair/time_cost_prefecture_pair_rail_good.csv` is the travel time for **freight** transportation on the **rail network**.
 3. `pref_pair/time_cost_prefecture_pair_rail_pass.csv` is the travel time for **passenger** transportation on the **rail network**.
 4. `pref_pair/time_cost_prefecture_pair_road.csv` is the travel time for both **freight** and **passenger** transportation on the **road network**.
