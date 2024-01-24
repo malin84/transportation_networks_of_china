@@ -10,5 +10,9 @@ The file contains the following columns:
 4. `coord_lat`: the latitude.
 5. `pos_x`: the $x$ index in the 12669-by-8829 pixel-level matrix dataset.
 6. `pos_y`: the $y$ index in the 12669-by-8829 pixel-level matrix dataset.
-7. `cityname_chn`: prefecture name in Chinese
-8. `cityname_eng`: prefecture name in English
+7. `cityname_chn`: prefecture name in Chinese.
+8. `cityname_eng`: prefecture name in English.
+9. `cpop2000`: total population in the unit of *ten-thousands*, 2000 census.
+10. `cpop2010`: total population in the unit of *ten-thousands*, 2010 census.
+11. `upop2000`: urban population in the unit of *ten-thousands*, 2000 census.
+12. `upop2010`: urban population in the unit of *ten-thousands*, 2010 census.
