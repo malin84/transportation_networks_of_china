@@ -19,10 +19,37 @@ All the files are stored in the folder [pref_pair](pref_pair/).
 The travel time is computed using the Fast Marching algorithm based on the pixel-level design speed. Ma and Tang (2024) provide more details on how to infer the pixel-level design speed and prefecture-to-prefecture travel time. 
 
 The dataset contains the following files.
-1. `cityinfo.csv` is the file that contains the basic information about the 279 prefectures. [(variable definition)](pref_pair/cityinfo.md).
-2. `pref_pair/time_cost_prefecture_pair_rail_good.csv` is the travel time for **freight** transportation on the **rail network**.
-3. `pref_pair/time_cost_prefecture_pair_rail_pass.csv` is the travel time for **passenger** transportation on the **rail network**.
-4. `pref_pair/time_cost_prefecture_pair_road.csv` is the travel time for both **freight** and **passenger** transportation on the **road network**.
+### Prefecture Information
+`cityinfo.csv` is the file that contains the basic information about the 279 prefectures.
+<details> 
+  <summary>Variable Definisions</summary>
+  1. `id`: the index of a prefecture.
+  2. `dzcode`: the four-digit administrative division code.
+  3. `coord_long`: the longitude.
+  4. `coord_lat`: the latitude.
+  5. `pos_x`: the $x$ index in the 12669-by-8829 pixel-level matrix dataset.
+  6. `pos_y`: the $y$ index in the 12669-by-8829 pixel-level matrix dataset.
+  7. `cityname_chn`: prefecture name in Chinese.
+  8. `cityname_eng`: prefecture name in English.
+  9. `cpop2000`: total population in the unit of *ten-thousands*, 2000 census.
+  10. `cpop2010`: total population in the unit of *ten-thousands*, 2010 census.
+  11. `upop2000`: urban population in the unit of *ten-thousands*, 2000 census.
+  12. `upop2010`: urban population in the unit of *ten-thousands*, 2010 census.
+  13. `cityclass`: official city size classification based on the 2010 census:
+      1. `cityclass` = 7: Mega City (超大城市), with an urban population greater than 10 million.
+      2. `cityclass` = 6: Major City (特大城市), with an urban population between 5 and 10 million.
+      3. `cityclass` = 5: Type-I Large City (I型大城市), with an urban population between 3 and 5 million.
+      4. `cityclass` = 4: Type-II Large City (II型大城市), with an urban population between 1 and 3 million.
+      5. `cityclass` = 3: Medium City (中等城市), with an urban population between 500 thousand and 1 million.
+      6. `cityclass` = 2: Type-I Small City (I型小城市), with an urban population between 200 and 500 thousand.
+      7. `cityclass` = 1: Type-II Small City (II型小城市), with an urban population smaller than 200 thousand.  
+
+### Distance files  
+
+The following files contains the distance matrix:
+1.`pref_pair/time_cost_prefecture_pair_rail_good.csv` is the travel time for **freight** transportation on the **rail network**.
+2. `pref_pair/time_cost_prefecture_pair_rail_pass.csv` is the travel time for **passenger** transportation on the **rail network**.
+3. `pref_pair/time_cost_prefecture_pair_road.csv` is the travel time for both **freight** and **passenger** transportation on the **road network**.
 
 The travel time data files share the same structure. Each file contains 38781 rows, which is the lower triangle of the $279\times279$ symmetric distance matrix without the diagonal elements. The variables in these files are:  
 1. The first two columns, `origin` and `destination,` are the four-digit admin codes of the origin and destination prefectures.
