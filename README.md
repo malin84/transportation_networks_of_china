@@ -53,7 +53,7 @@ The following files contain the distance matrix:
 2. `pref_pair/time_cost_prefecture_pair_rail_pass.csv` is the travel time for **passenger** transportation on the **rail network**.
 3. `pref_pair/time_cost_prefecture_pair_road.csv` is the travel time for both **freight** and **passenger** transportation on the **road network**.
    
-The travel time data files share the same structure. Each file contains 38781 rows, which is the lower triangle of the $279\times279$ symmetric distance matrix without the diagonal elements. The variables in these files are:  
+The travel time data files share the same structure. Each file contains $38781$ rows, which is the lower triangle of the $279\times279$ symmetric distance matrix without the diagonal elements. The variables in these files are:  
 1. The first two columns, `origin` and `destination,` are the four-digit admin codes of the origin and destination prefectures.
 2. `year_yyyy`: the travel time between the two prefectures in the year `yyyy` in hours.
 
