@@ -8,7 +8,7 @@ This dataset contains three components:
   2) [Year of Construction and Applicable Design Code](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#year-of-construction-and-applicable-design-code);
   3) [Pixel-Level Design Speed and Travel Time](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#pixel-level-design-speed-and-travel-time).
    
-The authors are still in the process of cleaning up parts (2) and (3), and you can access the raw data via the [Dropbox Link](https://www.dropbox.com/scl/fo/6cey5kdtqsfqyatn6xa43/h?rlkey=ycklu6jgstjlkiu2fa740iv21&dl=0) 
+The authors are still in the process of cleaning up part (2), and you can access the raw data via the [Dropbox Link](https://www.dropbox.com/scl/fo/6cey5kdtqsfqyatn6xa43/h?rlkey=ycklu6jgstjlkiu2fa740iv21&dl=0) 
 
 ## Prefecture-to-Prefecture Travel Time
 
