@@ -78,14 +78,14 @@ All the files are stored in the folder [pixel_info](pixel_info/). The data files
 7. `speed`: design speed of the infrastructure on the pixel.
 8. `time`: the time required to traverse the pixel in the unit of hours. See the note below on its computation.
 9. `type`: the type of the infrastructure that takes three values:
-  1. `both` refers to mixed freight and passenger transportation usage. All road transportation is mixed.
-  2. `good` refers to freight transportation.
-  3. `pass` refers to passenger transportation.
+    1. `both` refers to mixed freight and passenger transportation usage. All road transportation is mixed.
+    2. `good` refers to freight transportation.
+    3. `pass` refers to passenger transportation.
 10. `terrain_type`: the terrain type of the pixel, takes four values:
-  1. `0`: coastal areas.
-  2. `1`: plains.
-  3. `2`: low-rolling hills.
-  4. `3`: hills.
-  5. `4`: mountains.
+    1. `0`: coastal areas.
+    2. `1`: plains.
+    3. `2`: low-rolling hills.
+    4. `3`: hills.
+    5. `4`: mountains.
 </details>
 
