@@ -59,7 +59,7 @@ The travel time data files share the same structure. Each file contains $38781$ 
 
 ## Year of Construction and Applicable Design Code
 
-This data set records the years of construction and the applicable design codes for all segments of roads and railroads in the dataset. In addition, the dataset also contains the coordinates of the roads and railroads.
+This data set records the years of construction and the applicable design codes for all segments of roads and railroads in the dataset.
 
 ## Pixel-Level Design Speed and Travel Time
 
@@ -70,12 +70,12 @@ All the files are stored in the folder [pixel_info](pixel_info/). The data files
 <details> 
 <summary>Variable Definition</summary>
   
-1. `path_id`: the unique index of a path that the pixel belongs to.
+1. `path_id`: the unique index of a path that the pixel belongs to. The `path_id` is the same as the path-level dataset that records the years of construction and the applicable design codes.
 2. `long`: the longitude of the pixel.
 3. `lat`: the latitude of the pixel.
 4. `pos_x`: the $x$ index in the 12669-by-8829 pixel-level matrix dataset.
 5. `pos_y`: the $y$ index in the 12669-by-8829 pixel-level matrix dataset.
-7. `speed`: design speed of the infrastructure on the pixel in the unit of kilometers per hour.
+7. `speed`: the design speed of the infrastructure on the pixel in kilometers per hour.
 8. `time`: the time required to traverse the pixel in the unit of hours. See the note below on its computation.
 9. `type`: the type of the infrastructure that takes three values:
     1. `both` refers to mixed freight and passenger transportation usage. All road transportation is mixed.
@@ -90,7 +90,7 @@ All the files are stored in the folder [pixel_info](pixel_info/). The data files
    
 Notes:
 1. The user should specify a speed to traverse empty pixels without any infrastructure to compute point-to-point travel time. In Ma and Tang (2024), the empty traverse speed is 10km/h.
-2. To compute `time` from `speed,` the authors used the following equation: $time = (1+\sqrt{2}/2)*distance/speed$.
+2. To compute `time` from `speed,` the authors used the following equation: $time = (1+\sqrt{2}/2)*distance/speed$. The variable $distance$ is computed based on the average distance to move to the four adjacent pixels. In most cases, the distance equals to $0.5097$km. The term $(1+\sqrt{2}/2)$ corrects for the fact that around half of the time, travelers cross a pixel along the diagonal.
 
 </details>
 
