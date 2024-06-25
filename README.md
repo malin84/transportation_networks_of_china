@@ -90,7 +90,7 @@ All the files are stored in the folder [pixel_info](pixel_info/). The data files
    
 Notes:
 1. The user should specify a speed to traverse empty pixels without any infrastructure to compute point-to-point travel time. In Ma and Tang (2024), the empty traverse speed is 10km/h.
-2. To compute `time` from `speed,` the authors used the following equation: $time = (1+\sqrt{2}/2)*distance/speed$. The variable $distance$ is computed based on the average distance to move to the four adjacent pixels. In most cases, the distance equals to $0.5097$km. The term $(1+\sqrt{2}/2)$ corrects for the fact that around half of the time, travelers cross a pixel along the diagonal.
+2. To compute `time` from `speed,` the authors used the following equation: $time = (1+\sqrt{2}/2)*distance/speed$. The variable $distance$ is computed based on the average distance to move to the four adjacent pixels. In most cases, the distance equals to 0.5097 km. The term $(1+\sqrt{2}/2)$ corrects for the fact that around half of the time, travelers cross a pixel along the diagonal.
 
 </details>
 
