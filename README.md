@@ -65,7 +65,7 @@ This data set records the years of construction and the applicable design codes 
 
 This data set contains the design speed and the travel time to traverse the pixels with infrastructure build-up in the $12669\times 8829$ raster map of China by year and transportation mode. The prefecture-to-prefecture travel time is computed based on this data set using the Fast Marching Algorithm.
 
-All the files are stored in the folder [pixel_info](pixel_info/). The data files are named `pixel_info_MMMM_YYYY.csv,` where `MMMM` refers to the three modes of transportation: road, railroad (freight), and railroad (passenger), and `YYYY` refers to the year. Each row of the data file refers to a pixel with infrastructure build-up.
+All the files are stored in the folder [pixel_info](pixel_info/). The data files are named `pixel_info_MMMM_YYYY.csv,` where `MMMM` refers to the three modes of transportation: road, railroad (freight), and railroad (passenger), and `YYYY` refers to the year. Each row of the data file refers to a pixel with infrastructure build-up. 
 
 <details> 
 <summary>Variable Definition</summary>
@@ -75,7 +75,7 @@ All the files are stored in the folder [pixel_info](pixel_info/). The data files
 3. `lat`: the latitude of the pixel.
 4. `pos_x`: the $x$ index in the 12669-by-8829 pixel-level matrix dataset.
 5. `pos_y`: the $y$ index in the 12669-by-8829 pixel-level matrix dataset.
-7. `speed`: design speed of the infrastructure on the pixel.
+7. `speed`: design speed of the infrastructure on the pixel in the unit of kilometers per hour.
 8. `time`: the time required to traverse the pixel in the unit of hours. See the note below on its computation.
 9. `type`: the type of the infrastructure that takes three values:
     1. `both` refers to mixed freight and passenger transportation usage. All road transportation is mixed.
@@ -87,5 +87,10 @@ All the files are stored in the folder [pixel_info](pixel_info/). The data files
     3. `2`: low-rolling hills.
     4. `3`: hills.
     5. `4`: mountains.
+   
+Notes:
+1. The user should specify a speed to traverse empty pixels without any infrastructure to compute point-to-point travel time. In Ma and Tang (2024), the empty traverse speed is 10km/h.
+2. To compute `time` from `speed,` the authors used the following equation: $time = (1+\sqrt{2}/2)*distance/speed$.
+
 </details>
 
