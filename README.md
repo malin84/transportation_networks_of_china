@@ -61,10 +61,9 @@ The travel time data files share the same structure. Each file contains $38781$ 
 
 This data set contains the design speed and the travel time to traverse the pixels with infrastructure build-up in the $12669\times 8829$ raster map of China by year and transportation mode. The prefecture-to-prefecture travel time is computed based on this data set using the Fast Marching Algorithm.
 
-All the files are stored in the folder [pixel_info](pixel_info/). The data files are named `pixel_info_MMMM_YYYY.csv,` where `MMMM` refers to the three modes of transportation: road, railroad (freight), and railroad (passenger), and `YYYY` refers to the year. Each row of the data file refers to a pixel with infrastructure build-up. 
+All the files are stored in the folder [pixel_info](pixel_info/). The data files are named `pixel_info_MMMM_YYYY.csv,` where `MMMM` refers to the three modes of transportation: road, railroad (freight), and railroad (passenger), and `YYYY` refers to the year. 
 
-<details> 
-<summary>Variable Definition</summary>
+Each row of the data file refers to a pixel with infrastructure build-up. The columns contain the following variables:
   
 1. `path_id`: the unique index of a path that the pixel belongs to. The `path_id` is the same as the path-level dataset that records the years of construction and the applicable design codes.
 2. `long`: the longitude of the pixel.
@@ -87,8 +86,6 @@ All the files are stored in the folder [pixel_info](pixel_info/). The data files
 Notes:
 1. The user should specify a speed to traverse empty pixels without any infrastructure to compute point-to-point travel time. In Ma and Tang (2024), the empty traverse speed is 10km/h.
 2. To compute `time` from `speed,` the authors used the following equation: $time = (1+\sqrt{2}/2)*distance/speed$. The variable $distance$ is computed based on the average distance to move to the four adjacent pixels. In most cases, the distance equals to 0.5097 km. The term $(1+\sqrt{2}/2)$ corrects for the fact that around half of the time, travelers cross a pixel along the diagonal.
-
-</details>
 
 ## Year of Construction and Applicable Design Code
 
