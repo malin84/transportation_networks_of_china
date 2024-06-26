@@ -6,7 +6,7 @@ This data repository hosts datasets covering China's road and rail transportatio
 This dataset contains three components: 
   1) [Prefecture-to-Prefecture Travel Time](https://github.com/malin84/transportation_networks_of_china/blob/main/README.md#prefecture-to-prefecture-travel-time);
   2) [Pixel-Level Information: Design Speed and Travel Time](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#pixel-level-design-speed-and-travel-time);
-  3) [Path-Level Information: Name, Year of Construction, and Applicable Design Code](https://github.com/malin84/transportation_networks_of_china/blob/main/README.md#path-level-information-name-year-of-construction-and-applicable-design-code).
+  3) [Segment-Level Information: Name, Rate, Year of Construction, and Applicable Design Code](https://github.com/malin84/transportation_networks_of_china/blob/main/README.md#segment-level-information-name-year-of-construction-and-applicable-design-code).
 
 The current version covers the transportation network between 1994 and 2017. 
 
@@ -67,7 +67,7 @@ All the files are stored in the folder [pixel_info](pixel_info/). The data files
 
 Each row of the data file refers to a pixel with infrastructure build-up. The columns contain the following variables:
   
-1. `path_id`: the unique index of a path that the pixel belongs to. The `path_id` is the same as the path-level dataset that records the years of construction and the applicable design codes.
+1. `seg_id`: the unique index of a segment that the pixel belongs to. The `seg_id` is the same as the segment-level dataset that records the years of construction and the applicable design codes, among other information.
 2. `long`: the longitude of the pixel.
 3. `lat`: the latitude of the pixel.
 4. `pos_x`: the $x$ index in the 12669-by-8829 pixel-level matrix dataset.
@@ -89,7 +89,7 @@ Notes:
 1. The user should specify a speed to traverse empty pixels without any infrastructure to compute point-to-point travel time. In Ma and Tang (2024), the empty traverse speed is 10km/h.
 2. To compute `time` from `speed,` the authors used the following equation: $time = (1+\sqrt{2}/2)*distance/speed$. The variable $distance$ is computed based on the average distance to move to the four adjacent pixels. In most cases, the distance equals to 0.5097 km. The term $(1+\sqrt{2}/2)$ corrects for the fact that around half of the time, travelers cross a pixel along the diagonal.
 
-## Path-Level Information: Name, Year of Construction, and Applicable Design Code
+## Segment-Level Information: Name, Year of Construction, and Applicable Design Code
 
 This data set records the years of construction and the applicable design codes for all segments of roads and railroads in the dataset.
 
