@@ -5,10 +5,10 @@ This data repository hosts datasets covering China's road and rail transportatio
 
 This dataset contains three components: 
   1) [Prefecture-to-Prefecture Travel Time](https://github.com/malin84/transportation_networks_of_china/blob/main/README.md#prefecture-to-prefecture-travel-time);
-  2) [Year of Construction and Applicable Design Code](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#year-of-construction-and-applicable-design-code);
-  3) [Pixel-Level Design Speed and Travel Time](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#pixel-level-design-speed-and-travel-time).
+  2) [Pixel-Level Design Speed and Travel Time](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#pixel-level-design-speed-and-travel-time).
+  3) [Year of Construction and Applicable Design Code](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#year-of-construction-and-applicable-design-code);
    
-The authors are still in the process of cleaning up part (2), and you can access the raw data via the [Dropbox Link](https://www.dropbox.com/scl/fo/6cey5kdtqsfqyatn6xa43/h?rlkey=ycklu6jgstjlkiu2fa740iv21&dl=0) 
+The authors are still in the process of cleaning up part (3), and you can access the raw data via the [Dropbox Link](https://www.dropbox.com/scl/fo/6cey5kdtqsfqyatn6xa43/h?rlkey=ycklu6jgstjlkiu2fa740iv21&dl=0) 
 
 ## Prefecture-to-Prefecture Travel Time
 
@@ -57,10 +57,6 @@ The travel time data files share the same structure. Each file contains $38781$ 
 1. The first two columns, `origin` and `destination,` are the four-digit admin codes of the origin and destination prefectures.
 2. `year_yyyy`: the travel time between the two prefectures in the year `yyyy` in hours.
 
-## Year of Construction and Applicable Design Code
-
-This data set records the years of construction and the applicable design codes for all segments of roads and railroads in the dataset.
-
 ## Pixel-Level Design Speed and Travel Time
 
 This data set contains the design speed and the travel time to traverse the pixels with infrastructure build-up in the $12669\times 8829$ raster map of China by year and transportation mode. The prefecture-to-prefecture travel time is computed based on this data set using the Fast Marching Algorithm.
@@ -93,4 +89,8 @@ Notes:
 2. To compute `time` from `speed,` the authors used the following equation: $time = (1+\sqrt{2}/2)*distance/speed$. The variable $distance$ is computed based on the average distance to move to the four adjacent pixels. In most cases, the distance equals to 0.5097 km. The term $(1+\sqrt{2}/2)$ corrects for the fact that around half of the time, travelers cross a pixel along the diagonal.
 
 </details>
+
+## Year of Construction and Applicable Design Code
+
+This data set records the years of construction and the applicable design codes for all segments of roads and railroads in the dataset.
 
