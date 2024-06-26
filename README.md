@@ -61,7 +61,7 @@ The travel time data files share the same structure. Each file contains $38781$ 
 
 ## Pixel-Level Design Speed and Travel Time
 
-This data set contains the design speed and the travel time to traverse the pixels with infrastructure build-up in the $12669\times 8829$ raster map of China by year and transportation mode. The prefecture-to-prefecture travel time is computed based on this data set using the Fast Marching Algorithm.
+This data set contains the design speed and the travel time to traverse the pixels with infrastructure build-up in the $12669\times 8829$ raster map of China by year and transportation mode. All the travel time estimations, including the prefecture-to-prefecture travel time database, are computed based on this data set using the Fast Marching Algorithm.
 
 All the files are stored in the folder [pixel_info](pixel_info/). The data files are named `pixel_info_MMMM_YYYY.csv,` where `MMMM` refers to the three modes of transportation: road, railroad (freight), and railroad (passenger), and `YYYY` refers to the year. 
 
