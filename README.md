@@ -5,8 +5,8 @@ This data repository hosts datasets covering China's road and rail transportatio
 
 This dataset contains three components: 
   1) [Prefecture-to-Prefecture Travel Time](https://github.com/malin84/transportation_networks_of_china/blob/main/README.md#prefecture-to-prefecture-travel-time);
-  2) [Pixel-Level Design Speed and Travel Time](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#pixel-level-design-speed-and-travel-time);
-  3) [Year of Construction and Applicable Design Code](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#year-of-construction-and-applicable-design-code).
+  2) [Pixel-Level Information: Design Speed and Travel Time](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#pixel-level-design-speed-and-travel-time);
+  3) [Path-Level Information: Name, Year of Construction, and Applicable Design Code](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#year-of-construction-and-applicable-design-code).
    
 The authors are still in the process of cleaning up part (3), and you can access the raw data via the [Dropbox Link](https://www.dropbox.com/scl/fo/6cey5kdtqsfqyatn6xa43/h?rlkey=ycklu6jgstjlkiu2fa740iv21&dl=0) 
 
@@ -73,10 +73,10 @@ Each row of the data file refers to a pixel with infrastructure build-up. The co
 7. `speed`: the design speed of the infrastructure on the pixel in kilometers per hour.
 8. `time`: the time required to traverse the pixel in the unit of hours. See the note below on its computation.
 9. `type`: the type of the infrastructure that takes three values:
-    1. `both` refers to mixed freight and passenger transportation usage. All road transportation is mixed.
-    2. `good` refers to freight transportation.
-    3. `pass` refers to passenger transportation.
-10. `terrain_type`: the terrain type of the pixel, takes four values:
+    1. `both` refers to mixed freight and passenger transportation usage. All road transportation and the majority of railroads fall into this category.
+    2. `good` refers to freight-only railroad transportation.
+    3. `pass` refers to passenger-only railroad transportation.
+10. `terrain_type`: the terrain type of the pixel that takes four values. Refer to the Appendix to Ma and Tang (2024) for the terrain definition:
     1. `0`: coastal areas.
     2. `1`: plains.
     3. `2`: low-rolling hills.
@@ -87,7 +87,7 @@ Notes:
 1. The user should specify a speed to traverse empty pixels without any infrastructure to compute point-to-point travel time. In Ma and Tang (2024), the empty traverse speed is 10km/h.
 2. To compute `time` from `speed,` the authors used the following equation: $time = (1+\sqrt{2}/2)*distance/speed$. The variable $distance$ is computed based on the average distance to move to the four adjacent pixels. In most cases, the distance equals to 0.5097 km. The term $(1+\sqrt{2}/2)$ corrects for the fact that around half of the time, travelers cross a pixel along the diagonal.
 
-## Year of Construction and Applicable Design Code
+## Path-Level Information: Name, Year of Construction, and Applicable Design Code
 
 This data set records the years of construction and the applicable design codes for all segments of roads and railroads in the dataset.
 
