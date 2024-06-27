@@ -6,10 +6,10 @@ To use the data, please cite:
 "Lin Ma and Yang Tang. *The Distributional Impacts of Transportation Networks in China.* Journal of International Economics (2024): 103873."
 
 <details>
-  <summary>bibtex</summary>
+  <summary>`bibtex`</summary>
   
   ```
-  @article{MA2023103873,
+  @article{MT2024_Transportation_China,
     title = {The Distributional Impacts of Transportation Networks in China},
     journal = {Journal of International Economics},
     pages = {103873},
