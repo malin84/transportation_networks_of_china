@@ -71,7 +71,7 @@ Each row of the data file refers to a **pixel** with infrastructure build-up. Th
 5. `pos_y`: the $y$ index in the 12669-by-8829 pixel-level matrix dataset.
 7. `speed`: the design speed of the infrastructure on the pixel in kilometers per hour.
 8. `time`: the time required to traverse the pixel in the unit of hours. See the note below on its computation.
-9. `type`: the type of the infrastructure that takes three values:
+9. `type`: the usage type of the infrastructure that takes three values:
     1. `both` refers to mixed freight and passenger transportation usage. All road transportation and the majority of railroads fall into this category.
     2. `good` refers to freight-only railroad transportation.
     3. `pass` refers to passenger-only railroad transportation.
