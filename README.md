@@ -95,11 +95,11 @@ All the files are stored in the folder [seg_info](seg_info/). We create three da
 
 ### Segment Level Information
 
-The file `seg_info_MMMM.csv` contains the segment-level information for the mode (`MMMM` = road or rail). Each row in the file refers to a segment. The columns are as follows:
+The file `seg_info_MMMM.csv` contains the segment-level information for the mode (`MMMM` = road or rail). Each row in the file refers to a **segment**. The columns are as follows:
 1. `seg_id`: The unique id of the segment, which is the same as those used in the pixel-level dataset.
 2. `rate`: The rate of the segment, such as "National I" for railroads or "First-Rate" for roads. See the table below for more details.
 3. `year`: The year of construction.
-4. `year_std`: The publication year of the applicable design code. For example, highways built in 2010 were subject to the highway design codes published in 2003. In this case, `year` = 2010, and `year_std` = 2003.  
+4. `year_std`: The publication year of the applicable design code. For example, highways built in 2010 were subject to the highway design codes published in 2003. In this case, `year` = 2010, and `year_std` = 2003. We did not assign `year_std` for HSR because we collected the design speed of each high-speed railway by hand.
 5. `path_name`: (in Chinese) The name of the path to which the segment belongs. For example, Segment `rail_10` is part of the "滨绥铁路," and therefore we record the name of the path in this variable.  
 6. `path_supplement`: (in Chinese) Additional information about the path, such as original names, original usage, phases, etc.
 7. `notes`: (in Chinese) Additional information about the segment, usually regarding the segment's endpoints. We record this information for quality control purposes.
@@ -139,7 +139,7 @@ The road rates in the dataset are as follows:
 |first-rate       | First-Rate Road| 国家I级公路            | mixed |
 
 #### Design Codes
-The variable `year_std` records the publication year of the applicable design standard for a given segment. The detailed design standards are as follows.
+The variable `year_std` records the publication year of the applicable design standard for a given segment. The detailed design standards are as follows:
 
 | `year_std` | Full Name | Full Name in Chinese | Standard Code|Mode |
 |----------|-----------|----------------------|-----|-------|
@@ -159,14 +159,14 @@ The variable `year_std` records the publication year of the applicable design st
 
 ### Segment-Year Level Information 
 
-The file `seg_year_MMMM.csv` contains the segment-year level information. In the current version, the only variable that varies at this level is the usage type of railroads. Several railroads switched between "mixed-use" and "freight-only" during our sample period. Each row in the file refers to a segment. The columns are as follows:
+The file `seg_year_MMMM.csv` contains the segment-year level information. In the current version, the only variable that varies at this level is the usage type of railroads. Several railroads switched between "mixed-use" and "freight-only" during our sample period. Each row in the file refers to a **segment**. The columns are as follows:
 
 1. `seg_id`: the unique segment id.
 2. `year_type_YYYY`: the usage type of the segment in the year `YYYY.` `type= none` indicates that the road or railroad was no longer used that year.
 
 
 ### Segment-Pixel Mapping
-The file `seg_pixel_MMMM.csv` contains the mapping between segments and pixels for mode `MMMM`. Each row in the file refers to a pixel. The columns are as follows:
+The file `seg_pixel_MMMM.csv` contains the mapping between segments and pixels for mode `MMMM.` Each row in the file refers to a **pixel**. The columns are as follows:
 
 1. `seg_id`: the unique id of the segment to which the pixel belongs.
 2. `long`: the longitude of the pixel.
