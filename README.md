@@ -23,8 +23,6 @@ The travel time is computed using the Fast Marching algorithm based on the pixel
 The dataset contains the following files.
 ### Prefecture Information
 `cityinfo.csv` is the file that contains the basic information about the 279 prefectures.
-<details> 
-<summary>Variable Definition</summary>
   
 1. `id`: the index of a prefecture.
 2. `dzcode`: the four-digit administrative division code.
@@ -46,7 +44,6 @@ The dataset contains the following files.
       5. `cityclass` = 3: Medium City (中等城市), with an urban population between 500 thousand and 1 million.
       6. `cityclass` = 2: Type-I Small City (I型小城市), with an urban population between 200 and 500 thousand.
       7. `cityclass` = 1: Type-II Small City (II型小城市), with an urban population smaller than 200 thousand.  
-</details>
 
 ### Distance files  
 
