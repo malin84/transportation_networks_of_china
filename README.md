@@ -117,9 +117,9 @@ The railroad rates in the dataset are as follows:
 |GT2G      | National II (Freights)| 国家II级货运铁路            | freights |
 |GT3G      | National III (Freights)| 国家III级货运铁路           | freights |
 |GT        | National Rail, Unknown Rate | 国家铁路, 等级未知           | mixed |
-|***|
+***
 |HSR       | High-Speed Rail| 高速铁路            | passenger |
-|----------|-----------|----------------------|------------|
+***
 |DT1       | Local I| 地方客货共线I级铁路            | mixed |
 |DT2       | Local II| 地方客货共线II级铁路            | mixed |
 |DT3       | Local III| 地方客货共线III级铁路           | mixed |
