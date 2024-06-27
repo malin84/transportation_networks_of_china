@@ -91,5 +91,8 @@ Notes:
 
 ## Segment-Level Information: Name, Year of Construction, and Applicable Design Code
 
-This data set records the years of construction and the applicable design codes for all segments of roads and railroads in the dataset.
+This data set records the information at the segment level for roads and railroads. A segment is part of a named road or railroad (such as the Beijing-Shanghai Railway or Beijing-Shijiazhuang Highway) constructed in a given year. We record information at the segment level because large infrastructure projects often take many years to compute. 
+
+
+years of construction and the applicable design codes for all segments of roads and railroads in the dataset.
 
