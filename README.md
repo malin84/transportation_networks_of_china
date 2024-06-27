@@ -6,7 +6,7 @@ To use the data, please cite:
 "Lin Ma and Yang Tang. *The Distributional Impacts of Transportation Networks in China.* Journal of International Economics (2024): 103873."
 
 <details>
-  <summary>bibtex</summary>
+  <summary>BibTex</summary>
   
   ```
   @article{MT2024_Transportation_China,
