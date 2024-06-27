@@ -111,8 +111,12 @@ The railroad rates in the dataset are as follows:
 |----------|-----------|----------------------|------------|
 |GT1       | National I| 国家I级铁路            | mixed |
 |GT2       | National II| 国家II级铁路            | mixed |
-|GT3       | National III| 国家III级铁路(2012标准后)           | mixed |
+|GT3       | National III| 国家III级铁路           | mixed |
 |GT4       | National IV| 国家IV级铁路(2012标准后)           | mixed |
+|GT1G       | National I (Freights)| 国家I级货运铁路            | freights |
+|GT2G       | National II (Freights)| 国家II级货运铁路            | freights |
+|GT3G       | National III (Freights)| 国家III级货运铁路           | freights |
+
 
 
 
