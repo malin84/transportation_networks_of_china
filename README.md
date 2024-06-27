@@ -102,5 +102,5 @@ All the files are stored in the folder [seg_info](seg_info/). We create three da
    5. `path_name`:
    6. `path_supplement`:
    7. `notes`
-2. `seg_pixel_MMMM.csv` contains the mapping between segments and pixels. Each row in the file refers to a pixel. The columns are as follows:
+3. `seg_pixel_MMMM.csv` contains the mapping between segments and pixels. Each row in the file refers to a pixel. The columns are as follows:
 4. `seg_year_MMMM.csv` contains the segment-year level information. In the current project, the only variable that varies at this level is the usage type of railroads. Several railroads switched between "mixed-use" and "freight-only" during our sample period. Each row in the file refers to a segment. The columns are as follows:
