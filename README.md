@@ -170,7 +170,7 @@ The file `seg_pixel_MMMM.csv` contains the mapping between segments and pixels f
 3. `lat`: the latitude of the pixel.
 4. `pos_x`: the $x$ index in the 12669-by-8829 raster map.
 5. `pos_y`: the $y$ index in the 12669-by-8829 raster map.
-6. `index`: the index number of the pixel in the 12669-by-8829. The index number is the output of the following MATLAB function:
+6. `index`: the index number of the pixel in the 12669-by-8829 raster map. The index number is the output of the following MATLAB function:
    ```
    index=sub2ind([8829 12669],pos_y,pos_x)
    ```
