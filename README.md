@@ -123,12 +123,12 @@ The railroad rates in the dataset are as follows:
 |DT3       | Local III| 地方客货共线III级铁路           | mixed |
 |DT1G      | Local I (Freights)| 地方I级货运铁路            | freights |
 |DT        | Local Rail, Unknown Rate | 地方铁路, 等级未知           | mixed |
-|----------------------------------------------------------|
 |IT1       | Industrial I| 工业企业I级铁路            | freights |
 |IT2       | Industrial II| 工业企业II级铁路            | freights |
 |IT3       | Industrial III| 工业企业III级铁路           | freights |
-|IT       | Industrial Rail, Unknown Rate| 工业企业铁路, 等级位置          | freights |
-
+|IT        | Industrial Rail, Unknown Rate| 工业企业铁路, 等级未知          | freights |
+|UN        | Unknown Rate| 等级未知          | mixed |
+|NA        | Non-Active| 废置铁路          | - |
 
 
 ### Segment-Year Level Information 
