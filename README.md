@@ -60,7 +60,7 @@ This data set contains the design speed and the travel time to traverse the pixe
 
 All the files are stored in the folder [pixel_info](pixel_info/). The data files are named `pixel_info_MMMM_YYYY.csv,` where `MMMM` refers to the three modes of transportation: road, railroad (freight), and railroad (passenger), and `YYYY` refers to the year. 
 
-Each row of the data file refers to a pixel with infrastructure build-up. The columns contain the following variables:
+Each row of the data file refers to a **pixel** with infrastructure build-up. The columns contain the following variables:
   
 1. `seg_id`: the unique index of a segment that the pixel belongs to. The `seg_id` is the same as the segment-level dataset that records the years of construction and the applicable design codes, among other information.
 2. `long`: the longitude of the pixel.
@@ -86,7 +86,7 @@ Notes:
 
 ## Segment-Level Information: Name, Year of Construction, and Applicable Design Code
 
-This data set records the information for roads and railroads at the **segment** level. A "segment" is part of a named road or railroad, referred to as a **path** (such as the Beijing-Shanghai Railway or Beijing-Shijiazhuang Highway) constructed in a given year. We record information at the segment level because large infrastructure projects often take many years to compute. See the detailed definitions of "segment" and "path" in Ma and Tang (2024).
+This data set records the information for roads and railroads at the **segment** level. A "segment" is part of a named road or railroad, referred to as a **path** (such as the Beijing-Shanghai Railway or Beijing-Shijiazhuang Highway) constructed in a given year. We record information at the segment level because large infrastructure projects often take many years to complete. See the detailed definitions of "segment" and "path" in Ma and Tang (2024).
 
 All the files are stored in the folder [seg_info](seg_info/). We create three data files for each mode of transportation. These files are as follows:
 1. [segment-level information](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#segment-level-information): year of construction, applicable standard, rates, parent path.
