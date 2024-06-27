@@ -91,11 +91,12 @@ Notes:
 
 ## Segment-Level Information: Name, Year of Construction, and Applicable Design Code
 
-This data set records the information for roads and railroads at the **segment** level. A "segment" is part of a named road or railroad, which we refer to as a "path" (such as the Beijing-Shanghai Railway or Beijing-Shijiazhuang Highway) constructed in a given year. We record information at the segment level because large infrastructure projects often take many years to compute. See the detailed definitions of "segment" and "path" in Ma and Tang (2024).
+This data set records the information for roads and railroads at the **segment** level. A "segment" is part of a named road or railroad, which we refer to as a **path** (such as the Beijing-Shanghai Railway or Beijing-Shijiazhuang Highway) constructed in a given year. We record information at the segment level because large infrastructure projects often take many years to compute. See the detailed definitions of "segment" and "path" in Ma and Tang (2024).
 
 All the files are stored in the folder [seg_info](seg_info/). We create three data files for each mode of transportation:
+
 1. `seg_info_MMMM.csv` contains the segment-level information for the mode (road or rail). Each row in the file refers to a segment. The columns are as follows:
-   1.`seg_id`:
+   1.`seg_id`: The unique id of the segment, which is the same as those used in the pixel-level dataset.
    2. `rate`:
    3. `year`:
    4. `year_std`:
