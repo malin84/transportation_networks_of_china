@@ -148,6 +148,10 @@ The variable `year_std` records the publication year of the applicable design st
 |2006       | Code for Design of Railway Line (2006) | 铁路线路设计规范 |GB50090-2006           | rail |
 |2012       | Code for Design of III and IV Rated Railway Line | III、IV级铁路设计规范 |GB50012-2012           | rail |
 |2017       | Code for Design of Railway Line (2017) | 铁路线路设计规范 |TB10098-2017           | rail |
+|1988 | Technical Standard of Highway Engineering (1988) | 公路工程技术标准 | JTJ01-88 | road|
+|1997 | Technical Standard of Highway Engineering (1997) | 公路工程技术标准 | JTJ01-97 | road|
+|2003 | Technical Standard of Highway Engineering (2003) | 公路工程技术标准 | JTG B01-2003 | road|
+|2014 | Technical Standard of Highway Engineering (2014) | 公路工程技术标准 | JTG B01-2014 | road|
 
 
 
