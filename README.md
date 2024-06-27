@@ -89,9 +89,9 @@ Notes:
 This data set records the information for roads and railroads at the **segment** level. A "segment" is part of a named road or railroad, referred to as a **path** (such as the Beijing-Shanghai Railway or Beijing-Shijiazhuang Highway) constructed in a given year. We record information at the segment level because large infrastructure projects often take many years to compute. See the detailed definitions of "segment" and "path" in Ma and Tang (2024).
 
 All the files are stored in the folder [seg_info](seg_info/). We create three data files for each mode of transportation. These files are as follows:
-1. [segment-level information](https://github.com/malin84/transportation_networks_of_china/edit/main/README.md#segment-level-information): year of construction, applicable standard, rates, parent path.
-2. [segment-year level information](https://github.com/malin84/transportation_networks_of_china/edit/main/README.md#segment-year-level-information): usage type by year.
-3. [segment-pixel mapping](https://github.com/malin84/transportation_networks_of_china/edit/main/README.md#segment-pixel-mapping): the coordinates of each pixel within a segment.
+1. [segment-level information](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#segment-level-information): year of construction, applicable standard, rates, parent path.
+2. [segment-year level information](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#segment-year-level-information): usage type by year.
+3. [segment-pixel mapping](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#segment-pixel-mapping): the coordinates of each pixel within a segment.
 
 ### Segment Level Information
 
