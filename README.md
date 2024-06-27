@@ -5,6 +5,24 @@ To use the data, please cite:
 
 "Lin Ma and Yang Tang. *The Distributional Impacts of Transportation Networks in China.* Journal of International Economics (2024): 103873."
 
+<details>
+  <summary>bibtex</summary>
+  ```
+  @article{MA2023103873,
+    title = {The Distributional Impacts of Transportation Networks in China},
+    journal = {Journal of International Economics},
+    pages = {103873},
+    year = {2023},
+    issn = {0022-1996},
+    doi = {https://doi.org/10.1016/j.jinteco.2023.103873},
+    url = {https://www.sciencedirect.com/science/article/pii/S0022199623001599},
+    author = {Lin Ma and Yang Tang},
+    keywords = {Regional trade, Migration, Welfare, Economic geography},
+    abstract = {We document that the quality of roads and railroads vary substantially over time and space in China, and neglecting these variations biases the distributional impacts of transportation       networks. To account for quality differences, we construct a new panel dataset and approximate quality using the design speed of roads and railroads that varies by vintage, class, and terrain at the pixel level. We then build a dynamic spatial general equilibrium model for multiple modes, transportation routes, and forward-looking migration decisions. Our findings demonstrate that disregarding     quality differences leads to a median bias of approximately 31% in estimating real wage growth rates at the prefecture level. Moreover, this bias is non-random and correlates with the initial conditions of the prefectures, resulting in significant errors when predicting the distributional effects of transportation networks.}
+}
+  ```
+</details>
+
 This dataset contains three components: 
   1) [Prefecture-to-Prefecture Travel Time](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#prefecture-to-prefecture-travel-time);
   2) [Pixel-Level Information: Design Speed and Travel Time](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#pixel-level-design-speed-and-travel-time);
