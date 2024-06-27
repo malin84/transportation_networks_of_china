@@ -97,7 +97,7 @@ All the files are stored in the folder [seg_info](seg_info/). We create three da
 
 The file `seg_info_MMMM.csv` contains the segment-level information for the mode (`MMMM` = road or rail). Each row in the file refers to a **segment**. The columns are as follows:
 1. `seg_id`: The unique id of the segment, which is the same as those used in the pixel-level dataset.
-2. `rate`: The rate of the segment, such as "National I" for railroads or "First-Rate" for roads. See the table [below](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#railroad_and_road_rates) for more details.
+2. `rate`: The rate of the segment, such as "National I" for railroads or "First-Rate" for roads. See the table [below](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#railroad-and-road-rates) for more details.
 3. `year`: The year of construction.
 4. `year_std`: The publication year of the applicable design code. For example, highways built in 2010 were subject to the highway design codes published in 2003. In this case, `year` = 2010, and `year_std` = 2003. We did not assign `year_std` for HSR because we collected the design speed of each high-speed railway by hand.
 5. `path_name`: (in Chinese) The name of the path to which the segment belongs. For example, Segment `rail_10` is part of the "滨绥铁路," and therefore we record the name of the path in this variable.  
