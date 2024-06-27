@@ -155,7 +155,11 @@ The variable `year_std` records the publication year of the applicable design st
 
 
 ### Segment-Year Level Information 
-4. `seg_year_MMMM.csv` contains the segment-year level information. In the current project, the only variable that varies at this level is the usage type of railroads. Several railroads switched between "mixed-use" and "freight-only" during our sample period. Each row in the file refers to a segment. The columns are as follows:
+
+The file `seg_year_MMMM.csv` contains the segment-year level information. In the current version, the only variable that varies at this level is the usage type of railroads. Several railroads switched between "mixed-use" and "freight-only" during our sample period. Each row in the file refers to a segment. The columns are as follows:
+
+1. `seg_id`: the segment id.
+2. `year_type_YYYY`: the usage type of the segment in the year `YYYY.` `type= none` indicates that the road or railroad is no longer in use in that year.
 
 
 ### Segment-Pixel Mapping
