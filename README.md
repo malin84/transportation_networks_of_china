@@ -143,6 +143,11 @@ The variable `year_std` records the publication year of the applicable design st
 | `year_std` | Full Name | Full Name in Chinese | Standard Code|Mode |
 |----------|-----------|----------------------|-----|-------|
 |1985       | Code for Design of Railway Line (1985) | 铁路线路设计规范 |GBJ90-85           | rail |
+|1987       | Code for Design of Standard Railway Line for Industrial Firms | 工业企业标准轨距铁路线路设计规范 |GBJ12-87           | rail |
+|1999       | Code for Design of Railway Line (1999) | 铁路线路设计规范 |GB50090-99           | rail |
+|2006       | Code for Design of Railway Line (2006) | 铁路线路设计规范 |GB50090-2006           | rail |
+|2012       | Code for Design of III and IV Rated Railway Line | III、IV级铁路设计规范 |GB50012-2012           | rail |
+|2017       | Code for Design of Railway Line (2017) | 铁路线路设计规范 |TB10098-2017           | rail |
 
 
 
