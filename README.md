@@ -105,7 +105,7 @@ The file `seg_info_MMMM.csv` contains the segment-level information for the mode
 
 #### Railroad and Road Rates
 
-The railroad rates in the dataset are as follows:
+The variable `rate` in the dataset above records a codename for the rate of the railroad and roads. The details regarding the railroad rates in the dataset are as follows:
 
 |Rate Code | Full Name | Full Name in Chinese | Usage Type |
 |----------|-----------|----------------------|------------|
@@ -136,6 +136,17 @@ The road rates in the dataset are as follows:
 |----------|-----------|----------------------|------------|
 |highway       | Highway| 高速公路           | mixed |
 |first-rate       | First-Rate Road| 国家I级公路            | mixed |
+
+#### Design Codes
+The variable `year_std` records the publication year of the applicable design standard for a given segment. The detailed design standard, in the case of railroads, are as follows.
+
+| `year_std` | Full Name | Full Name in Chinese | Usage Type |
+|----------|-----------|----------------------|------------|
+|highway       | Highway| 高速公路           | mixed |
+|first-rate       | First-Rate Road| 国家I级公路            | mixed |
+
+
+
 
 ### Segment-Year Level Information 
 4. `seg_year_MMMM.csv` contains the segment-year level information. In the current project, the only variable that varies at this level is the usage type of railroads. Several railroads switched between "mixed-use" and "freight-only" during our sample period. Each row in the file refers to a segment. The columns are as follows:
