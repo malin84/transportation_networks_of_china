@@ -7,6 +7,7 @@ To use the data, please cite:
 
 <details>
   <summary>bibtex</summary>
+  
   ```
   @article{MA2023103873,
     title = {The Distributional Impacts of Transportation Networks in China},
