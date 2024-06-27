@@ -109,7 +109,10 @@ The railroad rates in the dataset are as follows:
 
 |Rate Code | Full Name | Full Name in Chinese | Usage Type |
 |----------|-----------|----------------------|------------|
-|GT1       | National I| 国铁一级              | mixed |
+|GT1       | National I| 国家I级铁路            | mixed |
+|GT2       | National II| 国家II级铁路            | mixed |
+|GT3       | National III| 国家III级铁路(2012标准后)           | mixed |
+|GT4       | National IV| 国家IV级铁路(2012标准后)           | mixed |
 
 
 
