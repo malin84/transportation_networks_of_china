@@ -107,7 +107,7 @@ The file `seg_info_MMMM.csv` contains the segment-level information for the mode
 
 The variable `rate` in the dataset above records a codename for the rate of the railroad and roads. The details regarding the railroad rates in the dataset are as follows:
 
-|Rate Code | Full Name | Full Name in Chinese | Usage Type |
+|`rate` | Full Name | Full Name in Chinese | Usage Type |
 |----------|-----------|----------------------|------------|
 |GT1       | National I| 国家I级铁路，客货共线            | mixed |
 |GT2       | National II| 国家II级铁路，客货共线            | mixed |
@@ -132,18 +132,17 @@ The variable `rate` in the dataset above records a codename for the rate of the 
 
 The road rates in the dataset are as follows:
 
-|Rate Code | Full Name | Full Name in Chinese | Usage Type |
+|`rate` | Full Name | Full Name in Chinese | Usage Type |
 |----------|-----------|----------------------|------------|
 |highway       | Highway| 高速公路           | mixed |
 |first-rate       | First-Rate Road| 国家I级公路            | mixed |
 
 #### Design Codes
-The variable `year_std` records the publication year of the applicable design standard for a given segment. The detailed design standard, in the case of railroads, are as follows.
+The variable `year_std` records the publication year of the applicable design standard for a given segment. The detailed design standards are as follows.
 
-| `year_std` | Full Name | Full Name in Chinese | Usage Type |
-|----------|-----------|----------------------|------------|
-|highway       | Highway| 高速公路           | mixed |
-|first-rate       | First-Rate Road| 国家I级公路            | mixed |
+| `year_std` | Full Name | Full Name in Chinese | Standard Code|Mode |
+|----------|-----------|----------------------|-----|-------|
+|1985       | Code for Design of Railway Line (1985) | 铁路线路设计规范 |GBJ90-85           | rail |
 
 
 
