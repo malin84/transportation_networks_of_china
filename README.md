@@ -130,6 +130,12 @@ The railroad rates in the dataset are as follows:
 |UN        | Unknown Rate| 等级未知          | mixed |
 |NA        | Non-Active| 废置铁路          | - |
 
+The road rates in the dataset are as follows:
+
+|Rate Code | Full Name | Full Name in Chinese | Usage Type |
+|----------|-----------|----------------------|------------|
+|highway       | Highway| 高速公路           | mixed |
+|first-rate       | First-Rate Road| 国家I级公路            | mixed |
 
 ### Segment-Year Level Information 
 4. `seg_year_MMMM.csv` contains the segment-year level information. In the current project, the only variable that varies at this level is the usage type of railroads. Several railroads switched between "mixed-use" and "freight-only" during our sample period. Each row in the file refers to a segment. The columns are as follows:
