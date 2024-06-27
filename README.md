@@ -109,19 +109,19 @@ The railroad rates in the dataset are as follows:
 
 |Rate Code | Full Name | Full Name in Chinese | Usage Type |
 |----------|-----------|----------------------|------------|
-|GT1       | National I| 国家客货共线I级铁路            | mixed |
-|GT2       | National II| 国家客货共线II级铁路            | mixed |
-|GT3       | National III| 国家客货共线III级铁路           | mixed |
-|GT4       | National IV| 国家客货共线IV级铁路(2012标准后)           | mixed |
-|GT1G      | National I (Freights)| 国家I级货运铁路            | freights |
-|GT2G      | National II (Freights)| 国家II级货运铁路            | freights |
-|GT3G      | National III (Freights)| 国家III级货运铁路           | freights |
+|GT1       | National I| 国家I级铁路，客货共线            | mixed |
+|GT2       | National II| 国家II级铁路，客货共线            | mixed |
+|GT3       | National III| 国家III级铁路，客货共线           | mixed |
+|GT4       | National IV| 国家IV级铁路， 客货共线(2012标准后)           | mixed |
+|GT1G      | National I (Freights)| 国家I级铁路，货运            | freights |
+|GT2G      | National II (Freights)| 国家II级铁路，货运            | freights |
+|GT3G      | National III (Freights)| 国家III级铁路，货运           | freights |
 |GT        | National Rail, Unknown Rate | 国家铁路, 等级未知           | mixed |
 |HSR       | High-Speed Rail| 高速铁路            | passenger |
-|DT1       | Local I| 地方客货共线I级铁路            | mixed |
-|DT2       | Local II| 地方客货共线II级铁路            | mixed |
-|DT3       | Local III| 地方客货共线III级铁路           | mixed |
-|DT1G      | Local I (Freights)| 地方I级货运铁路            | freights |
+|DT1       | Local I| 地方I级铁路，客货共线            | mixed |
+|DT2       | Local II| 地方II级铁路，客货共线            | mixed |
+|DT3       | Local III| 地方III级铁路，客货共线           | mixed |
+|DT1G      | Local I (Freights)| 地方I级铁路，货运            | freights |
 |DT        | Local Rail, Unknown Rate | 地方铁路, 等级未知           | mixed |
 |IT1       | Industrial I| 工业企业I级铁路            | freights |
 |IT2       | Industrial II| 工业企业II级铁路            | freights |
