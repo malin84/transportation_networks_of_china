@@ -64,7 +64,7 @@ All the files are stored in the folder [pixel_info](pixel_info/). The data files
 
 Each row of the data file refers to a **pixel** with infrastructure build-up. The columns contain the following variables:
   
-1. `seg_id`: the unique index of a segment that the pixel belongs to. The `seg_id` is the same as the segment-level dataset, with details [here] (https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#segment-level-information-name-year-of-construction-and-applicable-design-code).
+1. `seg_id`: the unique index of a segment that the pixel belongs to. The `seg_id` is the same as the segment-level dataset, with details [here](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#segment-level-information-name-year-of-construction-and-applicable-design-code).
 2. `long`: the longitude of the pixel.
 3. `lat`: the latitude of the pixel.
 4. `pos_x`: the $x$ index in the 12669-by-8829 pixel-level matrix dataset.
