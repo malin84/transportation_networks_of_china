@@ -90,11 +90,11 @@ Notes:
 
 This data set records the information for roads and railroads at the **segment** level. A "segment" is part of a named road or railroad, referred to as a **path** (such as the Beijing-Shanghai Railway or Beijing-Shijiazhuang Highway) constructed in a given year. We record information at the segment level because large infrastructure projects often take many years to compute. See the detailed definitions of "segment" and "path" in Ma and Tang (2024).
 
-All the files are stored in the folder [seg_info](seg_info/). We create three data files for each mode of transportation:
+All the files are stored in the folder [seg_info](seg_info/). We create three data files for each mode of transportation. These files are as follows.
 
 ### Segment Level Information
 
-The file `seg_info_MMMM.csv` contains the segment-level information for the mode (road or rail). Each row in the file refers to a segment. The columns are as follows:
+The file `seg_info_MMMM.csv` contains the segment-level information for the mode (`MMMM` = road or rail). Each row in the file refers to a segment. The columns are as follows:
 1. `seg_id`: The unique id of the segment, which is the same as those used in the pixel-level dataset.
 2. `rate`: The rate of the segment, such as "National I" for railroads or "First-Rate" for roads. See the table below for more details.
 3. `year`: The year of construction.
@@ -102,6 +102,16 @@ The file `seg_info_MMMM.csv` contains the segment-level information for the mode
 5. `path_name`: (in Chinese) The name of the path to which the segment belongs. For example, Segment `rail_10` is part of the "滨绥铁路," and therefore we record the name of the path in this variable.  
 6. `path_supplement`: (in Chinese) Additional information about the path, such as original names, original usage, phases, etc.
 7. `notes`: (in Chinese) Additional information about the segment, usually regarding the segment's endpoints. We record this information for quality control purposes.
+
+#### Railroad and Road Rates
+
+The railroad rates in the dataset are as follows:
+
+|Rate Code | Full Name | Full Name in Chinese | Usage Type |
+|----------|-----------|----------------------|------------|
+|GT1       | National I| 国铁一级              | mixed |
+
+
 
 ### Segment-Year Level Information 
 4. `seg_year_MMMM.csv` contains the segment-year level information. In the current project, the only variable that varies at this level is the usage type of railroads. Several railroads switched between "mixed-use" and "freight-only" during our sample period. Each row in the file refers to a segment. The columns are as follows:
