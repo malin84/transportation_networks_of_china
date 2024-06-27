@@ -10,8 +10,6 @@ This dataset contains three components:
 
 The current version covers the transportation network between 1994 and 2017. 
 
-The authors are still in the process of cleaning up part (3), and you can access the raw data via the [Dropbox Link](https://www.dropbox.com/scl/fo/6cey5kdtqsfqyatn6xa43/h?rlkey=ycklu6jgstjlkiu2fa740iv21&dl=0) 
-
 ## Prefecture-to-Prefecture Travel Time
 
 This data set records the prefecture-to-prefecture travel time in units of hours for three modes of transportation: road, railroad (freight), and railroad (passenger). The current version covers the years 1994 to 2017 and contains 279 prefectures. 
