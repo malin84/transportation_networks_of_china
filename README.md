@@ -104,7 +104,7 @@ The file `seg_info_MMMM.csv` contains the segment-level information for the mode
 4. `year_std`: The publication year of the applicable design code. For example, highways built in 2010 were subject to the highway design codes published in 2003. In this case, `year` = 2010, and `year_std` = 2003.  
 5. `path_name`: (in Chinese) The name of the path to which the segment belongs. For example, Segment `rail_10` is part of the "滨绥铁路," and therefore we record the name of the path in this variable.  
 6. `path_supplement`: (in Chinese) Additional information about the path, such as original names, original usage, phases, etc.
-7. `notes`: (in Chinese) Additional information about the segment, usually regarding the segment's endpoints. We record this information for quality-control and manual checks.
+7. `notes`: (in Chinese) Additional information about the segment, usually regarding the segment's endpoints. We record this information for quality control purposes.
 
 ### Segment-Year Level Information 
 4. `seg_year_MMMM.csv` contains the segment-year level information. In the current project, the only variable that varies at this level is the usage type of railroads. Several railroads switched between "mixed-use" and "freight-only" during our sample period. Each row in the file refers to a segment. The columns are as follows:
