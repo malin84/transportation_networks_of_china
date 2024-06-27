@@ -99,9 +99,9 @@ All the files are stored in the folder [seg_info](seg_info/). We create three da
 
 The file `seg_info_MMMM.csv` contains the segment-level information for the mode (road or rail). Each row in the file refers to a segment. The columns are as follows:
 1. `seg_id`: The unique id of the segment, which is the same as those used in the pixel-level dataset.
-2. `rate`:
-3. `year`:
-4. `year_std`:
+2. `rate`: The rate of the segment, such as "National I" for railroads or "First-Rate" for roads. See the table below for more details.
+3. `year`: The year of construction.
+4. `year_std`: The publication year of the applicable design code. For example, highways built in 2010 were subject to the highway design codes published in 2003. In this case, `year` = 2010, and `year_std` = 2003.  
 5. `path_name`:
 6. `path_supplement`:
 7. `notes`:
