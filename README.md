@@ -95,8 +95,12 @@ This data set records the information for roads and railroads at the **segment**
 
 All the files are stored in the folder [seg_info](seg_info/). We create three data files for each mode of transportation:
 1. `seg_info_MMMM.csv` contains the segment-level information for the mode (road or rail). Each row in the file refers to a segment. The columns are as follows:
-      1.`seg_id`:
-      2. `rate`:
-      3.
+   1.`seg_id`:
+   2. `rate`:
+   3. `year`:
+   4. `year_std`:
+   5. `path_name`:
+   6. `path_supplement`:
+   7. `notes`
 2. `seg_pixel_MMMM.csv` contains the mapping between segments and pixels. Each row in the file refers to a pixel. The columns are as follows:
-3. `seg_year_MMMM.csv` contains the segment-year level information. In the current project, the only variable that varies at this level is the usage type of railroads. Several railroads switched between "mixed-use" and "freight-only" during our sample period. Each row in the file refers to a segment. The columns are as follows:
+4. `seg_year_MMMM.csv` contains the segment-year level information. In the current project, the only variable that varies at this level is the usage type of railroads. Several railroads switched between "mixed-use" and "freight-only" during our sample period. Each row in the file refers to a segment. The columns are as follows:
