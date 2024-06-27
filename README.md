@@ -158,10 +158,20 @@ The variable `year_std` records the publication year of the applicable design st
 
 The file `seg_year_MMMM.csv` contains the segment-year level information. In the current version, the only variable that varies at this level is the usage type of railroads. Several railroads switched between "mixed-use" and "freight-only" during our sample period. Each row in the file refers to a segment. The columns are as follows:
 
-1. `seg_id`: the segment id.
-2. `year_type_YYYY`: the usage type of the segment in the year `YYYY.` `type= none` indicates that the road or railroad is no longer in use in that year.
+1. `seg_id`: the unique segment id.
+2. `year_type_YYYY`: the usage type of the segment in the year `YYYY.` `type= none` indicates that the road or railroad was no longer used that year.
 
 
 ### Segment-Pixel Mapping
-`seg_pixel_MMMM.csv` contains the mapping between segments and pixels. Each row in the file refers to a pixel. The columns are as follows:
+The file `seg_pixel_MMMM.csv` contains the mapping between segments and pixels for mode `MMMM`. Each row in the file refers to a pixel. The columns are as follows:
+
+1. `seg_id`: the unique id of the segment to which the pixel belongs.
+2. `long`: the longitude of the pixel.
+3. `lat`: the latitude of the pixel.
+4. `pos_x`: the $x$ index in the 12669-by-8829 raster map.
+5. `pos_y`: the $y$ index in the 12669-by-8829 raster map.
+6. `index`: the index number of the pixel in the 12669-by-8829. The index number is the output of the following MATLAB function:
+   ```
+   index=sub2ind([8829 12669],pos_y,pos_x)
+   ```
 
