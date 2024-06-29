@@ -32,7 +32,6 @@ This dataset contains three components:
 
 The current version covers the transportation network between 1994 and 2017. 
 
----
 ## Prefecture-to-Prefecture Travel Time
 
 This data set records the prefecture-to-prefecture travel time in units of hours for three modes of transportation: road, railroad (freight), and railroad (passenger). The current version covers the years 1994 to 2017 and contains 279 prefectures. 
@@ -77,7 +76,7 @@ The travel time data files share the same structure. Each file contains $38781$ 
 1. The first two columns, `origin` and `destination,` are the four-digit admin codes of the origin and destination prefectures.
 2. `year_yyyy`: the travel time between the two prefectures in the year `yyyy` in hours.
 
----
+
 ## Pixel-Level Design Speed and Travel Time
 
 This data set contains the design speed of the roads and railroads on each **pixel** and the travel time to traverse these pixels in the $12669\times 8829$ raster map of China by year and transportation mode. We only include the pixels with infrastructure build-up. The user should specify a speed to traverse empty pixels without any infrastructure to compute point-to-point travel time. In Ma and Tang (2024), the empty traverse speed is 10km/h. The travel time estimations between any two points, including the prefecture-to-prefecture travel time database reported above, are computed based on this data set using the Fast Marching Algorithm.
@@ -178,7 +177,7 @@ The variable `year_std` records the publication year of the applicable design st
 |2014 | Technical Standard of Highway Engineering (2014) | 公路工程技术标准 | JTG B01-2014 | road|
 
 
-
+---
 
 ### Segment-Year Level Information 
 
@@ -187,7 +186,7 @@ The file `seg_year_MMMM.csv` contains the segment-year level information. In the
 1. `seg_id`: the unique segment id.
 2. `year_type_YYYY`: the usage type of the segment in the year `YYYY.` `type= none` indicates that the road or railroad was no longer used that year.
 
-
+---
 ### Segment-Pixel Mapping
 The file `seg_pixel_MMMM.csv` contains the mapping between segments and pixels for mode `MMMM.` Each row in the file refers to a **pixel**. The columns are as follows:
 
