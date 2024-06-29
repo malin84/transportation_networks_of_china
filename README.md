@@ -107,7 +107,7 @@ Notes:
 
 ## Segment-Level Information: Name, Year of Construction, and Applicable Design Code
 
-This data set records the information for roads and railroads at the **segment** level. A "segment" is part of a named road or railroad, referred to as a **path** (such as the Beijing-Shanghai Railway or Beijing-Shijiazhuang Highway) constructed in a given year. We record information at the segment level because large infrastructure projects often take many years to complete. See the detailed definitions of "segment" and "path" in Ma and Tang (2024).
+This data set records the information for roads and railroads at the **segment** level. A "segment" is a group of **pixels** that form part of a named road or railroad referred to as a **path** (such as the Beijing-Shanghai Railway or Beijing-Shijiazhuang Highway) constructed in a given year. We record information at the segment level because large infrastructure projects often take many years to complete. See the detailed definitions of "segment" and "path" in Ma and Tang (2024).
 
 All the files are stored in the folder [seg_info](seg_info/). We create three data files for each mode of transportation. These files are as follows:
 1. [segment-level information](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#segment-level-information): year of construction, applicable standard, rates, parent path.
