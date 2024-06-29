@@ -24,6 +24,7 @@ To use the data, please cite:
   ```
 </details>
 
+---
 This dataset contains three components: 
   1) [Prefecture-to-Prefecture Travel Time](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#prefecture-to-prefecture-travel-time);
   2) [Pixel-Level Information: Design Speed and Travel Time](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#pixel-level-design-speed-and-travel-time);
