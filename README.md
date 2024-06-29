@@ -13,7 +13,7 @@ To use the data, please cite:
     title = {The Distributional Impacts of Transportation Networks in China},
     journal = {Journal of International Economics},
     pages = {103873},
-    year = {2023},
+    year = {2024},
     issn = {0022-1996},
     doi = {https://doi.org/10.1016/j.jinteco.2023.103873},
     url = {https://www.sciencedirect.com/science/article/pii/S0022199623001599},
