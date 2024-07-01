@@ -1,0 +1,729 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.5.31)  12 OCT 2023 15:41
+entering extended mode
+ \write18 enabled.
+ Source specials enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**\input report.tex
+ (./report.tex
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count175
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\lst@mode=\count176
+\lst@gtempboxa=\box45
+\lst@token=\toks15
+\lst@length=\count177
+\lst@currlwidth=\dimen135
+\lst@column=\count178
+\lst@pos=\count179
+\lst@lostspace=\dimen136
+\lst@width=\dimen137
+\lst@newlines=\count180
+\lst@lineno=\count181
+\lst@maxwidth=\dimen138
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count182
+\lst@skipnumbers=\count183
+\lst@framebox=\box46
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen139
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count184
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count185
+\leftroot@=\count186
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count187
+\DOTSCASE@=\count188
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count189
+\c@MaxMatrixCols=\count190
+\dotsspace@=\muskip16
+\c@parentequation=\count191
+\dspbrk@lvl=\count192
+\tag@help=\toks17
+\row@=\count193
+\column@=\count194
+\maxfields@=\count195
+\andhelp@=\toks18
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks19
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen148
+\Gin@req@width=\dimen149
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip52
+\bibsep=\skip53
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count196
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen150
+\captionmargin@=\dimen151
+\captionwidth=\dimen152
+\caption@tempdima=\dimen153
+\caption@indent=\dimen154
+\caption@parindent=\dimen155
+\caption@hangindent=\dimen156
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count197
+\c@continuedfloat=\count198
+Package caption Info: listings package is loaded.
+)
+\c@KVtest=\count199
+\sf@farskip=\skip54
+\sf@captopadj=\dimen157
+\sf@capskip=\skip55
+\sf@nearskip=\skip56
+\c@subfigure=\count266
+\c@subfigure@save=\count267
+\c@lofdepth=\count268
+\c@subtable=\count269
+\c@subtable@save=\count270
+\c@lotdepth=\count271
+\sf@top=\skip57
+\sf@bottom=\skip58
+)
+(/usr/share/texlive/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box49
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen158
+\lightrulewidth=\dimen159
+\cmidrulewidth=\dimen160
+\belowrulesep=\dimen161
+\belowbottomsep=\dimen162
+\aboverulesep=\dimen163
+\abovetopsep=\dimen164
+\cmidrulesep=\dimen165
+\cmidrulekern=\dimen166
+\defaultaddspace=\dimen167
+\@cmidla=\count272
+\@cmidlb=\count273
+\@aboverulesep=\dimen168
+\@belowrulesep=\dimen169
+\@thisruleclass=\count274
+\@lastruleclass=\count275
+\@thisrulewidth=\dimen170
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip59
+\multirow@cntb=\count276
+\multirow@dima=\skip60
+\bigstrutjot=\dimen171
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count277
+\rotFPtop=\skip61
+\rotFPbot=\skip62
+\rot@float@box=\box50
+\rot@mess@toks=\toks21
+)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/floatrow/floatrow.sty
+Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
+\c@float@type=\count278
+\float@exts=\toks22
+\float@box=\box51
+\@floatcapt=\box52
+Package floatrow Info: Modified float package code loaded on input line 455.
+Package floatrow Info: Modified rotfloat package code loaded on input line 473.
+
+\FR@everyfloat=\toks23
+\flrow@foot=\insert252
+\FB@wd=\dimen172
+\FBo@wd=\dimen173
+\FBc@wd=\dimen174
+\FBo@ht=\skip63
+\FBc@ht=\skip64
+\FBf@ht=\skip65
+\FBo@max=\skip66
+\FBc@max=\skip67
+\FBf@max=\skip68
+\c@FBl@b=\count279
+\floatbox@depth=\count280
+\c@FRobj=\count281
+\c@FRsobj=\count282
+\Xhsize=\skip69
+\sXhsize=\skip70
+\Zhsize=\skip71
+\sZhsize=\skip72
+\flrow@rowbox=\box53
+\FR@Zunitlength=\dimen175
+\c@FBcnt=\count283
+\FPOScnt=\count284
+\LTleft=\skip73
+\LTright=\skip74
+\LTleft=\skip75
+\LTright=\skip76
+\flrow@types=\toks24
+)
+(/usr/share/texlive/texmf-dist/tex/latex/chngcntr/chngcntr.sty
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
+Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip77
+\LTright=\skip78
+\LTpre=\skip79
+\LTpost=\skip80
+\LTchunksize=\count285
+\LTcapwidth=\dimen176
+\LT@head=\box54
+\LT@firsthead=\box55
+\LT@foot=\box56
+\LT@lastfoot=\box57
+\LT@cols=\count286
+\LT@rows=\count287
+\c@LT@tables=\count288
+\c@LT@chunks=\count289
+\LT@p@ftn=\toks25
+)
+(/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
+Package: supertabular 2020/02/02 v4.1g the supertabular environment
+\c@tracingst=\count290
+\ST@wd=\dimen177
+\ST@rightskip=\skip81
+\ST@leftskip=\skip82
+\ST@parfillskip=\skip83
+\ST@pageleft=\dimen178
+\ST@headht=\dimen179
+\ST@tailht=\dimen180
+\ST@pagesofar=\dimen181
+\ST@pboxht=\dimen182
+\ST@lineht=\dimen183
+\ST@prevht=\dimen184
+\ST@toadd=\dimen185
+\ST@dimen=\dimen186
+\ST@pbox=\box58
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed) + inter
+mediate FMi
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen187
+\ar@mcellbox=\box59
+\extrarowheight=\dimen188
+\NC@list=\toks26
+\extratabsurround=\skip84
+\backup@length=\skip85
+\ar@cellbox=\box60
+)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box61
+\sift@deathcycles=\count291
+\@vwid@loff=\dimen189
+\@vwid@roff=\dimen190
+)
+\c@taburow=\count292
+\tabu@nbcols=\count293
+\tabu@cnt=\count294
+\tabu@Xcol=\count295
+\tabu@alloc=\count296
+\tabu@nested=\count297
+\tabu@target=\dimen191
+\tabu@spreadtarget=\dimen192
+\tabu@naturalX=\dimen193
+\tabucolX=\dimen194
+\tabu@Xsum=\dimen195
+\extrarowdepth=\dimen196
+\abovetabulinesep=\dimen197
+\belowtabulinesep=\dimen198
+\tabustrutrule=\dimen199
+\tabu@thebody=\toks27
+\tabu@footnotes=\toks28
+\tabu@box=\box62
+\tabu@arstrutbox=\box63
+\tabu@hleads=\box64
+\tabu@vleads=\box65
+\tabu@cellskip=\skip86
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count298
+\Gm@cntv=\count299
+\c@Gm@tempcnt=\count300
+\Gm@bindingoffset=\dimen256
+\Gm@wd@mp=\dimen257
+\Gm@odd@mp=\dimen258
+\Gm@even@mp=\dimen259
+\Gm@layoutwidth=\dimen260
+\Gm@layoutheight=\dimen261
+\Gm@layouthoffset=\dimen262
+\Gm@layoutvoffset=\dimen263
+\Gm@dimlist=\toks29
+)
+\c@theorem=\count301
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count302
+\l__pdf_internal_box=\box66
+)
+
+LaTeX Warning: Unused global option(s):
+    [thmsa].
+
+(./report.aux)
+\openout1 = `report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+\c@lstlisting=\count303
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count304
+\scratchdimen=\dimen264
+\scratchbox=\box67
+\nofMPsegments=\count305
+\nofMParguments=\count306
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count307
+\MPscratchDim=\dimen265
+\MPnumerator=\count308
+\makeMPintoPDFobject=\count309
+\everyMPtoPDFconversion=\toks31
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: floatrow package is loaded.
+Package caption Info: longtable package is loaded.
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
+)
+Package caption Info: Fixing longtable code of `floatrow' package.
+Package caption Info: rotating package is loaded.
+Package caption Info: supertabular package is loaded.
+Package caption Info: threeparttable package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/floatrow/fr-subfig.sty
+Package: fr-subfig 2007/12/24 v0.1g (beta) floatrow: additions for subfig
+\FBsc@max=\skip87
+\FBso@max=\skip88
+)
+(/usr/share/texlive/texmf-dist/tex/latex/floatrow/fr-longtable.sty
+Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
+
+\flrow@LT@lasthead=\box68
+\flrow@LT@prelastfoot=\box69
+\c@FBLTpage=\count310
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package epstopdf Info: Source file: <tab_fig/dist_ori_v001_rail_hsr_combined_pa
+ss.eps>
+(epstopdf)                    date: 2023-10-12 15:40:12
+(epstopdf)                    size: 54139 bytes
+(epstopdf)             Output file: <tab_fig/dist_ori_v001_rail_hsr_combined_pa
+ss-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-10-12 15:41:14
+(epstopdf)                    size: 25283 bytes
+(epstopdf)             Command: <epstopdf --outfile=tab_fig/dist_ori_v001_rail_
+hsr_combined_pass-eps-converted-to.pdf tab_fig/dist_ori_v001_rail_hsr_combined_
+pass.eps>
+(epstopdf)             \includegraphics on input line 69.
+Package epstopdf Info: Output file is already uptodate.
+<tab_fig/dist_ori_v001_rail_hsr_combined_pass-eps-converted-to.pdf, id=1, 374.3
+9874pt x 293.095pt>
+File: tab_fig/dist_ori_v001_rail_hsr_combined_pass-eps-converted-to.pdf Graphic
+ file (type pdf)
+<use tab_fig/dist_ori_v001_rail_hsr_combined_pass-eps-converted-to.pdf>
+Package pdftex.def Info: tab_fig/dist_ori_v001_rail_hsr_combined_pass-eps-conve
+rted-to.pdf  used on input line 69.
+(pdftex.def)             Requested size: 234.8775pt x 183.87263pt.
+Package epstopdf Info: Source file: <tab_fig/dist_ori_v001_nationalroad_highway
+_combined_pass.eps>
+(epstopdf)                    date: 2023-10-12 15:40:12
+(epstopdf)                    size: 54750 bytes
+(epstopdf)             Output file: <tab_fig/dist_ori_v001_nationalroad_highway
+_combined_pass-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-10-12 15:41:14
+(epstopdf)                    size: 25177 bytes
+(epstopdf)             Command: <epstopdf --outfile=tab_fig/dist_ori_v001_natio
+nalroad_highway_combined_pass-eps-converted-to.pdf tab_fig/dist_ori_v001_nation
+alroad_highway_combined_pass.eps>
+(epstopdf)             \includegraphics on input line 72.
+Package epstopdf Info: Output file is already uptodate.
+<tab_fig/dist_ori_v001_nationalroad_highway_combined_pass-eps-converted-to.pdf,
+ id=2, 374.39874pt x 293.095pt>
+File: tab_fig/dist_ori_v001_nationalroad_highway_combined_pass-eps-converted-to
+.pdf Graphic file (type pdf)
+<use tab_fig/dist_ori_v001_nationalroad_highway_combined_pass-eps-converted-to.
+pdf>
+Package pdftex.def Info: tab_fig/dist_ori_v001_nationalroad_highway_combined_pa
+ss-eps-converted-to.pdf  used on input line 72.
+(pdftex.def)             Requested size: 234.8775pt x 183.87263pt.
+
+Overfull \hbox (14.59996pt too wide) in paragraph at lines 69--73
+ [][][][] 
+ []
+
+Package epstopdf Info: Source file: <tab_fig/dist_ori_v002_rail_hsr_combined_pa
+ss.eps>
+(epstopdf)                    date: 2023-10-12 15:40:12
+(epstopdf)                    size: 54154 bytes
+(epstopdf)             Output file: <tab_fig/dist_ori_v002_rail_hsr_combined_pa
+ss-eps-converted-to.pdf>
+(epstopdf)             Command: <epstopdf --outfile=tab_fig/dist_ori_v002_rail_
+hsr_combined_pass-eps-converted-to.pdf tab_fig/dist_ori_v002_rail_hsr_combined_
+pass.eps>
+(epstopdf)             \includegraphics on input line 76.
+runsystem(epstopdf --outfile=tab_fig/dist_ori_v002_rail_hsr_combined_pass-eps-c
+onverted-to.pdf tab_fig/dist_ori_v002_rail_hsr_combined_pass.eps)...executed.
+
+Package epstopdf Info: Result file: <tab_fig/dist_ori_v002_rail_hsr_combined_pa
+ss-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-10-12 15:41:51
+(epstopdf)                    size: 25392 bytes.
+<tab_fig/dist_ori_v002_rail_hsr_combined_pass-eps-converted-to.pdf, id=3, 374.3
+9874pt x 293.095pt>
+File: tab_fig/dist_ori_v002_rail_hsr_combined_pass-eps-converted-to.pdf Graphic
+ file (type pdf)
+<use tab_fig/dist_ori_v002_rail_hsr_combined_pass-eps-converted-to.pdf>
+Package pdftex.def Info: tab_fig/dist_ori_v002_rail_hsr_combined_pass-eps-conve
+rted-to.pdf  used on input line 76.
+(pdftex.def)             Requested size: 234.8775pt x 183.87263pt.
+Package epstopdf Info: Source file: <tab_fig/dist_ori_v002_nationalroad_highway
+_combined_pass.eps>
+(epstopdf)                    date: 2023-10-12 15:40:13
+(epstopdf)                    size: 53387 bytes
+(epstopdf)             Output file: <tab_fig/dist_ori_v002_nationalroad_highway
+_combined_pass-eps-converted-to.pdf>
+(epstopdf)             Command: <epstopdf --outfile=tab_fig/dist_ori_v002_natio
+nalroad_highway_combined_pass-eps-converted-to.pdf tab_fig/dist_ori_v002_nation
+alroad_highway_combined_pass.eps>
+(epstopdf)             \includegraphics on input line 79.
+runsystem(epstopdf --outfile=tab_fig/dist_ori_v002_nationalroad_highway_combine
+d_pass-eps-converted-to.pdf tab_fig/dist_ori_v002_nationalroad_highway_combined
+_pass.eps)...executed.
+
+Package epstopdf Info: Result file: <tab_fig/dist_ori_v002_nationalroad_highway
+_combined_pass-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-10-12 15:41:51
+(epstopdf)                    size: 25293 bytes.
+<tab_fig/dist_ori_v002_nationalroad_highway_combined_pass-eps-converted-to.pdf,
+ id=4, 374.39874pt x 293.095pt>
+File: tab_fig/dist_ori_v002_nationalroad_highway_combined_pass-eps-converted-to
+.pdf Graphic file (type pdf)
+<use tab_fig/dist_ori_v002_nationalroad_highway_combined_pass-eps-converted-to.
+pdf>
+Package pdftex.def Info: tab_fig/dist_ori_v002_nationalroad_highway_combined_pa
+ss-eps-converted-to.pdf  used on input line 79.
+(pdftex.def)             Requested size: 234.8775pt x 183.87263pt.
+
+Overfull \hbox (14.59996pt too wide) in paragraph at lines 76--80
+ [][][][] 
+ []
+
+Package epstopdf Info: Source file: <tab_fig/dist_ori_v003_rail_hsr_combined_pa
+ss.eps>
+(epstopdf)                    date: 2023-10-12 15:40:12
+(epstopdf)                    size: 53288 bytes
+(epstopdf)             Output file: <tab_fig/dist_ori_v003_rail_hsr_combined_pa
+ss-eps-converted-to.pdf>
+(epstopdf)             Command: <epstopdf --outfile=tab_fig/dist_ori_v003_rail_
+hsr_combined_pass-eps-converted-to.pdf tab_fig/dist_ori_v003_rail_hsr_combined_
+pass.eps>
+(epstopdf)             \includegraphics on input line 83.
+runsystem(epstopdf --outfile=tab_fig/dist_ori_v003_rail_hsr_combined_pass-eps-c
+onverted-to.pdf tab_fig/dist_ori_v003_rail_hsr_combined_pass.eps)...executed.
+
+Package epstopdf Info: Result file: <tab_fig/dist_ori_v003_rail_hsr_combined_pa
+ss-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-10-12 15:41:51
+(epstopdf)                    size: 25353 bytes.
+<tab_fig/dist_ori_v003_rail_hsr_combined_pass-eps-converted-to.pdf, id=5, 368.3
+7625pt x 293.095pt>
+File: tab_fig/dist_ori_v003_rail_hsr_combined_pass-eps-converted-to.pdf Graphic
+ file (type pdf)
+<use tab_fig/dist_ori_v003_rail_hsr_combined_pass-eps-converted-to.pdf>
+Package pdftex.def Info: tab_fig/dist_ori_v003_rail_hsr_combined_pass-eps-conve
+rted-to.pdf  used on input line 83.
+(pdftex.def)             Requested size: 234.8775pt x 186.878pt.
+Package epstopdf Info: Source file: <tab_fig/dist_ori_v003_nationalroad_highway
+_combined_pass.eps>
+(epstopdf)                    date: 2023-10-12 15:40:13
+(epstopdf)                    size: 53394 bytes
+(epstopdf)             Output file: <tab_fig/dist_ori_v003_nationalroad_highway
+_combined_pass-eps-converted-to.pdf>
+(epstopdf)             Command: <epstopdf --outfile=tab_fig/dist_ori_v003_natio
+nalroad_highway_combined_pass-eps-converted-to.pdf tab_fig/dist_ori_v003_nation
+alroad_highway_combined_pass.eps>
+(epstopdf)             \includegraphics on input line 86.
+runsystem(epstopdf --outfile=tab_fig/dist_ori_v003_nationalroad_highway_combine
+d_pass-eps-converted-to.pdf tab_fig/dist_ori_v003_nationalroad_highway_combined
+_pass.eps)...executed.
+
+Package epstopdf Info: Result file: <tab_fig/dist_ori_v003_nationalroad_highway
+_combined_pass-eps-converted-to.pdf>
+(epstopdf)                    date: 2023-10-12 15:41:51
+(epstopdf)                    size: 25323 bytes.
+<tab_fig/dist_ori_v003_nationalroad_highway_combined_pass-eps-converted-to.pdf,
+ id=6, 374.39874pt x 293.095pt>
+File: tab_fig/dist_ori_v003_nationalroad_highway_combined_pass-eps-converted-to
+.pdf Graphic file (type pdf)
+<use tab_fig/dist_ori_v003_nationalroad_highway_combined_pass-eps-converted-to.
+pdf>
+Package pdftex.def Info: tab_fig/dist_ori_v003_nationalroad_highway_combined_pa
+ss-eps-converted-to.pdf  used on input line 86.
+(pdftex.def)             Requested size: 234.8775pt x 183.87263pt.
+
+Overfull \hbox (14.59996pt too wide) in paragraph at lines 83--87
+ [][][][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 4.79326pt on input line 89.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./tab_fig/dist_ori_v001_
+rail_hsr_combined_pass-eps-converted-to.pdf> <./tab_fig/dist_ori_v001_nationalr
+oad_highway_combined_pass-eps-converted-to.pdf> <./tab_fig/dist_ori_v002_rail_h
+sr_combined_pass-eps-converted-to.pdf> <./tab_fig/dist_ori_v002_nationalroad_hi
+ghway_combined_pass-eps-converted-to.pdf> <./tab_fig/dist_ori_v003_rail_hsr_com
+bined_pass-eps-converted-to.pdf> <./tab_fig/dist_ori_v003_nationalroad_highway_
+combined_pass-eps-converted-to.pdf>] (./report.aux) ) 
+Here is how much of TeX's memory you used:
+ 8479 strings out of 481239
+ 127678 string characters out of 5920377
+ 378571 words of memory out of 5000000
+ 23616 multiletter control sequences out of 15000+600000
+ 532937 words of font info for 26 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 50i,10n,51p,799b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr9.pfb>
+Output written on report.pdf (1 page, 159829 bytes).
+PDF statistics:
+ 52 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+
