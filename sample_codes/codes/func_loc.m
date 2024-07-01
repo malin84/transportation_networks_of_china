@@ -1,15 +1,20 @@
-function output = func_loc(long,lat,id,fname,outpath)
+function output = func_loc(long,lat,id,fname,outpath,draw_map)
 % Converts the longitude and latitude into positions.  Two outputs: a
-% file that contains the positions, and a map that shows the
-% positions.
+% file that contains the positions, and (optional) a map that shows
+% the positions.
 
+% This part is slow. Only do it on trial runs
+    
+    if (nargin < 6)
+        draw_map = false;
+    end
+    
     run define_path;
     albers = @(x,y) albers_sph(x,y);
     
-    nloc = length(long);
+    nloc   = length(long);
     fprintf(1,'%30s:%30g\n','Number of locations',nloc);
 
-    draw_map = false;
 
     xmax = 12669;
     xmin = 1;
@@ -30,12 +35,6 @@ function output = func_loc(long,lat,id,fname,outpath)
         albers_kh(i,2) = tmp.h;
 
     end
-
-    % scatter(albers_xy(:,1),albers_xy(:,2));
-
-    % % First Raw Check
-    % print('-dpng','output/loc_check_0.png','-r0');
-
 
     % A couple of points to back out the scales
 
@@ -123,7 +122,7 @@ function output = func_loc(long,lat,id,fname,outpath)
     % ----------------------------------------------------------------------
     
     if (draw_map)
-    
+        fprintf(1,'Drawing location maps. This could take a while.\n');
         loc_map = uint8(zeros(xmax,ymax));
 
         ind_xy = sub2ind([xmax,ymax],pos_xy(:,1),pos_xy(:,2));
@@ -195,7 +194,7 @@ function output = func_loc(long,lat,id,fname,outpath)
         imwrite(map_dots,[outpath '/loc_dots_' fname '.png']);
 
         % the check map
-        imwrite(basemap,[outpath '/loc_check_' fname '.png']);
+        imwrite(basemap,[outpath '/loc_map_' fname '.png']);
 
     
     end 
@@ -205,13 +204,13 @@ function output = func_loc(long,lat,id,fname,outpath)
 
     % Output to the csv
 
-    fname = [outpath '/coordinates_loc_output_' fname '.csv'];
+    fname = [outpath '/coordinates_' fname '.csv'];
 
     fid = fopen(fname,'w');
 
     fprintf(fid,'%12s, %12s, %12s, %12s, %12s, %12s, %12s\n','id','long','lat','pos_x','pos_y','k','h');
     for i = 1:nloc
-        fprintf(fid,'%12s, %12.2f, %12.2f, %12d, %12d, %12.10f, %12.10f\n',...
+        fprintf(fid,'%12s, %12.4f, %12.4f, %12d, %12d, %12.10f, %12.10f\n',...
                 id{i},long(i),lat(i),pos_xy(i,:),albers_kh(i,:));
     end
 

@@ -2,20 +2,24 @@
 
 clear;
 
+addpath('codes');
 
-year_list = [2007:2016];
+year_list   = [2007:2009];
+ncores      = 8;
+outpath     = 'output';
+input_fname = 'sample_input.csv';
 
-file_type = 'supplier';
-ncores    = 24;
-outpath   = 'output';
+% Drawing the location maps could be slow.
+draw_loc    = false;
+
+loc_1(input_fname,outpath,draw_loc);
 
 
 for iyear = 1:length(year_list)
     year      = num2str(year_list(iyear));
 
-    loc_1(file_type,year,outpath);
-    compute_dist_fmm_2(file_type,year,outpath,ncores);
-    export_dist_3(file_type,year,outpath);
+    % compute_dist_fmm_2(file_type,year,outpath,ncores);
+    % export_dist_3(file_type,year,outpath);
 
 end
 

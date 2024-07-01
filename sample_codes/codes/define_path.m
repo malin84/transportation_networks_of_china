@@ -7,7 +7,11 @@ map_output      = map_path;
 aligned_map_path = [root_path 'Data/maps/3_codes/align_maps/output/'];
 
 % The baseline map at the 8k resolution
-base_map_path   = [root_path 'Data/maps/2_processed_maps/base_8k.png'];
+base_map_path   = ['input/base_8k.png'];
+
+% Pixel Data
+pixel_data_path = ['../pixel_info/'];
+
 % The coordinates of cities and counties
 coordinate_path = [root_path 'Data/city_county_lists/'];
 

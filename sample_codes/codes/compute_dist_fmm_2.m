@@ -12,10 +12,6 @@ function compute_dist_fmm_2(file_type,year,outpath,ncores)
     % The scale info for the 8k map
     load('scale_info');
 
-    % file_type    = 'buyer';
-    % year         = '2007';
-
-
     road_list    = {'nationalroad_highway_combined','rail_hsr_combined'};
 
     % ----------------------------------------------------------------------

@@ -1,30 +1,30 @@
-function loc_1(file_type,year,outpath)
+function loc_1(input_fname,outpath,draw_loc)
 % ----------------------------------------------------------------------
 % Map the coordinates into x-y positions of locations in the 8k maps
 % ----------------------------------------------------------------------
 
+% Default option: do not draw the location maps as it is slow.
+    if nargin < 3
+        draw_loc = false;
+    end
+    
+    
 
 % Define the path of the input and output files;
-    run define_path;
 
     if ~exist(outpath,'dir')
         mkdir(outpath);
     end
-    
-    % outpath = 'output/';
 
-    % Define the boundary
+    % Define the boundary to be within China
     long_min = 72;
     long_max = 135;
 
     lat_min  = 18;
     lat_max  = 124;
 
-    % file_type = 'buyer';
-    % year      = '2007';
-
-    % Load the coordinates
-    [long_ori lat_ori long_des lat_des id_ori] = textread(['input/firm-' file_type '_' year '.csv'],'%f %f %f %f %f','delimiter',',', 'headerlines',1);
+    % Load the input files
+    [long_ori lat_ori long_des lat_des] = textread(['input/' input_fname],'%f %f %f %f','delimiter',',', 'headerlines',1);
 
     % Clean data;
     ind_drop = false(size(long_ori));
@@ -62,8 +62,6 @@ function loc_1(file_type,year,outpath)
     fprintf(1,'============================================================\n')
     
     
-
-    
     % Define which projection to use: sphere (sph) or ellipsoid (ell);
 
     spec = 'sph';
@@ -80,7 +78,7 @@ function loc_1(file_type,year,outpath)
     % The origins
     % ----------------------------------------------------------------------
 
-    % Do not use the provided ID. Generate a new ID. IC here is the variable that contains the ID at the record level.
+    % Generate a new ID. IC here is the variable that contains the ID at the record level.
     [coord_ori_unique ia ic] = unique([long_ori lat_ori],'rows');
 
     nloc = size(coord_ori_unique,1);
@@ -93,9 +91,11 @@ function loc_1(file_type,year,outpath)
         id_ori{i} = ['o_' num2str(i)];
     end
 
-    fname_ori = [file_type '_' year '_ori' ];
+    fname_split = split(input_fname,'.') ;
+    
+    fname_ori = [fname_split{1} '_ori' ];
 
-    func_loc(long_unique,lat_unique,id_ori,fname_ori,outpath);
+    func_loc(long_unique,lat_unique,id_ori,fname_ori,outpath,draw_loc);
 
     % ----------------------------------------------------------------------
     % The destinations
@@ -109,7 +109,7 @@ function loc_1(file_type,year,outpath)
         id_des{i} = ['d_' num2str(ic(i)) '_' num2str(i)];
     end
 
-    fname_des = [file_type '_' year '_des' ];
+    fname_des = [fname_split{1} '_des' ];
 
-    func_loc(long_des,lat_des,id_des,fname_des,outpath);
+    func_loc(long_des,lat_des,id_des,fname_des,outpath,draw_loc);
 end
