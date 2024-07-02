@@ -1,4 +1,4 @@
-function output = albers(long,lat)
+function output = albers_sph(long,lat)
 
 % Albers projection, assuming spherical earth.
 
