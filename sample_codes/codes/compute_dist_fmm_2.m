@@ -8,13 +8,13 @@ function compute_dist_fmm_2(input_fname,mode,year,outpath,ncores,empty_speed)
 
     if nargin < 5
         ncores = 4;
-        msg = ['setting ncores to ' num2str(ncores)];
+        msg = ['No input on ncores; setting ncores to ' num2str(ncores)];
         fprintf(1,'%s\n',msg);
     end
 
     if nargin < 6
         empty_speed = 10;
-        msg = ['setting empty_speed to ' num2str(empty_speed)];
+        msg = ['no input on empty_speed; setting empty_speed to ' num2str(empty_speed)];
         fprintf(1,'%s\n',msg);
     end
     
@@ -22,7 +22,6 @@ function compute_dist_fmm_2(input_fname,mode,year,outpath,ncores,empty_speed)
     run define_map_dimension.m;
     
     fname_split = split(input_fname,'.') ;
-
 
     % ----------------------------------------------------------------------
     % Load the destination locations
@@ -51,18 +50,18 @@ function compute_dist_fmm_2(input_fname,mode,year,outpath,ncores,empty_speed)
         mypool = parpool(ncores);               
     end
 
-    % Re-using the legacy codes, and hence the renaming.    
+    % Reusing some legacy codes, and hence the renaming.    
     road = mode;
     
     % ==================================================
-    % Create the friction matrix. The unit here is minute
+    % Create the friction matrix. The unit here is a minute
     % ==================================================
 
     time_output = func_friction_map(mode,year,empty_speed);
     dist_output = zeros(nori,ndes);
 
     % ======================================================================
-    % Main code, looping over the pre-defined locations
+    % Main code, looping over the origins
     % ======================================================================
 
 
@@ -72,7 +71,7 @@ function compute_dist_fmm_2(input_fname,mode,year,outpath,ncores,empty_speed)
         pos_y = pos_y_list_ori(iori);
 
         % --------------------------------------------------
-        % The units here is in minutes
+        % The units here are in minutes
         % --------------------------------------------------
         
         % Distance to all pixels
@@ -83,7 +82,7 @@ function compute_dist_fmm_2(input_fname,mode,year,outpath,ncores,empty_speed)
         dist_output(iori,:)      = dist_vec; 
         
         fprintf(1,'==================================================\n')
-        fprintf(1,'%30s:%30g\n','Finished Origin',iori);
+        fprintf(1,'%30s:%30g\n',' Finished Origin',iori);
         fprintf(1,'==================================================\n')
         
     end 
@@ -95,6 +94,7 @@ function compute_dist_fmm_2(input_fname,mode,year,outpath,ncores,empty_speed)
     long_ori_table = zeros(ndes,1);
     lat_ori_table  = zeros(ndes,1);
 
+    % Arrange the output files in the same order as the input. 
     for ides = 1:ndes
         id = id_des{ides};
         split_str = split(id,'_');
@@ -102,7 +102,8 @@ function compute_dist_fmm_2(input_fname,mode,year,outpath,ncores,empty_speed)
         % Find out the row number of the origin location
         ori                  = ['o_' split_str{2}];
         pos_ori              = find(strcmp(id_ori,ori));
-        
+
+        % Convert the output to the unit of hours
         time_table(ides)     = dist_output(pos_ori,ides)/60;
 
         id_ori_table{ides}   = id_ori{pos_ori};
@@ -113,7 +114,7 @@ function compute_dist_fmm_2(input_fname,mode,year,outpath,ncores,empty_speed)
 
     fname_out  = [outpath '/t_mat_' fname_split{1} '_' road '_' num2str(year) '.csv'];
 
-    % Convert to hours
+    % write to file
     table_out = table(id_ori_table,long_ori_table,lat_ori_table,long_des,lat_des,time_table,...
                       'VariableNames',{'id_ori','long_ori','lat_ori','long_des','lat_des','time_cost'}); 
     writetable(table_out,fname_out);
