@@ -82,7 +82,9 @@ The travel time data files share the same structure. Each file contains $38781$ 
 
 ## Pixel-Level Design Speed and Travel Time
 
-This data set contains the design speed of the roads and railroads on each **pixel** and the travel time to traverse these pixels in the $12669\times 8829$ raster map of China by year and transportation mode. We only include the pixels with infrastructure build-up. The user should specify a speed to traverse empty pixels without any infrastructure to compute point-to-point travel time. In Ma and Tang (2024), the empty traverse speed is 10km/h. The travel time estimations between any two points, including the prefecture-to-prefecture travel time database reported above, are computed based on this data set using the Fast Marching Algorithm.
+This data set contains the design speed of the roads and railroads on each **pixel** and the travel time to traverse these pixels in the $12669\times 8829$ raster map of China by year and transportation mode. We only include the pixels with infrastructure build-up. The user should specify a speed to traverse empty pixels without any infrastructure to compute point-to-point travel time. In Ma and Tang (2024), the empty traverse speed is 10km/h. 
+
+The travel time estimations between any two points, including the prefecture-to-prefecture travel time database reported above, are computed based on this data set using the Fast Marching Algorithm. The folder [sample_codes](sample_codes/) contains examples of using these data to compute travel time between any two pixels.
 
 All the files are stored in the folder [pixel_info](pixel_info/). The data files are named `pixel_info_MMMM_YYYY.csv,` where `MMMM` refers to the three modes of transportation: road, railroad (freight), and railroad (passenger), and `YYYY` refers to the year. 
 
