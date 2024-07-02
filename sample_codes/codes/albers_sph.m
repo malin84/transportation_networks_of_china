@@ -1,5 +1,7 @@
 function output = albers(long,lat)
 
+% Albers projection, assuming spherical earth.
+
 lambda_0 = pi*110/180;
 psi_0 = pi*35/180;
 psi_1 = pi*25/180;
