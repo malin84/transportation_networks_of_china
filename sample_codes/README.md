@@ -24,17 +24,18 @@ Each row in the output file refers to an **origin-destination pair**. The rows a
 
 The following options could be set inside `main.m`:
 
-1. `ncores` (positive integer): the number of cores to use in parallel when computing the distances. Fast Marching is memory-consuming. The rule of thumb is that **each core could use up to 6GB of memory**.
+1. `ncores` (positive integer): the number of cores to use in parallel when computing the distances. Fast Marching is memory-consuming with our map size. The rule of thumb is that **each core could use up to 6GB of memory**.
 2. `empty_spped` (positive number): the speed when traversing an empty pixel without any infrastructure in the unit of km/h.
 3. `draw_loc` (logical): whether to produce maps that show the locations of the origin and destinations. The files are stored in the output folder specified in `outpath`.
 
  
  ## Fast Marching
-In the file `compute_dist_fmm_2.m`, to implement the fast marching algorithm, we used the [Accurate Fast Marching](https://www.mathworks.com/matlabcentral/fileexchange/24531-accurate-fast-marching) package from the MATLAB File Exchange. Please refer to the help file there for instructions on how to install the package. From our experience, compiling the c-code with `mex` significantly improves performance. 
+In the file `compute_dist_fmm_2.m`, to implement the fast marching algorithm, we used the [Accurate Fast Marching](https://www.mathworks.com/matlabcentral/fileexchange/24531-accurate-fast-marching) package from the MATLAB File Exchange. Please refer to the help file on Mathworks for instructions on installing the package. From our experience, compiling the c-code with `mex` significantly improves performance. 
 
 ## Tips on Improving Performance
 
-FMM is computationally heavy to implement. Starting from one origin, computing the distances to all pixels on the map takes around 120 seconds on a single core with compiled code. Here are some tips on improving the codes' performance.
+FMM is computationally heavy to implement. From one origin, computing the distances to all pixels on the map takes around 120 seconds on a single core with compiled code. Here are some tips on improving the codes' performance.
 
 1. **Reduce the number of unique origins**. Accurate Fast Marching automatically computes distances to all pixels on a map, conditional on an **origin**. Therefore, the computational time scales linearly with the number of origins. The number of destinations does not meaningfully affect computational time. Therefore, always use the coordinates with fewer unique locations as the origin. For example, if you are computing the distances from 10,000 firms to 300 destination cities, you should use cities as the origin, not the firms. Using cities as origin calls FMM 300 times, and using firms as origin requires 10,000 calls.
-2.     
+2. **Compile the Accurate Fast Marching Package**. Before using the FMM package, follow the instructions on Mathworks to compile it with `mex.` Compilation reduces computational time by about one order of magnitude.
+3. **Parallel as much as possible if memory permits**. The sample code calls FMM in parallel to improve performance. However, be careful about memory usage. Due to the size of the map, each core requires roughly 6GB of memory. Too many parfor workers can easily crash MATLAB.      
