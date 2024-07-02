@@ -8,7 +8,7 @@ See `main.m` for more details.
 ### Main Input
 The user must provide the coordinates of the origins and destinations in the same format as in the file `input/sample_input.csv.` Each row of the input file should contain an **origin-destination pair**.
 
-Besides the file name containing the input coordinates, the user should also specify the `mode` and `year` variables inside `main.m`. The `mode` variable could be a string that takes one of the following values: `road,` `rail_good,` or `rail_pass.` The variable `year` should be an integer between 1994 and 2017. 
+In addition to the file name containing the input coordinates, the user should also specify the `mode` and `year` variables inside `main.m`. The `mode` is a string variable that takes one of the following values: `road,` `rail_good,` or `rail_pass.` The variable `year` should be an integer between 1994 and 2017. 
 
 ### Main Output
 The main output files are stored in the folder `output.` Each mode-year combination has a separate output file named `output/t_mat_INPUT_MODE_YEAR.csv,` in which `INPUT` is the input file name that contains the coordinates, and MODE and YEAR are self-explanatory.
@@ -25,8 +25,8 @@ Each row in the output file refers to an **origin-destination pair**. The rows a
 The following options could be set inside `main.m`:
 
 1. `ncores` (positive integer): the number of cores to use in parallel when computing the distances. Fast Marching is memory-consuming with our map size. The rule of thumb is that **each core could use up to 6GB of memory**.
-2. `empty_spped` (positive number): the speed when traversing an empty pixel without any infrastructure in the unit of km/h.
-3. `draw_loc` (logical): whether to produce maps that show the locations of the origin and destinations. The files are stored in the output folder specified in `outpath`.
+2. `empty_speed` (positive number): the speed when traversing an empty pixel without any infrastructure in the unit of km/h.
+3. `draw_loc` (logical): whether to produce maps that show the locations of the origin and destinations. The files are stored in the output folder specified in `outpath`. See the next section for details of the maps.
 
 ### Auxiliary Output
 
