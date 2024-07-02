@@ -191,10 +191,10 @@ function output = func_loc(long,lat,id,fname,outpath,draw_map)
         end
 
         % the dot and check maps
-        imwrite(map_dots,[outpath '/loc_dots_' fname '.png']);
+        imwrite(map_dots,[outpath '/loc_dots_' fname '.jpg']);
 
         % the check map
-        imwrite(basemap,[outpath '/loc_map_' fname '.png']);
+        imwrite(basemap,[outpath '/loc_map_' fname '.jpg']);
 
     
     end 

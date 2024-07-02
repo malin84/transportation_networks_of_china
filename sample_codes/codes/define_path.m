@@ -7,7 +7,7 @@ map_output      = map_path;
 aligned_map_path = [root_path 'Data/maps/3_codes/align_maps/output/'];
 
 % The baseline map at the 8k resolution
-base_map_path   = ['input/base_8k.png'];
+base_map_path   = ['input/base_8k.jpg'];
 
 % Pixel Data
 pixel_data_path = ['../pixel_info/'];

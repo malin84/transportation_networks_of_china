@@ -10,7 +10,7 @@ outpath     = 'output';
 input_fname = 'sample_input.csv';
 
 % Drawing the location maps could be slow.
-draw_loc    = false;
+draw_loc    = true;
 
 loc_1(input_fname,outpath,draw_loc);
 
