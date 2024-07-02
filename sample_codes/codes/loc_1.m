@@ -84,7 +84,7 @@ function loc_1(input_fname,outpath,draw_loc)
     nloc = size(coord_ori_unique,1);
     long_unique = coord_ori_unique(:,1);
     lat_unique  = coord_ori_unique(:,2);
-
+    nori_unique = nloc;
 
     id_ori = cell(nloc,1);
     for i = 1:nloc
@@ -112,4 +112,16 @@ function loc_1(input_fname,outpath,draw_loc)
     fname_des = [fname_split{1} '_des' ];
 
     func_loc(long_des,lat_des,id_des,fname_des,outpath,draw_loc);
+
+
+    [coord_des_unique ia ic] = unique([long_des lat_des],'rows');
+
+    ndes_unique = size(coord_des_unique,1);
+    
+    [nori_unique ndes_unique];
+    
+    if nori_unique > ndes_unique
+        msg = ['number of unique origins (' num2str(nori_unique) ') is greater than the number of unique destinations (' num2str(ndes_unqiue) '). Switching origin and destination could speed up the code.'];
+        warning(msg)
+    end
 end

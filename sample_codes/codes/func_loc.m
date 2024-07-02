@@ -220,6 +220,6 @@ function output = func_loc(long,lat,id,fname,outpath,draw_map)
     % locations, and one with the codes.
 
     % The scale info.
-    save('scale_info','scale_x','scale_y','center_x','center_y','xmax','ymax');
+    %save('scale_info','scale_x','scale_y','center_x','center_y','xmax','ymax');
 
 end
