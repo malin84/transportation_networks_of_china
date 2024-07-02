@@ -10,7 +10,7 @@ ymax = 8829;
 distance_pixel = 0.509651956221723;
 
 % Some parameters used to recompute the distance at the pixel level,
-% if needed.
+% if needed: the scales and center of the projection.
 scale_x  = 1.258151200840857e+04;
 scale_y  = 1.244998253976599e+04;
 
