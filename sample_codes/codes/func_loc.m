@@ -1,10 +1,10 @@
 function output = func_loc(long,lat,id,fname,outpath,draw_map)
 % Converts the longitude and latitude into positions.  Two outputs: a
-% file that contains the positions, and (optional) a map that shows
+% file that contains the positions and (optional) a map that shows
 % the positions.
 
-% This part is slow. Only do it on trial runs
-    
+
+    % The default option is to skip map drawing    
     if (nargin < 6)
         draw_map = false;
     end
@@ -129,7 +129,7 @@ function output = func_loc(long,lat,id,fname,outpath,draw_map)
 
         loc_map(ind_xy) = uint8(1);
 
-        % Load the basemap
+        % Load the base map
 
         map_path = base_map_path;
 
@@ -215,11 +215,5 @@ function output = func_loc(long,lat,id,fname,outpath,draw_map)
     end
 
     fclose(fid);
-
-    % Create two output maps to be used later: one with only the city
-    % locations, and one with the codes.
-
-    % The scale info.
-    %save('scale_info','scale_x','scale_y','center_x','center_y','xmax','ymax');
 
 end
