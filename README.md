@@ -32,6 +32,9 @@ This dataset contains three components:
 
 The current version covers the transportation network between 1994 and 2017. 
 
+The folder [sample_codes](sample_codes/) contains some sample codes for computing travel time between any pixels. Please refer to the readme file in that folder for details. 
+
+
 ## Prefecture-to-Prefecture Travel Time
 
 This data set records the prefecture-to-prefecture travel time in units of hours for three modes of transportation: road, railroad (freight), and railroad (passenger). The current version covers the years 1994 to 2017 and contains 279 prefectures. 
