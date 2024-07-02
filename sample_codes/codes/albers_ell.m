@@ -1,5 +1,7 @@
 function output = albers_ell(long,lat)
 
+% Albers projection, assuming elliptical earth.
+
 lambda_0 = pi*110/180;
 psi_0 = pi*35/180;
 psi_1 = pi*25/180;
@@ -14,7 +16,7 @@ iv = 298.3;
 e2 = sqrt(iv/a);
 e  = sqrt(e2);
 
-% Also as lambda
+% Also known as lambda
 long = pi*long/180;
 
 % Also as psi
