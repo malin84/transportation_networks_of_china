@@ -30,11 +30,11 @@ The following options could be set inside `main.m`:
 
 ### Auxiliary Output
 
-The following auxiliary output files will be automatically produced and stored in the `output` folder:
+The following auxiliary output files will be stored in the `output` folder:
 
-1. `coordinates_INPUT_des(ori).csv`: the coordinates and the map positions of each destination (origin) in the INPUT file.
-2. `loc_dots_INPUT_des(ori).jpg`: a simple map that shows all the destinations (origins) without any reference.
-3. `loc_map_INPUT_des(ori).jpg`: a map that overlays the simple map onto a published map of China. These maps are for quality control purposes.
+1. `coordinates_INPUT_des(ori).csv`: the coordinates and the map positions of each destination (origin) in the INPUT file. This file is always produced by calling `loc_1.m`.
+2. `loc_dots_INPUT_des(ori).jpg`: a simple map that shows all the destinations (origins) without any reference. This file will only be produced when `draw_loc = true.`
+3. `loc_map_INPUT_des(ori).jpg`: a map that overlays the simple map onto a published map of China. This map is for quality control purposes. This file will only be produced when `draw_loc = true.`
  
  ## Fast Marching
 In the file `compute_dist_fmm_2.m`, to implement the fast marching algorithm, we used the [Accurate Fast Marching](https://www.mathworks.com/matlabcentral/fileexchange/24531-accurate-fast-marching) package from the MATLAB File Exchange. Please refer to the help file on Mathworks for instructions on installing the package. From our experience, compiling the c-code with `mex` significantly improves performance. 
