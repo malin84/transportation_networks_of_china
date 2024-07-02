@@ -2,8 +2,8 @@ function compute_dist_fmm_2(input_fname,mode,year,outpath,ncores,empty_speed)
 
 % ----------------------------------------------------------------------
 % This code computes the distance between some predefined locations
-% and cities using FMM. The output is mode-year specific. Call loc_1.m
-% to generate the coordinate of the pre-defined locations.
+% in input_fname using FMM. The output is mode-year specific. Call loc_1.m
+% to generate the coordinates of the pre-defined locations.
 % ----------------------------------------------------------------------
 
     if nargin < 5
