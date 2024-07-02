@@ -32,7 +32,7 @@ This dataset contains three components:
 
 The current version covers the transportation network between 1994 and 2017. 
 
-The folder [sample_codes](sample_codes/) contains some sample codes for computing travel time between any pixels. Please refer to the readme file in that folder for details. 
+The folder [sample_codes](sample_codes/) contains some sample codes for computing travel time between any pixels using Fast Marching. Please refer to the readme file in that folder for details. 
 
 
 ## Prefecture-to-Prefecture Travel Time
