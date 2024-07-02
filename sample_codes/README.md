@@ -29,3 +29,9 @@ The following options could be set inside `main.m`:
  
  ## Fast Marching
 In the file `compute_dist_fmm_2.m`, to implement the fast marching algorithm, we used the [Accurate Fast Marching](https://www.mathworks.com/matlabcentral/fileexchange/24531-accurate-fast-marching) package from the MATLAB File Exchange. Please refer to the help file there for instructions on how to install the package. From our experience, compiling the c-code with `mex` significantly improves performance. It takes around 120 seconds on a single core to compute the distance to all pixels on the map.  
+
+## Tips on Improving Performance
+
+FMM is computationally heavy to implement. Here are some tips on improving the performance of the codes.
+
+1. **Reduce the number of unique origins**. Accurate Fast Marching automatically computes distances to all pixels on a map, conditional on an **origin**. 
