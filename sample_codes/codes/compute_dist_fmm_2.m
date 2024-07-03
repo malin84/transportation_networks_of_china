@@ -74,7 +74,7 @@ function compute_dist_fmm_2(input_fname,mode,year,outpath,ncores,empty_speed)
         % The units here are in minutes
         % --------------------------------------------------
         
-        % Distance to all pixels
+        % Distance to all pixels, using Accurate Fast Marching from Mathworks.
         dist_map                 = (msfm(1./time_output, [pos_x;pos_y], true, true));
 
         % Select destination
