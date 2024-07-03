@@ -6,7 +6,7 @@ See [`main.m`](main.m) for more details.
 ## Input and Output
 
 ### Main Input
-The user must provide the coordinates of the origins and destinations in the same format as in the file `input/sample_input.csv.` Each row of the input file should contain an **origin-destination pair**.
+The user must provide the coordinates of the origins and destinations in the same format as in the file [`input/sample_input.csv`](input/sample_input.csv). Each row of the input file should contain an **origin-destination pair**.
 
 In addition to the file name containing the input coordinates, the user should also specify the `mode` and `year` variables inside `main.m`. The `mode` is a string variable that takes one of the following values: `road,` `rail_good,` or `rail_pass.` The variable `year` should be an integer between 1994 and 2017. 
 
