@@ -13,7 +13,7 @@ In addition to the file name containing the input coordinates, the user should a
 The user should define the paths in `define_path.m` so that `pixel_data_path` points to the folder that stores the pixel-level dataset (for example, [`../pixel_info/`](../pixel_info/)) and `base_map_path` points to the scanned map with 8k-by-12k resolution (for example, [`input/base_8k.jpg`](input/base_8k.jpg)).
 
 ### Main Output
-The main output files are stored in the folder `output.` Each mode-year combination has a separate output file named `output/t_mat_INPUT_MODE_YEAR.csv,` in which `INPUT` is the input file name that contains the coordinates, and MODE and YEAR are self-explanatory.
+The main output files are stored in the folder [`output`](output/). Each mode-year combination has a separate output file named `output/t_mat_INPUT_MODE_YEAR.csv,` in which `INPUT` is the input file name that contains the coordinates, and MODE and YEAR are self-explanatory.
 
 Each row in the output file refers to an **origin-destination pair**. The rows are sorted in the same order as in the input file. The output file contains the following columns:
 1. `id_ori`: the auto-generated id for each origin.
