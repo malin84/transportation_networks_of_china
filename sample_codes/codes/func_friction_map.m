@@ -57,6 +57,7 @@ function output = func_friction_map(mode,year,empty_speed)
     
     speed_output(data_pixel.index) = data_pixel.speed;
 
+    % The unit here is minutes
     time_output     = ((1 + sqrt(2))/2) * 60 * distance_output./speed_output;
     
     output          = time_output;

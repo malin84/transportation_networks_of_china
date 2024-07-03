@@ -5,7 +5,7 @@ clear;
 addpath('codes');
 
 % Required inputs
-year_list   = [1994 2007 2017];
+year_list   = [1994 2017];
 mode_list   = {'road','rail_pass','rail_good'};
 
 % The input file that contains the coordinates of the origins and

@@ -10,17 +10,14 @@ function output = func_loc(long,lat,id,fname,outpath,draw_map)
     end
     
     run define_path;
+    run define_map_dimension;
+
+    % pick which projection to use.
     albers = @(x,y) albers_sph(x,y);
     
     nloc   = length(long);
     fprintf(1,'%30s:%30g\n','Number of locations',nloc);
 
-
-    xmax = 12669;
-    xmin = 1;
-
-    ymax = 8829;
-    ymin = 1;
 
     albers_xy = zeros(nloc,2);
     albers_kh = zeros(nloc,2);
@@ -37,9 +34,6 @@ function output = func_loc(long,lat,id,fname,outpath,draw_map)
     end
 
     % A couple of points to back out the scales
-
-    center_x = 6955;
-    center_y = 4817;
 
     data_scale = [110 35 6955  4817;...
                   120 30 8831  5826;...

@@ -3,8 +3,9 @@
 % --------------------------------------------------
 
 xmax = 12669;
+xmin = 1;
 ymax = 8829;
-
+ymin = 1;
 % The mode of the compute distance map. The map is too large to store
 % and load every time, and the variations across pixels are small.
 distance_pixel = 0.509651956221723;
