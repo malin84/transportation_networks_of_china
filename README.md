@@ -95,6 +95,10 @@ Each row of the data file refers to a **pixel** with infrastructure build-up. Th
 3. `lat`: the latitude of the pixel.
 4. `pos_x`: the $x$ index in the 12669-by-8829 pixel-level matrix dataset.
 5. `pos_y`: the $y$ index in the 12669-by-8829 pixel-level matrix dataset.
+6. `index`: the index number of the pixel in the 12669-by-8829 matrix. The index number is the output of the following MATLAB function:
+   ```matlab
+   index=sub2ind([8829 12669],pos_y,pos_x)
+   ```
 7. `speed`: the design speed of the infrastructure on the pixel in kilometers per hour.
 8. `time`: the time required to traverse the pixel in the unit of hours. See the note below on its computation.
 9. `type`: the usage type of the infrastructure that takes three values:
