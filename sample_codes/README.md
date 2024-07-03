@@ -1,7 +1,7 @@
 # Sample Codes on Computing Pixel-to-Pixel Distance
 The files in this folder provide examples of computing the pixel-to-pixel distance on any mode in a given year using MATLAB. 
 
-See `main.m` for more details. 
+See [`main.m`](main.m) for more details. 
 
 ## Input and Output
 
