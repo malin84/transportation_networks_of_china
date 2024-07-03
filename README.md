@@ -132,8 +132,8 @@ The file `seg_info_MMMM.csv` contains the segment-level information for the mode
 3. `year`: The year of construction.
 4. `year_std`: The publication year of the applicable design code. For example, highways built in 2010 were subject to the highway design codes published in 2003. In this case, `year` = 2010, and `year_std` = 2003. We did not assign `year_std` for HSR because we collected the design speed of each high-speed railway by hand. See the subsection [below](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#design-codes) for more details.
 5. `path_name`: (in Chinese) The name of the path to which the segment belongs. For example, Segment `rail_10` is part of the "滨绥铁路," and therefore we record the name of the path in this variable.  
-6. `path_supplement`: (in Chinese) Additional information about the path, such as original names, original usage, phases, etc.
-7. `notes`: (in Chinese) Additional information about the segment, usually regarding the segment's endpoints. We record this information for quality control purposes.
+6. `path_supplement`: (in Chinese) Additional information about the path, such as original names, original usage, phases, etc. In the example above, the supplement information for `rail_10` is "原东清铁路东线."
+7. `notes`: (in Chinese) Additional information about the segment, usually regarding the segment's endpoints. We record this information for quality control purposes. In the example above, the notes for `rail_10` is "海林到牡丹江."
 
 #### Railroad and Road Rates
 
