@@ -24,7 +24,7 @@ Each row in the output file refers to an **origin-destination pair**. The rows a
 6. `time_cost`: the time required (in hours) to go from origin to location on the MODE in a given YEAR. 
 
 ### Optional Input
-The following options could be set inside `main.m`:
+The following options could be set inside [`main.m`](main.m):
 
 1. `ncores` (positive integer): the number of cores to use in parallel when computing the distances. Fast Marching is memory-consuming with our map size. The rule of thumb is that **each core could use up to 6GB of memory**.
 2. `empty_speed` (positive number): the speed when traversing an empty pixel without any infrastructure in the unit of km/h.
@@ -32,14 +32,14 @@ The following options could be set inside `main.m`:
 
 ### Auxiliary Output
 
-The following auxiliary output files will be stored in the `output` folder:
+The following auxiliary output files will be stored in the [`output`](output/) folder:
 
-1. `coordinates_INPUT_des(ori).csv`: the coordinates and the map positions of each destination (origin) in the INPUT file. This file is always produced by calling `loc_1.m`.
-2. `loc_dots_INPUT_des(ori).jpg`: a simple map that shows all the destinations (origins) without any reference. This file will only be produced when `draw_loc = true.`
-3. `loc_map_INPUT_des(ori).jpg`: a map that overlays the simple map onto a published map of China. This map is for quality control purposes. This file will only be produced when `draw_loc = true.`
+1. `coordinates_INPUT_des(ori).csv`: the coordinates and the map positions of each destination (origin) in the INPUT file. This file is always produced by calling [`loc_1.m`](codes/loc_1.m).
+2. `loc_dots_INPUT_des(ori).jpg`: a simple map that shows all the destinations (origins) without any reference. This file will only be produced when `draw_loc = true` in [`main.m`](main.m).
+3. `loc_map_INPUT_des(ori).jpg`: a map that overlays the simple map onto a published map of China. This map is for quality control purposes. This file will only be produced when `draw_loc = true` in [`main.m`](main.m).
  
  ## Fast Marching
-In the file `compute_dist_fmm_2.m`, to implement the fast marching algorithm, we used the [Accurate Fast Marching](https://www.mathworks.com/matlabcentral/fileexchange/24531-accurate-fast-marching) package from the MATLAB File Exchange. Please refer to the help file on Mathworks for instructions on installing the package. From our experience, compiling the c-code with `mex` significantly improves performance. 
+In the file [`compute_dist_fmm_2.m`](codes/compute_dist_fmm_2.m), to implement the fast marching algorithm, we used the [Accurate Fast Marching](https://www.mathworks.com/matlabcentral/fileexchange/24531-accurate-fast-marching) package from the MATLAB File Exchange. Please refer to the help file on Mathworks for instructions on installing the package. From our experience, compiling the c-code with `mex` significantly improves performance. 
 
 ## Tips on Improving Performance
 
