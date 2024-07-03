@@ -10,7 +10,7 @@ The user must provide the coordinates of the origins and destinations in the sam
 
 In addition to the file name containing the input coordinates, the user should also specify the `mode` and `year` variables inside `main.m`. The `mode` is a string variable that takes one of the following values: `road,` `rail_good,` or `rail_pass.` The variable `year` should be an integer between 1994 and 2017. 
 
-The user should define the paths in `define_path.m` so that `pixel_data_path` points to the folder that stores the pixel-level dataset (for example, `../pixel_info/`) and `base_map_path` points to the scanned map with 8k-by-12k resolution (for example, `input/base_8k.jpg`).
+The user should define the paths in `define_path.m` so that `pixel_data_path` points to the folder that stores the pixel-level dataset (for example, [`../pixel_info/`](../pixel_info/)) and `base_map_path` points to the scanned map with 8k-by-12k resolution (for example, [`input/base_8k.jpg`](input/base_8k.jpg)).
 
 ### Main Output
 The main output files are stored in the folder `output.` Each mode-year combination has a separate output file named `output/t_mat_INPUT_MODE_YEAR.csv,` in which `INPUT` is the input file name that contains the coordinates, and MODE and YEAR are self-explanatory.
