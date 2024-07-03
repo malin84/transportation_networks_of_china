@@ -8,7 +8,7 @@ See [`main.m`](main.m) for more details.
 ### Main Input
 The user must provide the coordinates of the origins and destinations in the same format as in the file [`input/sample_input.csv`](input/sample_input.csv). Each row of the input file should contain an **origin-destination pair**.
 
-In addition to the file name containing the input coordinates, the user should also specify the `mode` and `year` variables inside `main.m`. The `mode` is a string variable that takes one of the following values: `road,` `rail_good,` or `rail_pass.` The variable `year` should be an integer between 1994 and 2017. 
+In addition to the file name containing the input coordinates, the user should also specify the `mode` and `year` variables inside [`main.m`](main.m). The `mode` is a string variable that takes one of the following values: `road,` `rail_good,` or `rail_pass.` The variable `year` should be an integer between 1994 and 2017. 
 
 The user should define the paths in `define_path.m` so that `pixel_data_path` points to the folder that stores the pixel-level dataset (for example, [`../pixel_info/`](../pixel_info/)) and `base_map_path` points to the scanned map with 8k-by-12k resolution (for example, [`input/base_8k.jpg`](input/base_8k.jpg)).
 
