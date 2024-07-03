@@ -101,11 +101,11 @@ Each row of the data file refers to a **pixel** with infrastructure build-up. Th
    ```
 7. `speed`: the design speed of the infrastructure on the pixel in kilometers per hour.
 8. `time`: the time required to traverse the pixel in the unit of hours. See the note below on its computation.
-9. `type`: the usage type of the infrastructure that takes three values:
+9. `usage_type`: the usage type of the infrastructure that takes three values:
     1. `both` refers to mixed freight and passenger transportation usage. All road transportation and the majority of railroads fall into this category.
     2. `good` refers to freight-only railroad transportation.
     3. `pass` refers to passenger-only railroad transportation.
-10. `terrain_type`: the terrain type of the pixel that takes four values. Refer to the Appendix to Ma and Tang (2024) for the terrain definition:
+10. `terrain`: the terrain type of the pixel that takes four values. Refer to the Appendix to Ma and Tang (2024) for the terrain definition:
     1. `0`: coastal areas.
     2. `1`: plains.
     3. `2`: low-rolling hills.
