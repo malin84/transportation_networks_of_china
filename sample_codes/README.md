@@ -3,7 +3,7 @@ The files in this folder provide examples of computing the pixel-to-pixel distan
 
 See [`main.m`](main.m) for more details. 
 
-If you run into **negative values** in the distance, please see the note below on how to compile the Acurate Fast Marching Toolbox correctly.
+If you run into **negative values** in the distance, please see the [note](https://github.com/malin84/transportation_networks_of_china/tree/main/sample_codes#fast-marching) below on how to compile the Acurate Fast Marching Toolbox correctly.
 
 ## Input and Output
 
@@ -43,6 +43,7 @@ The following auxiliary output files will be stored in the [`output`](output/) f
  ## Fast Marching
 In the file [`compute_dist_fmm_2.m`](codes/compute_dist_fmm_2.m), to implement the fast marching algorithm, we used the [Accurate Fast Marching](https://www.mathworks.com/matlabcentral/fileexchange/24531-accurate-fast-marching) package from the MATLAB File Exchange. Please refer to the help file on Mathworks for instructions on installing the package. From our experience, compiling the c-code with `mex` significantly improves performance. 
 
+### Negative Distances in Output
 The AFM package is an old package published in 2011, so you might run into dimension compatibility issues if you compile the package using newer versions of MATLAB. An incorrectly compiled package will deliver a negative distance as the output. In this case, please place the file `compile_c_files_updated.m` included in this package in the same folder as the `compile_c_files.m` file from the original AFM package and run the updated file to re-compile the source codes. The updated compilation file added the option "-compatibleArrayDims" to the `mex` command to ensure compatibility.  
 
 ## Tips on Improving Performance
