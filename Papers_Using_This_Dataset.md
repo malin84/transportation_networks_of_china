@@ -1,8 +1,6 @@
 # Papers Using This Dataset
 
 This document tracks academic publications that have used the dataset in analysis.
----
-## Publications Using This Dataset
 
 *Last updated: [2025-09-02]*
 ### 2025
