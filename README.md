@@ -1,7 +1,7 @@
 # Transportation Networks of China
 This data repository hosts datasets covering China's road and rail transportation networks. These datasets are compiled in *The Distributional Impacts of Transportation Networks in China* by Lin Ma and Yang Tang, published in the *Journal of International Economics*. The published version of the paper is [here](https://www.sciencedirect.com/science/article/abs/pii/S0022199623001599?via%3Dihub), and the ungated working paper version is [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4118287).
 
-To use the data, please cite:
+You can find the list of published academic papers that used this dataset [here](https://github.com/malin84/transportation_networks_of_china/blob/main/Papers_Using_This_Dataset.md). To use the data, please cite:
 
 "Lin Ma and Yang Tang. *The Distributional Impacts of Transportation Networks in China.* Journal of International Economics (2024): 103873."
 
@@ -45,7 +45,7 @@ The travel time is computed using the Fast Marching algorithm based on the pixel
 
 The dataset contains the following files.
 ### Prefecture Information
-`cityinfo.csv` is the file that contains the basic information about the 279 prefectures.
+`cityinfo.csv` file contains the basic information about the 279 prefectures.
   
 1. `id`: the index of a prefecture.
 2. `dzcode`: the four-digit administrative division code.
