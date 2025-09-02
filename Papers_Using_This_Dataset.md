@@ -1,8 +1,9 @@
 # Papers Using This Dataset
 
-This document tracks academic publications that have used the dataset in analysis.
+This document tracks academic publications that have used the dataset in analysis. 
 
 *Last updated: [2025-09-02]*
+---
 ### 2025
 **[6]** Bo, S., & Wang, Y. (2025). The labor market outcomes of jurisdictional consolidation: Evidence from city–county mergers in China. *Journal of Urban Economics*, 149, 103788. https://doi.org/10.1016/j.jue.2025.103788
 
