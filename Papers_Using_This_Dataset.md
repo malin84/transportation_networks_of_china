@@ -2,7 +2,7 @@
 
 This document tracks academic publications that have used the dataset in analysis. 
 
-Last updated: [2025-09-02]
+Last updated: [2025-10-01]
 ---
 ### 2025
 **[7]** Lyu, W., Hao, C., & Yu, L. (2025). Digital financial inclusion and entrepreneurship: A spatial analysis of rural China. *Review of Development Economics*. https://doi.org/10.1111/rode.70064
