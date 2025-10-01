@@ -1,4 +1,4 @@
-# Papers Using This Dataset
+# Published Papers Using This Dataset
 
 This document tracks academic publications that have used the dataset in analysis. 
 
