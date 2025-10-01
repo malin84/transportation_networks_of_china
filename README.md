@@ -151,18 +151,20 @@ The variable `rate` in the dataset above records a codename for the rate of the 
 |GT2G      | National II (Freights)| 国家II级铁路，货运            | freights |
 |GT3G      | National III (Freights)| 国家III级铁路，货运           | freights |
 |GT        | National Rail, Unknown Rate | 国家铁路, 等级未知           | mixed |
-|HSR       | High-Speed Rail| 高速铁路            | passenger |
+|HSR       | High-Speed Rail| 高速铁路            | passenger/mixed |
 |DT1       | Local I| 地方I级铁路，客货共线            | mixed |
 |DT2       | Local II| 地方II级铁路，客货共线            | mixed |
 |DT3       | Local III| 地方III级铁路，客货共线           | mixed |
-|DT1G      | Local I (Freights)| 地方I级铁路，货运            | freights |
+|DT1G      | Local I (Freights)| 地方I级铁路，货运            | freights/mixed |
 |DT        | Local Rail, Unknown Rate | 地方铁路, 等级未知           | mixed |
-|IT1       | Industrial I| 工业企业I级铁路            | freights |
-|IT2       | Industrial II| 工业企业II级铁路            | freights |
-|IT3       | Industrial III| 工业企业III级铁路           | freights |
-|IT        | Industrial Rail, Unknown Rate| 工业企业铁路, 等级未知          | freights |
+|IT1       | Industrial I| 工业企业I级铁路            | freights/mixed |
+|IT2       | Industrial II| 工业企业II级铁路            | freights/mixed |
+|IT3       | Industrial III| 工业企业III级铁路           | freights/mixed |
+|IT        | Industrial Rail, Unknown Rate| 工业企业铁路, 等级未知          | freights/mixed |
 |UN        | Unknown Rate| 等级未知          | mixed |
 |NA        | Non-Active| 废置铁路          | - |
+
+Note that while some railroads were constructed as "freights" or "industrial" that were intended as freight-only routes, in reality, passenger services are also possible. We provide a detailed documentation of mixed usage of these railroads in the dataset.
 
 The road rates in the dataset are as follows:
 
