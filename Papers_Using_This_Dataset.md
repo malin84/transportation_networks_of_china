@@ -5,6 +5,8 @@ This document tracks academic publications that have used the dataset in analysi
 Last updated: [2025-10-01]
 ---
 ### 2025
+**[8]** Yang, Y., Chih, Y.-Y., Wen, C., & Luo, X. (2025). Antipollution willingness and urban population distribution: Evidence from Chinese cities. *Economic Modelling*, 107360. https://doi.org/10.1016/j.econmod.2025.107360
+
 **[7]** Lyu, W., Hao, C., & Yu, L. (2025). Digital financial inclusion and entrepreneurship: A spatial analysis of rural China. *Review of Development Economics*. https://doi.org/10.1111/rode.70064
 
 **[6]** Bo, S., & Wang, Y. (2025). The labor market outcomes of jurisdictional consolidation: Evidence from city–county mergers in China. *Journal of Urban Economics*, 149, 103788. https://doi.org/10.1016/j.jue.2025.103788
