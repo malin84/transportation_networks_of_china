@@ -5,6 +5,8 @@ This document tracks academic publications that have used the dataset in analysi
 Last updated: [2025-10-01]
 ---
 ### 2025
+**[9]** Zhang, R., Liu, X., & Ni, K. (2025). How transportation costs affect China's spatial misallocation of factors. *China Soft Science*, 40(10), 214-224. https://doi.org/10.3724/1005-0566.20251020 **(Article in Chinese)**
+
 **[8]** Yang, Y., Chih, Y.-Y., Wen, C., & Luo, X. (2025). Antipollution willingness and urban population distribution: Evidence from Chinese cities. *Economic Modelling*, 107360. https://doi.org/10.1016/j.econmod.2025.107360
 
 **[7]** Lyu, W., Hao, C., & Yu, L. (2025). Digital financial inclusion and entrepreneurship: A spatial analysis of rural China. *Review of Development Economics*. https://doi.org/10.1111/rode.70064
