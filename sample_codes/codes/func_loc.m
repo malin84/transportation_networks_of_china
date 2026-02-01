@@ -173,13 +173,8 @@ function output = func_loc(long,lat,id,fname,outpath,draw_map)
 
                 map_dots(dot_tmp(1),dot_tmp(2),:) = uint8(city_color);
                 map_codes(dot_tmp(1),dot_tmp(2),:) = uint8(city_color);
-            end
+            end       
 
-            loc_code = id{i};
-
-            basemap   = insertText(basemap,[pos_y pos_x],loc_code,...
-                                   'fontsize',18,'boxcolor','black',...
-                                   'textcolor','white');
             
             fprintf(1,'%30s: %4d/%4d\r','Finished location:',i,nloc);
         end
@@ -187,9 +182,16 @@ function output = func_loc(long,lat,id,fname,outpath,draw_map)
         % the dot and check maps
         imwrite(map_dots,[outpath '/loc_dots_' fname '.jpg']);
 
+       % Add labels onto basemap without CV toolbox / without figure
+        for i = 1:nloc
+            pos = pos_xy(i,:);
+            pos_x = pos(2);   % col
+            pos_y = pos(1);   % row
+            basemap = insertText_java(basemap, [pos_y pos_x], id{i}, 16, [255 255 255], [0 0 0],0.6);
+        end
+
         % the check map
         imwrite(basemap,[outpath '/loc_map_' fname '.jpg']);
-
     
     end 
     
