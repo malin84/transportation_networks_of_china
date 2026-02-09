@@ -57,7 +57,7 @@ This section outlines updates to roads built prior to 2017, focusing on three ma
 
 **1987**
 
-* In **1987**, in **Henan**, the **Shangmang Narrow-Gauge Railway Line** (marked **Abandoned**) ran from **Xiayi to Suixi** and carried **freight**. Sources: **[1976 – Henan Party History and Local Gazetteer Website](./1976年-河南党史方志网.pdf)**.
+* In **1987**, in **Henan**, the **Shangmang Narrow-Gauge Railway Line** (marked **Abandoned**) ran from **Xiayi to Suixi** and carried **freight**. Sources: 1976年-河南党史方志网.
 
 **1999**
 
