@@ -1,4 +1,4 @@
-function dist_output = compute_city_city_dijkstra(time_mat, ind_list)
+function dist_output = compute_city_city_dijkstra_allow_duplicate(time_mat, ind_list)
     % time_mat  : [ny, nx] per-pixel "time" value
     % ind_list  : linear indices (via sub2ind) of pixels where cities are located
     %

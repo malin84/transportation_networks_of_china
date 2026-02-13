@@ -1,7 +1,7 @@
 % ----------------------------------------------------------------------
 % Compute origin-to-destination travel time using multi-source Dijkstra on raster.
 % ----------------------------------------------------------------------
-function compute_dist_dijkstra_2(input_fname, mode, year, outpath, ncores, empty_speed)
+function compute_dist_dijkstra_0(input_fname, mode, year, outpath, ncores, empty_speed)
 
     if nargin < 5 || isempty(ncores)
         ncores = 4;
