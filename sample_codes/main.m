@@ -19,7 +19,7 @@ outpath     = 'output';
 % --------------------------------------------------
 % Optional inputs
 % --------------------------------------------------
-% number of cores to use. Each core could use up to 6GB of memory. 
+% number of cores to use. Each core could use up to 5GB of memory. 
 ncores      = 90;
 
 % The speed to traverse empty pixels, in the unit of km/h.
@@ -33,7 +33,7 @@ draw_loc    = true;
 % map.
 loc_1(input_fname,outpath,draw_loc);
 
-% Second step, compute distance using FMM.
+% Second step, compute distance using Dijkstra.
 for iyear = 1:length(year_list)
     for imode = 1:length(mode_list)
         year      = year_list(iyear);

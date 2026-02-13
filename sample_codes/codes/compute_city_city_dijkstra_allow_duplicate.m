@@ -88,8 +88,8 @@ function dist_output = compute_city_city_dijkstra_allow_duplicate(time_mat, ind_
     G = graph(ii, jj, ww, npix);   % undirected, weighted, positive weights → Dijkstra
 
     % City indices ind_list are used both as sources and targets
-    ind_u = unique(ind_list, 'stable');  
-    D_u   = distances(G, ind_u, ind_u); 
+    ind_u = unique(ind_list, 'stable');
+    D_u   = distances(G, ind_u, ind_u);
     [~,ix]= ismember(ind_list, ind_u);  
     dist_output = D_u(ix, ix);         
 end
