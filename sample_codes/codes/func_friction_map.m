@@ -14,11 +14,11 @@ function output = func_friction_map(mode,year,empty_speed)
 
     
     if nargin < 2
-        msg = '"year" can not be empty. It should be an integer between 1994 and 2017';
+        msg = '"year" can not be empty. It should be an integer between 1994 and 2024';
         error(msg);
     else
-        if year < 1994 | year > 2017
-            msg = '"year" should be an integer between 1994 and 2017';
+        if year < 1994 | year > 2024
+            msg = '"year" should be an integer between 1994 and 2024';
             error(msg)
         end
     end

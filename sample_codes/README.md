@@ -39,17 +39,7 @@ The following auxiliary output files will be stored in the [`output`](output/) f
 1. `coordinates_INPUT_des(ori).csv`: the coordinates and the map positions of each destination (origin) in the INPUT file. This file is always produced by calling [`loc_1.m`](codes/loc_1.m).
 2. `loc_dots_INPUT_des(ori).jpg`: a simple map that shows all the destinations (origins) without any reference. This file will only be produced when `draw_loc = true` in [`main.m`](main.m).
 3. `loc_map_INPUT_des(ori).jpg`: a map that overlays the simple map onto a published map of China. This map is for quality control purposes. This file will only be produced when `draw_loc = true` in [`main.m`](main.m).
- 
- ## Fast Marching
-In the file [`compute_dist_fmm_2.m`](codes/compute_dist_fmm_2.m), to implement the fast marching algorithm, we used the [Accurate Fast Marching](https://www.mathworks.com/matlabcentral/fileexchange/24531-accurate-fast-marching) package from the MATLAB File Exchange. Please refer to the help file on Mathworks for instructions on installing the package. From our experience, compiling the c-code with `mex` significantly improves performance. 
 
-### Negative Distances in Output
-The AFM package is an old package published in 2011, so you might run into dimension compatibility issues if you compile the package using newer versions of MATLAB. An incorrectly compiled package will deliver a negative distance as the output. In this case, please place the file `compile_c_files_updated.m` included in this package in the same folder as the `compile_c_files.m` file from the original AFM package and run the updated file to re-compile the source codes. The updated compilation file added the option "-compatibleArrayDims" to the `mex` command to ensure compatibility.  
+## Dijkstra
 
-## Tips on Improving Performance
-
-FMM is computationally heavy to implement. From one origin, computing the distances to all pixels on the map takes around 120 seconds on a single core with compiled code. Here are some tips on improving the codes' performance.
-
-1. **Reduce the number of unique origins**. Accurate Fast Marching automatically computes distances to all pixels on a map, conditional on an **origin**. Therefore, the computational time scales linearly with the number of origins. The number of destinations does not meaningfully affect computational time. Therefore, always use the coordinates with fewer unique locations as the origin. For example, if you are computing the distances from 10,000 firms to 300 destination cities, you should use cities as the origin, not the firms. Using cities as origin calls FMM 300 times, and using firms as origin requires 10,000 calls.
-2. **Compile the Accurate Fast Marching Package**. Before using the FMM package, follow the instructions on Mathworks to compile it with `mex.` Compilation reduces computational time by about one order of magnitude.
-3. **Parallel as much as possible if memory permits**. The sample code calls FMM in parallel to improve performance. However, be careful about memory usage. Due to the size of the map, each core requires roughly 6GB of memory. Too many parallel workers can easily crash MATLAB.      
+In [`compute_dist_dijkstra_0.m`], travel time along the road network is computed using a multi-source Dijkstra algorithm. Because multi-source Dijkstra does not allow repeated source/target points, we remove duplicates in the code to avoid redundant computation; this has no effect on the results.
