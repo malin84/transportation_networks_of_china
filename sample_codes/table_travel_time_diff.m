@@ -206,3 +206,19 @@ fprintf(fid, '\\end{document}\n');
 
 fclose(fid);
 fprintf('Saved to %s\n', fullfile(outpath, 'travel_time_diff_tables.tex'));
+
+% ==============================================================
+% Export positive changes to CSV
+% ==============================================================
+csv_path = fullfile(outpath, 'positive_changes.csv');
+fid_csv = fopen(csv_path, 'w');
+fprintf(fid_csv, 'mode,period,origin,destination,time_prev,time_curr,change\n');
+for i = 1:size(pos_records, 1)
+    change = pos_records{i, 6} - pos_records{i, 5};
+    fprintf(fid_csv, '%s,%s,%d,%d,%.6f,%.6f,%.6f\n', ...
+            pos_records{i, 1}, pos_records{i, 2}, ...
+            pos_records{i, 3}, pos_records{i, 4}, ...
+            pos_records{i, 5}, pos_records{i, 6}, change);
+end
+fclose(fid_csv);
+fprintf('Saved to %s\n', csv_path);
