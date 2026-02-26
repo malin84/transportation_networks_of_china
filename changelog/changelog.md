@@ -57,7 +57,7 @@ This section outlines updates to roads built prior to 2017, focusing on three ma
 
 **1987**
 
-* In **1987**, in **Henan**, the **Shangmang Narrow-Gauge Railway Line** (marked **Abandoned**) ran from **Xiayi to Suixi** and carried **freight**. Sources: 1976年-河南党史方志网.
+* In **1987**, in **Henan**, the **Shangmang Narrow-Gauge Railway Line** (marked **Abandoned**) ran from **Xiayi to Suixi** and carried **freight**. Sources: **[1976 – Henan Party History and Local Gazetteer Website](./1976年-河南党史方志网.pdf)**.
 
 **1999**
 
@@ -250,10 +250,24 @@ This section outlines updates to roads built prior to 2017, focusing on three ma
 
 * In **2012**, in **Chongqing**, the **Wuhan–Yichang railway** runs from **Wuhan to Yichang**, serves **both passenger and freight**, and has a design speed of **200 km/h**. Source: **[Wikipedia](https://zh.wikipedia.org/wiki/%E6%B1%89%E5%AE%9C%E9%93%81%E8%B7%AF)**.
 
+1. 
+
+2. For the Hanji Railway (邯济铁路), we originally stated that “passenger services ceased after 2015.” Upon verification, the correct information is that passenger services were introduced (i.e., the line began operating passenger services) in 2015.
+
+
+
 
 ## Others
 
 ### Rail and HSR
+
+**1994**
+
+* In **Hebei**, the **Hanji Railway** runs from **Handan** to **Jinan**. We originally stated that passenger services ceased after **2015**; upon verification, we correct this to passenger services being **introduced in 2015**. Source: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%82%AF%E6%B5%8E%E9%93%81%E8%B7%AF)**.
+
+**2003**
+
+* In **Jiangxi**, the **Fenwen Railway** runs from **Fenyi** to **Wenzhu**. We originally stated that passenger services were suspended starting in **2007**; upon verification, we correct this to passenger services being discontinued starting in **2003**. Source: **[Baidu](https://baike.baidu.com/item/%E5%88%86%E6%96%87%E9%93%81%E8%B7%AF/153495)**.
 
 **2008**
 
