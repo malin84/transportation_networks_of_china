@@ -20,7 +20,7 @@ outpath     = 'output';
 % Optional inputs
 % --------------------------------------------------
 % number of cores to use. Each core could use up to 5GB of memory. 
-ncores      = 90;
+ncores      = 60;
 
 % The speed to traverse empty pixels, in the unit of km/h.
 empty_speed = 10;
