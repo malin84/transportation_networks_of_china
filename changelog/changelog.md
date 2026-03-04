@@ -73,7 +73,7 @@ This section outlines updates to routes built prior to 2018, focusing on three a
 
 **2006**
 
-* In **2006**, in **Inner Mongolia**, the **Huzhun Railway** runs from **Jungar Banner to Hohhot** and is **freight-only** with a design speed of **80 km/h**. Sources: **[Wikipedia1](https://zh.wikipedia.org/wiki/%E5%91%BC%E5%87%86%E9%93%81%E8%B7%AF) / [Wikipedia2](https://zh.wikipedia.org/wiki/%E5%91%BC%E5%87%86%E9%84%82%E9%93%81%E8%B7%AF) / [Baidu Baike](https://baike.baidu.com/item/%E5%91%BC%E5%87%86%E9%84%82%E9%93%81%E8%B7%AF/6839217)**.
+* In **2006**, in **Inner Mongolia**, the **Huzhun Railway** runs from **Jungar Banner to Hohhot** and is **freight-only** with a design speed of **80 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E5%91%BC%E5%87%86%E9%93%81%E8%B7%AF)**.
 * In **2006**, in **Hebei**, the **Huangwan Railway** runs from **Huanghua to Wanjia Wharf (Binhai New Area, Tianjin)** and is **freight-only**. Sources: **[Baidu Baike](https://baike.baidu.com/item/%E9%BB%84%E4%B8%87%E9%93%81%E8%B7%AF/5907931)**.
 
 **2008**
@@ -114,13 +114,13 @@ This section outlines updates to routes built prior to 2018, focusing on three a
 
 * In **2013**, in **Gansu**, the **Xiping Railway** runs from **Pingliang to Bin County**, serves **both passenger and freight**, and has a design speed of **120 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E8%A5%BF%E5%B9%B3%E9%93%81%E8%B7%AF)**.
 * In **2013**, in **Jiangsu**, the **Fengpei Railway** runs from **Pei County to Shouxian**, serves **both passenger and freight**, and has a design speed of **120 km/h**. Sources: **[Baidu Baike](https://baike.baidu.com/item/%E4%B8%B0%E6%B2%9B%E9%93%81%E8%B7%AF/4289119?fromtitle=%E4%B8%B0%E6%B2%9B%E7%BA%BF&fromid=3989425)**.
-* In **2013**, in **Hebei**, the **Hanhuang Railway** runs from **Cangzhou Nanpi to Cangzhou Haixing**, serves **both passenger and freight**, and has a design speed of **160 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%82%AF%E9%BB%84%E9%93%81%E8%B7%AF) / [Baidu Baike](https://baike.baidu.com/item/%E9%82%AF%E9%BB%84%E9%93%81%E8%B7%AF/184512)**.
+* In **2013**, in **Hebei**, the **Hanhuang Railway** runs from **Cangzhou Nanpi to Cangzhou Haixing**, serves **both passenger and freight**, and has a design speed of **160 km/h**. The operating speed is 120 km/h with 160 km/h reserved (预留). Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%82%AF%E9%BB%84%E9%93%81%E8%B7%AF) / [Baidu Baike](https://baike.baidu.com/item/%E9%82%AF%E9%BB%84%E9%93%81%E8%B7%AF/184512)**.
 * In **2013**, in **Anhui**, the **Suhuai Railway** runs from **Siyang to Huai'an**, serves **both passenger and freight**, and has a design speed of **120 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E5%AE%BF%E6%B7%AE%E9%93%81%E8%B7%AF)**. Note that the Type changes to **both** starting in 2014.
 * In **2013**, in **Anhui**, the **Suhuai Railway** runs from **Fuliji to Siyang**, serves **both passenger and freight**, and has a design speed of **120 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E5%AE%BF%E6%B7%AE%E9%93%81%E8%B7%AF)**. Note that the Type changes to **both** starting in 2014.
 * In **2013**, in **Anhui**, the **Fuliu Railway** runs from **Fuyang to Lu’an**, serves **both passenger and freight**, and has a design speed of **160 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%98%9C%E5%85%AD%E9%93%81%E8%B7%AF) / [Baidu Baike](https://baike.baidu.com/item/%E9%98%9C%E5%85%AD%E9%93%81%E8%B7%AF/7172628)**.
 * In **2013**, in **Guangxi**, the **Qinfang Railway** runs from **Qinzhou to Fangchenggang**, serves **both passenger and freight**, and has a design speed of **250 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%92%A6%E9%98%B2%E9%93%81%E8%B7%AF)**.
-* In **2013**, in **Hebei**, the **Hanhuang Railway** runs from **Jizhou District (Hengshui) to Nanpi (Cangzhou)**, serves **both passenger and freight**, and has a design speed of **160 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%82%AF%E9%BB%84%E9%93%81%E8%B7%AF) / [Baidu Baike](https://baike.baidu.com/item/%E9%82%AF%E9%BB%84%E9%93%81%E8%B7%AF/184512)**.
-* In **2013**, in **Hebei**, the **Hanhuang Railway** runs from **Xingtai to Jizhou District (Hengshui)**, serves **both passenger and freight**, and has a design speed of **160 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%82%AF%E9%BB%84%E9%93%81%E8%B7%AF) / [Baidu Baike](https://baike.baidu.com/item/%E9%82%AF%E9%BB%84%E9%93%81%E8%B7%AF/184512)**.
+* In **2013**, in **Hebei**, the **Hanhuang Railway** runs from **Jizhou District (Hengshui) to Nanpi (Cangzhou)**, serves **both passenger and freight**, and has a design speed of **160 km/h**. The operating speed is 120 km/h with 160 km/h reserved (预留). Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%82%AF%E9%BB%84%E9%93%81%E8%B7%AF) / [Baidu Baike](https://baike.baidu.com/item/%E9%82%AF%E9%BB%84%E9%93%81%E8%B7%AF/184512)**.
+* In **2013**, in **Hebei**, the **Hanhuang Railway** runs from **Xingtai to Jizhou District (Hengshui)**, serves **both passenger and freight**, and has a design speed of **160 km/h**. The operating speed is 120 km/h with 160 km/h reserved (预留). Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%82%AF%E9%BB%84%E9%93%81%E8%B7%AF) / [Baidu Baike](https://baike.baidu.com/item/%E9%82%AF%E9%BB%84%E9%93%81%E8%B7%AF/184512)**.
 
 **2014**
 
@@ -201,7 +201,7 @@ This section outlines updates to routes built prior to 2018, focusing on three a
 
 **1960**
 
-* In **1960**, in **Hunan**, the **Tunqiu Railway** runs from **Liuzhou to Ladong** and had a service pattern of **both → none → both**, with a note that it **reopened in 2016 after nearly 20 years out of service**. Source: **[Baidu Baike](https://baike.baidu.com/item/%E5%B1%AF%E7%A7%8B%E6%94%AF%E7%BA%BF/13024645)**.
+* In **1960**, in **Guangxi**, the **Tunqiu Railway** runs from **Liuzhou to Ladong** and had a service pattern of **both → none → both**, with a note that it **reopened in 2016 after nearly 20 years out of service**. Source: **[Baidu Baike](https://baike.baidu.com/item/%E5%B1%AF%E7%A7%8B%E6%94%AF%E7%BA%BF/13024645)**.
 
 **1966**
 
