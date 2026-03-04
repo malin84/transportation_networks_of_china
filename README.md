@@ -1,7 +1,7 @@
 # Transportation Networks of China
-This data repository hosts datasets covering China's road and rail transportation networks. These datasets are compiled in *The Distributional Impacts of Transportation Networks in China* by Lin Ma and Yang Tang, published in the *Journal of International Economics*. The published version of the paper is [here](https://www.sciencedirect.com/science/article/abs/pii/S0022199623001599?via%3Dihub), and the ungated working paper version is [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4118287).
+This data repository hosts datasets covering China's road and rail transportation networks. These datasets were constructed for *The Distributional Impacts of Transportation Networks in China* by Lin Ma and Yang Tang, published in the *Journal of International Economics*. The published version of the paper is [here](https://www.sciencedirect.com/science/article/abs/pii/S0022199623001599?via%3Dihub), and the ungated working paper version is [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4118287).
 
-The list of published academic papers that used this dataset is [here](https://github.com/malin84/transportation_networks_of_china/blob/main/Papers_Using_This_Dataset.md). 
+The list of published academic papers that used this dataset is [here](https://github.com/malin84/transportation_networks_of_china/blob/main/Papers_Using_This_Dataset.md).
 
 To use the data, please cite:
 
@@ -9,7 +9,7 @@ To use the data, please cite:
 
 <details>
   <summary>BibTex</summary>
-  
+
   ```
   @article{MT2024_Transportation_China,
     title = {The Distributional Impacts of Transportation Networks in China},
@@ -21,34 +21,34 @@ To use the data, please cite:
     url = {https://www.sciencedirect.com/science/article/pii/S0022199623001599},
     author = {Lin Ma and Yang Tang},
     keywords = {Regional trade, Migration, Welfare, Economic Geography},
-    abstract = {We document that the quality of roads and railroads vary substantially over time and space in China, and neglecting these variations biases the distributional impacts of transportation       networks. To account for quality differences, we construct a new panel dataset and approximate quality using the design speed of roads and railroads that varies by vintage, class, and terrain at the pixel level. We then build a dynamic spatial general equilibrium model for multiple modes, transportation routes, and forward-looking migration decisions. Our findings demonstrate that disregarding     quality differences leads to a median bias of approximately 31% in estimating real wage growth rates at the prefecture level. Moreover, this bias is non-random and correlates with the initial conditions of the prefectures, resulting in significant errors when predicting the distributional effects of transportation networks.}
+    abstract = {We document that the quality of roads and railroads varies substantially over time and space in China, and neglecting these variations biases the distributional impacts of transportation networks. To account for quality differences, we construct a new panel dataset and approximate quality using the design speed of roads and railroads that varies by vintage, class, and terrain at the pixel level. We then build a dynamic spatial general equilibrium model for multiple modes, transportation routes, and forward-looking migration decisions. Our findings demonstrate that disregarding quality differences leads to a median bias of approximately 31% in estimating real wage growth rates at the prefecture level. Moreover, this bias is non-random and correlates with the initial conditions of the prefectures, resulting in significant errors when predicting the distributional effects of transportation networks.}
 }
   ```
 </details>
 
 ---
-This dataset contains three components: 
+This dataset contains three components:
   1) [Prefecture-to-Prefecture Travel Time](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#prefecture-to-prefecture-travel-time);
   2) [Pixel-Level Information: Design Speed and Travel Time](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#pixel-level-design-speed-and-travel-time);
   3) [Segment-Level Information: Name, Rate, Year of Construction, and Applicable Design Code](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#segment-level-information-name-year-of-construction-and-applicable-design-code).
 
-The current version covers the transportation network between 1994 and 2017. 
+The current version covers the transportation network from 1994 to 2017.
 
-The folder [sample_codes](sample_codes/) contains some sample codes for computing travel time between any pixels using Fast Marching. Please refer to the readme file in that folder for details. 
+The folder [sample_codes](sample_codes/) contains sample code for computing travel time between any two pixels using Dijkstra's algorithm. See the readme file in that folder for details.
 
 
 ## Prefecture-to-Prefecture Travel Time
 
-This data set records the prefecture-to-prefecture travel time in units of hours for three modes of transportation: road, railroad (freight), and railroad (passenger). The current version covers the years 1994 to 2017 and contains 279 prefectures. 
+This data set records the prefecture-to-prefecture travel time in units of hours for three modes of transportation: road, railroad (freight), and railroad (passenger). The current version covers the years 1994 to 2017 and contains 279 prefectures.
 
 All the files are stored in the folder [pref_pair](pref_pair/).
 
-The travel time is computed using the Fast Marching algorithm based on the pixel-level design speed. Ma and Tang (2024) provide more details on how to infer the pixel-level design speed and prefecture-to-prefecture travel time. 
+The travel time is computed using Dijkstra's shortest-path algorithm based on the pixel-level design speed. An earlier version employed the Fast Marching Method, which has been discontinued due to excessive sensitivity to local structural perturbations. Ma and Tang (2024) provide more details on how to infer the pixel-level design speed and prefecture-to-prefecture travel time.
 
 The dataset contains the following files.
 ### Prefecture Information
 `cityinfo.csv` file contains the basic information about the 279 prefectures.
-  
+
 1. `id`: the index of a prefecture.
 2. `dzcode`: the four-digit administrative division code.
 3. `coord_long`: the longitude.
@@ -68,30 +68,30 @@ The dataset contains the following files.
       4. `cityclass` = 4: Type-II Large City (II型大城市), with an urban population between 1 and 3 million.
       5. `cityclass` = 3: Medium City (中等城市), with an urban population between 500 thousand and 1 million.
       6. `cityclass` = 2: Type-I Small City (I型小城市), with an urban population between 200 and 500 thousand.
-      7. `cityclass` = 1: Type-II Small City (II型小城市), with an urban population smaller than 200 thousand.  
+      7. `cityclass` = 1: Type-II Small City (II型小城市), with an urban population smaller than 200 thousand.
 
-### Distance files  
+### Distance files
 
 The following files contain the distance matrix:
 1. `pref_pair/time_cost_prefecture_pair_rail_good.csv` contains the travel time for **freight** transportation on the **rail network**.
 2. `pref_pair/time_cost_prefecture_pair_rail_pass.csv` contains the travel time for **passenger** transportation on the **rail network**.
 3. `pref_pair/time_cost_prefecture_pair_road.csv` contains the travel time for both **freight** and **passenger** transportation on the **road network**.
-   
-The travel time data files share the same structure. Each file contains $38781$ rows, which is the lower triangle of the $279\times279$ symmetric distance matrix without the diagonal elements. The variables in these files are:  
+
+The travel time data files share the same structure. Each file contains $38781$ rows, corresponding to the lower triangle of the $279\times279$ symmetric distance matrix (excluding the diagonal). The variables in these files are:
 1. The first two columns, `origin` and `destination,` are the four-digit admin codes of the origin and destination prefectures.
 2. `year_yyyy`: the travel time between the two prefectures in the year `yyyy` in hours.
 
 
 ## Pixel-Level Design Speed and Travel Time
 
-This data set contains the design speed of the roads and railroads on each **pixel** and the travel time to traverse these pixels in the $12669\times 8829$ raster map of China by year and transportation mode. We only include the pixels with infrastructure build-up. The user should specify a speed to traverse empty pixels without any infrastructure to compute point-to-point travel time. In Ma and Tang (2024), the empty traverse speed is 10km/h. 
+This data set records, for each **pixel** in the $12669\times 8829$ raster map of China, the design speed of the road or railroad and the travel time to traverse that pixel. Data are provided by year and transportation mode. We only include pixels that contain built infrastructure. To compute point-to-point travel time, the user must specify a speed for traversing empty pixels (those without infrastructure). In Ma and Tang (2024), the empty traverse speed is 10 km/h.
 
-The travel time estimations between any two points, including the prefecture-to-prefecture travel time database reported above, are computed based on this data set using the Fast Marching Algorithm. The folder [sample_codes](sample_codes/) contains examples of using these data to compute travel time between any two pixels.
+The travel time estimates between any two points, including the prefecture-to-prefecture travel time database reported above, are computed from this data set using Dijkstra's algorithm. The folder [sample_codes](sample_codes/) contains examples of using these data to compute travel time between any two pixels.
 
-All the files are stored in the folder [pixel_info](pixel_info/). The data files are named `pixel_info_MMMM_YYYY.csv,` where `MMMM` refers to the three modes of transportation: road, railroad (freight), and railroad (passenger), and `YYYY` refers to the year. 
+All the files are stored in the folder [pixel_info](pixel_info/). The data files are named `pixel_info_MMMM_YYYY.csv,` where `MMMM` denotes the transportation mode (`road`, `rail_pass`, or `rail_good`) and `YYYY` denotes the year.
 
-Each row of the data file refers to a **pixel** with infrastructure build-up. The columns contain the following variables:
-  
+Each row of the data file refers to a **pixel** with built infrastructure. The columns contain the following variables:
+
 1. `seg_id`: the unique index of a segment that the pixel belongs to. The `seg_id` is the same as the segment-level dataset, with details [here](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#segment-level-information-name-year-of-construction-and-applicable-design-code).
 2. `long`: the longitude of the pixel.
 3. `lat`: the latitude of the pixel.
@@ -107,19 +107,19 @@ Each row of the data file refers to a **pixel** with infrastructure build-up. Th
     1. `both` refers to mixed freight and passenger transportation usage. All road transportation and the majority of railroads fall into this category.
     2. `good` refers to freight-only railroad transportation.
     3. `pass` refers to passenger-only railroad transportation.
-10. `terrain`: the terrain type of the pixel that takes four values. Refer to the Appendix to Ma and Tang (2024) for the terrain definition:
+10. `terrain`: the terrain type of the pixel that takes five values. Refer to the Appendix to Ma and Tang (2024) for the terrain definition:
     1. `0`: coastal areas.
     2. `1`: plains.
     3. `2`: low-rolling hills.
     4. `3`: hills.
     5. `4`: mountains.
-   
+
 Notes:
-1. To compute `time` from `speed,` the authors used the following equation: $time = 0.5(1+\sqrt{2})*distance/speed$. The variable $distance$ is computed based on the average distance to move to the four adjacent pixels. In most cases, the distance equals to 0.5097 km. The term $0.5(1+\sqrt{2})$ corrects for the fact that around half the time, travelers cross a pixel along the diagonal.
+1. To compute `time` from `speed,` we use the following equation: $time = 0.5(1+\sqrt{2})*distance/speed$. The variable $distance$ is the edge length to a cardinal-adjacent pixel (0.5097 km at this resolution). The term $0.5(1+\sqrt{2})$ corrects for the fact that around half the time, travelers cross a pixel along the diagonal.
 
 ## Segment-Level Information: Name, Year of Construction, and Applicable Design Code
 
-This data set records the information for roads and railroads at the **segment** level. A **segment** is a group of **pixels** that form part of a named road or railroad referred to as a **path** (such as the Beijing-Shanghai Railway or Beijing-Shijiazhuang Highway) constructed in a given year. Information that varies at the segment level includes rate, the year of construction, usage type, and design codes. See the detailed definitions of "segment" and "path" in Ma and Tang (2024).
+This data set records the information for roads and railroads at the **segment** level. A **path** is a named road or railroad (e.g., the Beijing–Shanghai Railway or Beijing–Shijiazhuang Highway). A **segment** is the portion of a path constructed in a given year, represented as a group of **pixels**. Information that varies at the segment level includes rate, the year of construction, usage type, and design codes. See the detailed definitions of "segment" and "path" in Ma and Tang (2024).
 
 All the files are stored in the folder [seg_info](seg_info/). We create three data files for each mode of transportation. These files are as follows:
 1. [segment-level information](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#segment-level-information): year of construction, applicable standard, rates, and parent path.
@@ -133,13 +133,13 @@ The file `seg_info_MMMM.csv` contains the segment-level information for the mode
 2. `rate`: The rate of the segment, such as "National I" for railroads or "First-Rate" for roads. See the subsection [below](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#railroad-and-road-rates) for more details.
 3. `year`: The year of construction.
 4. `year_std`: The publication year of the applicable design code. For example, highways built in 2010 were subject to the highway design codes published in 2003. In this case, `year` = 2010, and `year_std` = 2003. We did not assign `year_std` for HSR because we collected the design speed of each high-speed railway by hand. See the subsection [below](https://github.com/malin84/transportation_networks_of_china?tab=readme-ov-file#design-codes) for more details.
-5. `path_name`: (in Chinese) The name of the path to which the segment belongs. For example, Segment `rail_10` is part of the "滨绥铁路," and therefore we record the name of the path in this variable.  
+5. `path_name`: (in Chinese) The name of the path to which the segment belongs. For example, Segment `rail_10` is part of the "滨绥铁路," and therefore we record the name of the path in this variable.
 6. `path_supplement`: (in Chinese) Additional information about the path, such as original names, original usage, phases, etc. In the example above, the supplement information for `rail_10` is "原东清铁路东线."
-7. `notes`: (in Chinese) Additional information about the segment, usually regarding the segment's endpoints. We record this information for quality control purposes. In the example above, the notes for `rail_10` is "海林到牡丹江."
+7. `notes`: (in Chinese) Additional information about the segment, usually regarding the segment's endpoints. We record this information for quality control purposes. In the example above, the notes for `rail_10` are "海林到牡丹江."
 
 #### Railroad and Road Rates
 
-The variable `rate` in the dataset above records a codename for the rate of the railroad and roads. The details regarding the railroad rates in the dataset are as follows:
+The variable `rate` records the classification code for each railroad or road segment. The details regarding the railroad rates in the dataset are as follows:
 
 |`rate` | Full Name | Full Name in Chinese | Usage Type |
 |----------|-----------|----------------------|------------|
@@ -164,7 +164,7 @@ The variable `rate` in the dataset above records a codename for the rate of the 
 |UN        | Unknown Rate| 等级未知          | mixed |
 |NA        | Non-Active| 废置铁路          | - |
 
-Note that while some railroads were constructed as "freights" or "industrial" that were intended as freight-only routes, in reality, passenger services are also possible. We provide a detailed documentation of mixed usage of these railroads in the dataset.
+Note that while some railroads classified as "freights" or "industrial" were intended as freight-only routes, passenger services are also possible in practice. The dataset provides detailed documentation of mixed usage for these railroads.
 
 The road rates in the dataset are as follows:
 
@@ -192,12 +192,12 @@ The variable `year_std` records the publication year of the applicable design st
 
 ---
 
-### Segment-Year Level Information 
+### Segment-Year Level Information
 
-The file `seg_year_MMMM.csv` contains the segment-year level information. In the current version, the only variable that varies at this level is the usage type of railroads. Several railroads switched between "mixed-use" and "freight-only" during our sample period. Each row in the file refers to a **segment**. The columns are as follows:
+The file `seg_year_MMMM.csv` contains the segment-year level information. In the current version, the only time-varying variable at this level is the usage type of railroads. Several railroads switched between "mixed-use" and "freight-only" during our sample period. Each row in the file refers to a **segment**. The columns are as follows:
 
 1. `seg_id`: the unique segment id.
-2. `year_type_YYYY`: the usage type of the segment in the year `YYYY.` `type= none` indicates that the road or railroad was no longer used that year.
+2. `year_type_YYYY`: the usage type of the segment in the year `YYYY.` `type = none` indicates that the road or railroad was no longer used that year.
 
 ---
 ### Segment-Pixel Mapping
