@@ -1,6 +1,27 @@
-This file documents newly added routes, updates to the algorithm for computing shortest travel times between prefectures, and corrections to existing routes.
+# Changelog: Version 1.0 to Version 2.0
 
-# New data: 2018 to 2024
+This document records the changes between **Version 1.0** (the original dataset published with Ma and Tang, 2024) and **Version 2.0** (the current dataset). The three main changes are: (1) replacing the Fast Marching Method with Dijkstra's algorithm for computing travel times, (2) extending the data from 2018 to 2024, and (3) correcting and supplementing the pre-2018 data.
+
+## Table of Contents
+
+1. [Changes to Algorithm](#1-changes-to-algorithm)
+2. [New Data: 2018 to 2024](#2-new-data-2018-to-2024)
+3. [Modifications to Pre-2018 Data](#3-modifications-to-pre-2018-data)
+4. [Summary Statistics](#4-summary-statistics)
+
+---
+
+# 1. Changes to Algorithm
+
+We initially used the **Fast Marching Method (FMM)** to generate travel-time (or distance) fields. FMM formulates the propagation process via the Eikonal equation $|\nabla T(\mathbf{x})| \cdot F(\mathbf{x})=1$ and advances the wavefront using a **narrow-band** strategy with an **upwind discretization**. When the speed field $F(\mathbf{x})$ is smooth and strictly positive and the discretization is monotone, FMM provides an efficient approximation to an isotropic, continuous "all-directions" travel-time solution. However, under our rasterized network representation and year-to-year comparison framework, FMM exhibits an unacceptable drawback: **excessive sensitivity of the numerical solution to local structural perturbations**. Even when a given road segment does not change, construction or modification of nearby roads alters the set of globally optimal routes. In our implementation, the narrow-band marching procedure relies on local updates and acceptance order, so structural changes to nearby segments can induce unstable reordering of wavefront updates, producing disproportionate fluctuations in travel times and reducing reproducibility across years. Because our analysis critically relies on robust measurement of annual network changes, this sensitivity constitutes a methodological bottleneck.
+
+To address this limitation, we replace FMM with **Dijkstra's shortest-path algorithm** on a discrete raster graph to compute minimum-cost travel times. Dijkstra's method uses a global priority queue and "settles" nodes in non-decreasing cost order, guaranteeing global optimality under the specified neighborhood connectivity and edge weights. Relative to the FMM-based continuous-wavefront approximation and its local update mechanism, this graph-search formulation provides more consistent behavior under local network modifications and substantially improves reproducibility in our setting. We adopt **8-neighborhood** connectivity (horizontal, vertical, and diagonal moves) to mitigate the strong directional bias of 4-neighborhood grids. Although 8-neighborhood propagation is still a discrete approximation to continuous all-directions propagation and may introduce grid-metric anisotropy that accumulates with path length, our empirical comparison shows that the **year-over-year (YoY) differences** between the two versions are small overall. The discretization-induced deviations are well controlled at the current grid resolution and do not materially affect the key quantitative conclusions regarding annual network changes.
+
+Adopting Dijkstra's algorithm does not impose a prohibitive computational burden in our setting. We implement a multi-source variant that substantially reduces runtime while preserving the stability and cross-year comparability gains described above.
+
+---
+
+# 2. New Data: 2018 to 2024
 
 We have added new data for 2018–2024, covering high-speed rail (HSR), conventional rail, highways, and national roads. The data sources are listed below.
 
@@ -19,15 +40,9 @@ We have added new data for 2018–2024, covering high-speed rail (HSR), conventi
 
 ### China Transportation Atlas (Revised April 2025 and March 2023)
 
-# Changes to algorithm
+---
 
-We initially used the **Fast Marching Method (FMM)** to generate travel-time (or distance) fields. FMM formulates the propagation process via the Eikonal equation $|\nabla T(\mathbf{x})| \cdot F(\mathbf{x})=1$ and advances the wavefront using a **narrow-band** strategy with an **upwind discretization**. When the speed field $F(\mathbf{x})$ is smooth and strictly positive and the discretization is monotone, FMM provides an efficient approximation to an isotropic, continuous “all-directions” travel-time solution. However, under our rasterized network representation and year-to-year comparison framework, FMM exhibits an unacceptable drawback: **excessive sensitivity of the numerical solution to local structural perturbations**. Even when a given road segment does not change, construction or modification of nearby roads alters the set of globally optimal routes. In our implementation, the narrow-band marching procedure relies on local updates and acceptance order, so structural changes to nearby segments can induce unstable reordering of wavefront updates, producing disproportionate fluctuations in travel times and reducing reproducibility across years. Because our analysis critically relies on robust measurement of annual network changes, this sensitivity constitutes a methodological bottleneck.
-
-To address this limitation, we replace FMM with **Dijkstra’s shortest-path algorithm** on a discrete raster graph to compute minimum-cost travel times. Dijkstra’s method uses a global priority queue and “settles” nodes in non-decreasing cost order, guaranteeing global optimality under the specified neighborhood connectivity and edge weights. Relative to the FMM-based continuous-wavefront approximation and its local update mechanism, this graph-search formulation provides more consistent behavior under local network modifications and substantially improves reproducibility in our setting. We adopt **8-neighborhood** connectivity (horizontal, vertical, and diagonal moves) to mitigate the strong directional bias of 4-neighborhood grids. Although 8-neighborhood propagation is still a discrete approximation to continuous all-directions propagation and may introduce grid-metric anisotropy that accumulates with path length, our empirical comparison shows that the **year-over-year (YoY) differences** between the two versions are small overall. The discretization-induced deviations are well controlled at the current grid resolution and do not materially affect the key quantitative conclusions regarding annual network changes.
-
-Adopting Dijkstra’s algorithm does not impose a prohibitive computational burden in our setting. We implement a multi-source variant that substantially reduces runtime while preserving the stability and cross-year comparability gains described above.
-
-# Changes to 2017 and earlier data
+# 3. Modifications to Pre-2018 Data
 
 This section outlines updates to routes built prior to 2018, focusing on three areas: previously omitted routes, changes in usage type, and other corrections.
 
@@ -105,7 +120,7 @@ This section outlines updates to routes built prior to 2018, focusing on three a
 
 **2012**
 
-* In **2012**, in **Inner Mongolia**, the **Xin’en’tao Railway** runs from **Uxin Banner to Xinjie** and is **freight-only**. Sources: **[Baidu Baike](https://baike.baidu.com/item/%E6%96%B0%E6%81%A9%E9%99%B6%E9%93%81%E8%B7%AF/3301917)**.
+* In **2012**, in **Inner Mongolia**, the **Xin'en'tao Railway** runs from **Uxin Banner to Xinjie** and is **freight-only**. Sources: **[Baidu Baike](https://baike.baidu.com/item/%E6%96%B0%E6%81%A9%E9%99%B6%E9%93%81%E8%B7%AF/3301917)**.
 * In **2012**, in **Guangxi**, the **Tianjing Railway (Dejing Railway)** runs from **Debao to Jingxi**, serves **both passenger and freight**, and has a design speed of **120 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E7%94%B0%E9%9D%96%E9%93%81%E8%B7%AF)**.
 * In **2012**, in **Inner Mongolia**, the **Ganquan Railway** runs from **Ganqimaodu Station to Jinquan** and is **freight-only**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E7%94%98%E6%B3%89%E9%93%81%E8%B7%AF)**.
 * In **2012**, in **Inner Mongolia**, the **Ganquan Railway** runs from **Jinquan to Wanshuiquan South Station** and is **freight-only**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E7%94%98%E6%B3%89%E9%93%81%E8%B7%AF)**.
@@ -117,7 +132,7 @@ This section outlines updates to routes built prior to 2018, focusing on three a
 * In **2013**, in **Hebei**, the **Hanhuang Railway** runs from **Cangzhou Nanpi to Cangzhou Haixing**, serves **both passenger and freight**, and has a design speed of **160 km/h**. The operating speed is 120 km/h with 160 km/h reserved (预留). Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%82%AF%E9%BB%84%E9%93%81%E8%B7%AF) / [Baidu Baike](https://baike.baidu.com/item/%E9%82%AF%E9%BB%84%E9%93%81%E8%B7%AF/184512)**.
 * In **2013**, in **Anhui**, the **Suhuai Railway** runs from **Siyang to Huai'an**, serves **both passenger and freight**, and has a design speed of **120 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E5%AE%BF%E6%B7%AE%E9%93%81%E8%B7%AF)**. Note that the Type changes to **both** starting in 2014.
 * In **2013**, in **Anhui**, the **Suhuai Railway** runs from **Fuliji to Siyang**, serves **both passenger and freight**, and has a design speed of **120 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E5%AE%BF%E6%B7%AE%E9%93%81%E8%B7%AF)**. Note that the Type changes to **both** starting in 2014.
-* In **2013**, in **Anhui**, the **Fuliu Railway** runs from **Fuyang to Lu’an**, serves **both passenger and freight**, and has a design speed of **160 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%98%9C%E5%85%AD%E9%93%81%E8%B7%AF) / [Baidu Baike](https://baike.baidu.com/item/%E9%98%9C%E5%85%AD%E9%93%81%E8%B7%AF/7172628)**.
+* In **2013**, in **Anhui**, the **Fuliu Railway** runs from **Fuyang to Lu'an**, serves **both passenger and freight**, and has a design speed of **160 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%98%9C%E5%85%AD%E9%93%81%E8%B7%AF) / [Baidu Baike](https://baike.baidu.com/item/%E9%98%9C%E5%85%AD%E9%93%81%E8%B7%AF/7172628)**.
 * In **2013**, in **Guangxi**, the **Qinfang Railway** runs from **Qinzhou to Fangchenggang**, serves **both passenger and freight**, and has a design speed of **250 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%92%A6%E9%98%B2%E9%93%81%E8%B7%AF)**.
 * In **2013**, in **Hebei**, the **Hanhuang Railway** runs from **Jizhou District (Hengshui) to Nanpi (Cangzhou)**, serves **both passenger and freight**, and has a design speed of **160 km/h**. The operating speed is 120 km/h with 160 km/h reserved (预留). Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%82%AF%E9%BB%84%E9%93%81%E8%B7%AF) / [Baidu Baike](https://baike.baidu.com/item/%E9%82%AF%E9%BB%84%E9%93%81%E8%B7%AF/184512)**.
 * In **2013**, in **Hebei**, the **Hanhuang Railway** runs from **Xingtai to Jizhou District (Hengshui)**, serves **both passenger and freight**, and has a design speed of **160 km/h**. The operating speed is 120 km/h with 160 km/h reserved (预留). Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%82%AF%E9%BB%84%E9%93%81%E8%B7%AF) / [Baidu Baike](https://baike.baidu.com/item/%E9%82%AF%E9%BB%84%E9%93%81%E8%B7%AF/184512)**.
@@ -134,7 +149,7 @@ This section outlines updates to routes built prior to 2018, focusing on three a
 * In **2015**, in **Gansu**, the **Lanzhou–Zhongchuan Airport intercity railway** serves **Zhongchuan Airport** as a **passenger line** with a design speed of **160 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%B7%9D%E9%93%81%E8%B7%AF)**.
 * In **2015**, in **Liaoning**, the **Dandong–Dalian Intercity Railway** runs from **Dandong to Dalian**, serves **both passenger and freight**, and has a design speed of **200 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E4%B8%B9%E5%A4%A7%E5%9F%8E%E9%99%85%E9%93%81%E8%B7%AF)**.
 * In **2015**, in **Gansu**, the **Lanzhou–Zhongchuan Airport intercity railway** runs from **Lanzhou Fuli District to Zhongchuan Airport** as a **passenger line** with a design speed of **160 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%B7%9D%E9%93%81%E8%B7%AF)**.
-* In **2015**, in **Inner Mongolia**, the **Xi’er Railway** runs from **Zhuncha’gan Aobao Station to Xili Station**, serves **both passenger and freight**, and has a design speed of **120 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%94%A1%E4%BA%8C%E9%93%81%E8%B7%AF)**.
+* In **2015**, in **Inner Mongolia**, the **Xi'er Railway** runs from **Zhuncha'gan Aobao Station to Xili Station**, serves **both passenger and freight**, and has a design speed of **120 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%94%A1%E4%BA%8C%E9%93%81%E8%B7%AF)**.
 * In **2015**, in **Sichuan**, the **Lanzhou–Chongqing railway** runs from **Nanchong to Chongqing**, serves **both passenger and freight**, and has a design speed of **200 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E5%85%B0%E6%B8%9D%E9%93%81%E8%B7%AF)**.
 * In **2015**, in **Sichuan**, the **Lanzhou–Chongqing railway** runs from **Guangyuan to Nanchong**, serves **both passenger and freight**, and has a design speed of **200 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E5%85%B0%E6%B8%9D%E9%93%81%E8%B7%AF)**.
 * In **2015**, in **Hebei**, the **Jinbao Railway** runs from **Langfang Bazhou to Baoding Xushui District**, serves **both passenger and freight**, and has a design speed of **200 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E6%B4%A5%E4%BF%9D%E9%93%81%E8%B7%AF) / [Baidu Baike](https://baike.baidu.com/item/%E6%B4%A5%E4%BF%9D%E9%93%81%E8%B7%AF/4747197)**.
@@ -148,8 +163,8 @@ This section outlines updates to routes built prior to 2018, focusing on three a
 * In **2015**, in **Inner Mongolia**, the **Xiwu Railway** runs from **Zhushihua Station to Bayinhua South Station**, serves **both passenger and freight**, and has a design speed of **120 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%94%A1%E4%B9%8C%E9%93%81%E8%B7%AF)**.
 * In **2015**, in **Inner Mongolia**, the **Xiwu Railway** runs from **Xiwuqi Station to Bayinhua South Station**, serves **both passenger and freight**, and has a design speed of **120 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%94%A1%E4%B9%8C%E9%93%81%E8%B7%AF)**.
 * In **2015**, in **Inner Mongolia**, the **Xiwu Railway** runs from **Xilinhot Station to Zabuqier Station**, serves **both passenger and freight**, and has a design speed of **120 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%94%A1%E4%B9%8C%E9%93%81%E8%B7%AF)**.
-* In **2015**, in **Inner Mongolia**, the **Xi’er Railway** is recorded at the **Xilin Gol League** level as serving **both passenger and freight** with a design speed of **120 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%94%A1%E4%BA%8C%E9%93%81%E8%B7%AF)**.
-* In **2015**, in **Inner Mongolia**, the **Xi’er Railway** runs from **Xilin Gol League to Zhunchagan Aobao Station**, serves **both passenger and freight**, and has a design speed of **120 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%94%A1%E4%BA%8C%E9%93%81%E8%B7%AF)**.
+* In **2015**, in **Inner Mongolia**, the **Xi'er Railway** is recorded at the **Xilin Gol League** level as serving **both passenger and freight** with a design speed of **120 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%94%A1%E4%BA%8C%E9%93%81%E8%B7%AF)**.
+* In **2015**, in **Inner Mongolia**, the **Xi'er Railway** runs from **Xilin Gol League to Zhunchagan Aobao Station**, serves **both passenger and freight**, and has a design speed of **120 km/h**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E9%94%A1%E4%BA%8C%E9%93%81%E8%B7%AF)**.
 
 **2016**
 
@@ -225,7 +240,7 @@ This section outlines updates to routes built prior to 2018, focusing on three a
 **1975**
 
 * In **1975**, in **Hebei**, the **Tangzun Railway** runs from **Zunhua to Fengrun** and is **freight-only**. Source: **[Baidu Baike](https://baike.baidu.com/item/%E5%94%90%E9%81%B5%E9%93%81%E8%B7%AF/11032677)**.
-* In **1975**, in **Fujian**, the **Yongjia Railway** runs from **Yong’an to Jiafu** and is **freight-only**. Source: **[Baidu Baike1](https://baike.baidu.com/item/%E6%B0%B8%E5%8A%A0%E9%93%81%E8%B7%AF/4096757) / [Baidu Baike2](https://baike.baidu.com/item/%E6%B0%B8%E5%8A%A0%E7%BA%BF/4067721)**.
+* In **1975**, in **Fujian**, the **Yongjia Railway** runs from **Yong'an to Jiafu** and is **freight-only**. Source: **[Baidu Baike1](https://baike.baidu.com/item/%E6%B0%B8%E5%8A%A0%E9%93%81%E8%B7%AF/4096757) / [Baidu Baike2](https://baike.baidu.com/item/%E6%B0%B8%E5%8A%A0%E7%BA%BF/4067721)**.
 
 **1993**
 
@@ -251,7 +266,7 @@ This section outlines updates to routes built prior to 2018, focusing on three a
 
 * In **2012**, in **Chongqing**, the **Wuhan–Yichang railway** runs from **Wuhan to Yichang**, serves **both passenger and freight**, and has a design speed of **200 km/h**. Source: **[Wikipedia](https://zh.wikipedia.org/wiki/%E6%B1%89%E5%AE%9C%E9%93%81%E8%B7%AF)**.
 
-## Others
+## Other corrections
 
 ### Rail and HSR
 
@@ -281,9 +296,11 @@ This section outlines updates to routes built prior to 2018, focusing on three a
 
 **2018**
 
-* In **2018**, in **Shanxi**, the **Datong–Xi’an Passenger Dedicated Line** section from **Taiyuan to Yuanping** is a **passenger line** with a design speed of **350 km/h**. **Problem:** It was previously drawn incorrectly. **Changes:** (1) In **2017_hsr**, delete the **Taiyuan–Yuanping** segment; rename **“Datong–Xi’an Passenger Dedicated Line mixed-traffic section”** to **“Hanyuan Railway”**; and change the speed to **160**. (2) In **2018_hsr**, add the **Taiyuan–Yuanping** segment, named **“Datong–Xi’an Passenger Dedicated Line”**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E5%A4%A7%E8%A5%BF%E9%AB%98%E9%80%9F%E9%93%81%E8%B7%AF) / China Transportation Yearbook 2019 (p.201)**.
+* In **2018**, in **Shanxi**, the **Datong–Xi'an Passenger Dedicated Line** section from **Taiyuan to Yuanping** is a **passenger line** with a design speed of **350 km/h**. **Problem:** It was previously drawn incorrectly. **Changes:** (1) In **2017_hsr**, delete the **Taiyuan–Yuanping** segment; rename **"Datong–Xi'an Passenger Dedicated Line mixed-traffic section"** to **"Hanyuan Railway"**; and change the speed to **160**. (2) In **2018_hsr**, add the **Taiyuan–Yuanping** segment, named **"Datong–Xi'an Passenger Dedicated Line"**. Sources: **[Wikipedia](https://zh.wikipedia.org/wiki/%E5%A4%A7%E8%A5%BF%E9%AB%98%E9%80%9F%E9%93%81%E8%B7%AF) / China Transportation Yearbook 2019 (p.201)**.
 
-# Summary Statistics of Differences Between the 2017 Old and New Versions
+---
+
+# 4. Summary Statistics
 
 We label the original data as **v1.0** and the updated version (with revised routes and algorithms) as **v2.0**. The comparison is available in the linked PDF.
 - [Open the PDF](./time_city_diff_analysis.pdf)

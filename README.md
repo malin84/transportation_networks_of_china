@@ -36,6 +36,16 @@ The current version covers the transportation network from 1994 to 2024.
 
 The folder [sample_codes](sample_codes/) contains sample code for computing travel time between any two pixels using Dijkstra's algorithm. See the readme file in that folder for details.
 
+## Dataset Versions
+
+The current release is **Version 2.0**. The main changes from Version 1.0 are:
+
+1. **Algorithm:** Travel time is now computed using Dijkstra's shortest-path algorithm on an 8-neighbor raster graph instead of the Fast Marching Method (FMM). This change improves year-over-year comparability by eliminating FMM's excessive sensitivity to local structural perturbations.
+2. **New data:** The dataset now covers 1994 to 2024, extending the original 1994–2017 coverage with roads, highways, railroads, and high-speed rail built between 2018 and 2024.
+3. **Data corrections:** Several pre-2018 road and railroad segments have been corrected or updated based on new source materials.
+
+For a detailed list of all changes, see the [changelog](changelog/changelog.md).
+
 
 ## Prefecture-to-Prefecture Travel Time
 
