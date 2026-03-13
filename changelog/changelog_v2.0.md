@@ -28,13 +28,13 @@ We have added new data for 2018–2024, covering high-speed rail (HSR), conventi
 ## Main source
 | Year | Revision Date | Scale | Publisher |
 |------|---------------|-------|-----------|
-| 2018 | January 2019  | 1:4,500,000 |China Map Press|
-| 2019 | January 2020  | 1:6,000,000 |China Map Press|
-| 2020 | January 2021  | 1:4,500,000 |China Map Press|
-| 2021 | January 2022  | 1:4,500,000 |China Map Press|
-| 2022 | January 2023  | 1:4,500,000 |China Map Press|
-| 2023 | July 2024     | 1:6,000,000 |China Map Press|
-| 2024 | January 2025  | 1:6,000,000 |China Map Press|
+| 2018 | January 2019  | 1:4,500,000 |Sino Map Press|
+| 2019 | January 2020  | 1:6,000,000 |Sino Map Press|
+| 2020 | January 2021  | 1:4,500,000 |Sino Map Press|
+| 2021 | January 2022  | 1:4,500,000 |Sino Map Press|
+| 2022 | January 2023  | 1:4,500,000 |Sino Map Press|
+| 2023 | July 2024     | 1:6,000,000 |Sino Map Press|
+| 2024 | January 2025  | 1:6,000,000 |Sino Map Press|
 
 ## Other sources
 

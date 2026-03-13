@@ -44,7 +44,7 @@ The current release is **Version 2.0**. The main changes from Version 1.0 are:
 2. **New data:** The dataset now covers 1994 to 2024, extending the original 1994–2017 coverage with roads, highways, railroads, and high-speed rail built between 2018 and 2024.
 3. **Data corrections:** Several pre-2018 road and railroad segments have been corrected or updated based on new source materials.
 
-For a detailed list of all changes, see the [changelog](changelog/changelog.md).
+For a detailed list of all changes, see the [changelog](changelog/changelog_v2.0.md).
 
 
 ## Prefecture-to-Prefecture Travel Time
