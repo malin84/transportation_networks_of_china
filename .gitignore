@@ -1,5 +1,8 @@
 # R history files
 .Rhistory
 
+# Claude Code configuration
+CLAUDE.md
+
 # MATLAB generated output
 sample_codes/output/
