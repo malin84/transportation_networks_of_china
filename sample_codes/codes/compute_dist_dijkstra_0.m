@@ -33,11 +33,11 @@ function compute_dist_dijkstra_0(input_fname, mode, year, outpath, ncores, empty
         error('Destination coordinate file not found: %s', fname_des);
     end
 
-    [id_des, long_des, lat_des, pos_y_des, pos_x_des, k, h] = textread( ...
+    [id_des, long_des, lat_des, pos_x_des, pos_y_des, k, h] = textread( ...
         fname_des, '%s %f %f %d %d %f %f', 'delimiter', ',', 'headerlines', 1);
 
     ndes = length(id_des);
-    ind_list_des = sub2ind([ymax, xmax], pos_x_des, pos_y_des);
+    ind_list_des = sub2ind([ymax, xmax], pos_y_des, pos_x_des);
 
     % -------------------------
     % Load origin locations
@@ -47,11 +47,11 @@ function compute_dist_dijkstra_0(input_fname, mode, year, outpath, ncores, empty
         error('Origin coordinate file not found: %s', fname_ori);
     end
 
-    [id_ori, long_ori, lat_ori, pos_y_ori, pos_x_ori, k, h] = textread( ...
+    [id_ori, long_ori, lat_ori, pos_x_ori, pos_y_ori, k, h] = textread( ...
         fname_ori, '%s %f %f %d %d %f %f', 'delimiter', ',', 'headerlines', 1);
 
     nori = length(id_ori);
-    ind_list_ori = sub2ind([ymax, xmax], pos_x_ori, pos_y_ori);
+    ind_list_ori = sub2ind([ymax, xmax], pos_y_ori, pos_x_ori);
 
 
     % -----------------------------------------------------
