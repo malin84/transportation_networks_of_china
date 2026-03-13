@@ -1,5 +1,5 @@
 function output = func_friction_map(mode,year,empty_speed)
-% This function creates the friction map, the input to FMM, from the
+% This function creates the friction map, the input to Dijkstra, from the
 % pixel level infrastructure data.
     
     if nargin < 1
@@ -45,7 +45,7 @@ function output = func_friction_map(mode,year,empty_speed)
     sz = [ymax xmax];
     % Initialize outputs;
     
-    % The simplifed distance matrix
+    % The simplified distance matrix
     distance_output = distance_pixel * ones(sz);
 
     % Load the full distance matrix
