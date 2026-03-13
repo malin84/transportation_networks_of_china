@@ -5,7 +5,7 @@ This file documents newly added routes, updates to the algorithm for computing s
 We have added new data for 2018–2024, covering high-speed rail (HSR), conventional rail, highways, and national roads. The data sources are listed below.
 
 ## Main source
-| Year | Revision Date | Scale | Publisher
+| Year | Revision Date | Scale | Publisher |
 |------|---------------|-------|-----------|
 | 2018 | January 2019  | 1:4,500,000 |China Map Press|
 | 2019 | January 2020  | 1:6,000,000 |China Map Press|
@@ -21,7 +21,7 @@ We have added new data for 2018–2024, covering high-speed rail (HSR), conventi
 
 # Changes to algorithm
 
-We initially used the **Fast Marching Method (FMM)** to generate travel-time (or distance) fields. FMM formulates the propagation process via the Eikonal equation $|\nabla T(\mathbf{x})|,F(\mathbf{x})=1$ and advances the wavefront using a **narrow-band** strategy with an **upwind discretization**. When the speed field $F(\mathbf{x})$ is smooth and strictly positive and the discretization is monotone, FMM provides an efficient approximation to an isotropic, continuous “all-directions” travel-time solution. However, under our rasterized network representation and year-to-year comparison framework, FMM exhibits an unacceptable drawback: **excessive sensitivity of the numerical solution to local structural perturbations**. Even when a given road segment does not change, construction or modification of nearby roads alters the set of globally optimal routes. In our implementation, the narrow-band marching procedure relies on local updates and acceptance order, so structural changes to nearby segments can induce unstable reordering of wavefront updates, producing disproportionate fluctuations in travel times and reducing reproducibility across years. Because our analysis critically relies on robust measurement of annual network changes, this sensitivity constitutes a methodological bottleneck.
+We initially used the **Fast Marching Method (FMM)** to generate travel-time (or distance) fields. FMM formulates the propagation process via the Eikonal equation $|\nabla T(\mathbf{x})| \cdot F(\mathbf{x})=1$ and advances the wavefront using a **narrow-band** strategy with an **upwind discretization**. When the speed field $F(\mathbf{x})$ is smooth and strictly positive and the discretization is monotone, FMM provides an efficient approximation to an isotropic, continuous “all-directions” travel-time solution. However, under our rasterized network representation and year-to-year comparison framework, FMM exhibits an unacceptable drawback: **excessive sensitivity of the numerical solution to local structural perturbations**. Even when a given road segment does not change, construction or modification of nearby roads alters the set of globally optimal routes. In our implementation, the narrow-band marching procedure relies on local updates and acceptance order, so structural changes to nearby segments can induce unstable reordering of wavefront updates, producing disproportionate fluctuations in travel times and reducing reproducibility across years. Because our analysis critically relies on robust measurement of annual network changes, this sensitivity constitutes a methodological bottleneck.
 
 To address this limitation, we replace FMM with **Dijkstra’s shortest-path algorithm** on a discrete raster graph to compute minimum-cost travel times. Dijkstra’s method uses a global priority queue and “settles” nodes in non-decreasing cost order, guaranteeing global optimality under the specified neighborhood connectivity and edge weights. Relative to the FMM-based continuous-wavefront approximation and its local update mechanism, this graph-search formulation provides more consistent behavior under local network modifications and substantially improves reproducibility in our setting. We adopt **8-neighborhood** connectivity (horizontal, vertical, and diagonal moves) to mitigate the strong directional bias of 4-neighborhood grids. Although 8-neighborhood propagation is still a discrete approximation to continuous all-directions propagation and may introduce grid-metric anisotropy that accumulates with path length, our empirical comparison shows that the **year-over-year (YoY) differences** between the two versions are small overall. The discretization-induced deviations are well controlled at the current grid resolution and do not materially affect the key quantitative conclusions regarding annual network changes.
 
@@ -173,6 +173,7 @@ This section outlines updates to routes built prior to 2018, focusing on three a
 * In **2013**, **Shandong** added a new **highway segment** in **Heze**.
 
 **2017**
+
 * In **2017**, **Hunan** added a new **highway segment** in **Zhuzhou**.
 * In **2017**, **Hebei** added a new **highway segment** in **Qinhuangdao**.
 * In **2017**, **Zhejiang** added **two** new **highway segments** in **Hangzhou**.
@@ -212,6 +213,7 @@ This section outlines updates to routes built prior to 2018, focusing on three a
 * In **1968**, in **Sichuan**, the **Yigong Railway** runs from **Yibin to Gong County**, and it is recorded as **both → goods**, with a note that **passenger services were discontinued in 2010**. Source: **[Wikipedia](https://zh.wikipedia.org/wiki/%E5%AE%9C%E7%8F%99%E9%93%81%E8%B7%AF)**.
 
 **1970**
+
 * In **1970**, in **Guangxi**, the **Sanluo Railway** serves **Luocheng**, and it is recorded as **both → goods**, with a note that **passenger services were discontinued in 2005**. Source: **[Wikipedia](https://zh.wikipedia.org/wiki/%E4%B8%89%E7%BD%97%E9%93%81%E8%B7%AF)**.
 * In **1970**, in **Sichuan**, the **Dukou Railway** runs from **Panzhihua to Geliping** and is **freight-only**. Source: **[Wikipedia](https://zh.wikipedia.org/wiki/%E6%B8%A1%E5%8F%A3%E9%93%81%E8%B7%AF)**.
 
@@ -248,8 +250,6 @@ This section outlines updates to routes built prior to 2018, focusing on three a
 **2012**
 
 * In **2012**, in **Chongqing**, the **Wuhan–Yichang railway** runs from **Wuhan to Yichang**, serves **both passenger and freight**, and has a design speed of **200 km/h**. Source: **[Wikipedia](https://zh.wikipedia.org/wiki/%E6%B1%89%E5%AE%9C%E9%93%81%E8%B7%AF)**.
-
-
 
 ## Others
 

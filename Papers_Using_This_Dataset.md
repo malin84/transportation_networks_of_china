@@ -1,9 +1,11 @@
 # Published Papers Using This Dataset
 
-This document tracks academic publications that have used the dataset in analysis. 
+This document tracks academic publications that have used the dataset in analysis.
 
 Last updated: [2025-10-01]
+
 ---
+
 ### 2025
 **[9]** Zhang, R., Liu, X., & Ni, K. (2025). How transportation costs affect China's spatial misallocation of factors. *China Soft Science*, 40(10), 214-224. https://doi.org/10.3724/1005-0566.20251020 **(Article in Chinese)**
 

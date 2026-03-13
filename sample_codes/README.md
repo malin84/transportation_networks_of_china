@@ -10,12 +10,12 @@ See [`main.m`](main.m) for more details.
 ### Main Input
 The user must provide the coordinates of the origins and destinations in the same format as in the file [`input/sample_input.csv`](input/sample_input.csv). Each row of the input file should contain an **origin-destination pair**.
 
-The user must also specify the `mode` and `year` variables inside [`main.m`](main.m). The `mode` is a string variable that takes one of the following values: `road,` `rail_good,` or `rail_pass.` The variable `year` should be an integer from 1994 to 2017.
+The user must also specify the `mode` and `year` variables inside [`main.m`](main.m). The `mode` is a string variable that takes one of the following values: `road`, `rail_good`, or `rail_pass`. The variable `year` should be an integer from 1994 to 2024.
 
 The user should define the paths in `define_path.m` so that `pixel_data_path` points to the folder that stores the pixel-level dataset (for example, [`../pixel_info/`](../pixel_info/)) and `base_map_path` points to the scanned map with 8k-by-12k resolution (for example, [`input/base_8k.jpg`](input/base_8k.jpg)).
 
 ### Main Output
-The main output files are stored in the folder [`output`](output/). Each mode-year combination has a separate output file named `output/t_mat_INPUT_MODE_YEAR.csv,` where `INPUT` is the input file name, and `MODE` and `YEAR` are self-explanatory.
+The main output files are stored in the folder [`output`](output/). Each mode-year combination has a separate output file named `output/t_mat_INPUT_MODE_YEAR.csv`, where `INPUT` is the input file name, and `MODE` and `YEAR` are self-explanatory.
 
 Each row in the output file refers to an **origin-destination pair**. The rows are sorted in the same order as in the input file. The output file contains the following columns:
 1. `id_ori`: the auto-generated id for each origin.
