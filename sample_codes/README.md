@@ -3,8 +3,6 @@ The files in this folder provide examples of computing pixel-to-pixel travel tim
 
 See [`main.m`](main.m) for more details.
 
-**Note:** The Fast Marching Method has been replaced by Dijkstra's algorithm (see [below](#dijkstra)). The following note is retained only for backward compatibility. If you run into **negative values** using the legacy FMM code, please see the [note](https://github.com/malin84/transportation_networks_of_china/tree/main/sample_codes#fast-marching) below on how to compile the Accurate Fast Marching Toolbox correctly.
-
 ## Input and Output
 
 ### Main Input

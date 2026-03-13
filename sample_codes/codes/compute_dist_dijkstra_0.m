@@ -10,7 +10,7 @@ function compute_dist_dijkstra_0(input_fname, mode, year, outpath, ncores, empty
 
     if nargin < 6 || isempty(empty_speed)
         empty_speed = 10;
-        fprintf(1,'No input on empty_speed; setting empty_speed to 10 (unused in Dijkstra)\n');
+        fprintf(1,'No input on empty_speed; setting empty_speed to 10 km/h\n');
     end
 
     old = maxNumCompThreads(ncores);

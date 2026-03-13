@@ -121,7 +121,7 @@ function loc_1(input_fname,outpath,draw_loc)
     [nori_unique ndes_unique];
     
     if nori_unique > ndes_unique
-        msg = ['number of unique origins (' num2str(nori_unique) ') is greater than the number of unique destinations (' num2str(ndes_unqiue) '). Switching origin and destination could speed up the code.'];
+        msg = ['number of unique origins (' num2str(nori_unique) ') is greater than the number of unique destinations (' num2str(ndes_unique) '). Switching origin and destination could speed up the code.'];
         warning(msg)
     end
 end
