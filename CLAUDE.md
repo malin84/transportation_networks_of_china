@@ -48,7 +48,7 @@ sample_input.csv → loc_1.m (coords → raster positions)
 
 - Raster: 12,669 × 8,829 pixels (Albers projection)
 - Pixel distance: 0.5097 km
-- Time formula: `time = ((1+√2)/2) × 60 × distance / speed` (minutes)
+- Time formula: `time = 60 × distance / speed` (minutes)
 
 ## Conventions
 
