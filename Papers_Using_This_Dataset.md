@@ -2,9 +2,12 @@
 
 This document tracks academic publications that have used the dataset in analysis.
 
-Last updated: [2025-10-01]
+Last updated: [2026-03-16]
 
 ---
+
+### 2026
+**[10]** Chen, J., Wang, C., & Gao, Z. (2026). Infrastructure bundles and business entry: Evidence from China. *Finance Research Letters*, 96, 109800. https://doi.org/10.1016/j.frl.2026.109800
 
 ### 2025
 **[9]** Zhang, R., Liu, X., & Ni, K. (2025). How transportation costs affect China's spatial misallocation of factors. *China Soft Science*, 40(10), 214-224. https://doi.org/10.3724/1005-0566.20251020 **(Article in Chinese)**
