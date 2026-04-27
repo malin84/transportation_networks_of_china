@@ -2,11 +2,13 @@
 
 This document tracks academic publications that have used the dataset in analysis.
 
-Last updated: [2026-03-29]
+Last updated: [2026-04-27]
 
 ---
 
 ### 2026
+**[12]** Zheng, L., Wu, S., Zhang, A., & Zhou, Z. (2026). High-speed rail and employment disparity: A sectoral perspective. *Transportation Research Part A: Policy and Practice*, 209, 105014. https://doi.org/10.1016/j.tra.2026.105014
+
 **[11]** Ma, J., Lin, G., & Zhan, J. (2026). The impact of government digital attention on trade in services. *Asian Economic Journal*. https://doi.org/10.1111/asej.70008
 
 **[10]** Chen, J., Wang, C., & Gao, Z. (2026). Infrastructure bundles and business entry: Evidence from China. *Finance Research Letters*, 96, 109800. https://doi.org/10.1016/j.frl.2026.109800
