@@ -7,6 +7,8 @@ Last updated: [2026-04-27]
 ---
 
 ### 2026
+**[13]** Li, S., Liu, Q., Bao, X., & Yang, J. (2026). Speed up civil institutional connectivity: Evidence from China's high-speed rail network and non-local chambers of commerce. *Journal of Transport Geography*, 134, 104706. <https://doi.org/10.1016/j.jtrangeo.2026.104706>
+
 **[12]** Zheng, L., Wu, S., Zhang, A., & Zhou, Z. (2026). High-speed rail and employment disparity: A sectoral perspective. *Transportation Research Part A: Policy and Practice*, 209, 105014. https://doi.org/10.1016/j.tra.2026.105014
 
 **[11]** Ma, J., Lin, G., & Zhan, J. (2026). The impact of government digital attention on trade in services. *Asian Economic Journal*. https://doi.org/10.1111/asej.70008
