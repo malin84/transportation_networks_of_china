@@ -7,6 +7,8 @@ Last updated: [2026-04-27]
 ---
 
 ### 2026
+**[14]** Yan, D., Xu, H., Song, W., Cheng, W., & Li, X. (2026). Trade cost reductions, food affordability, and child underweight: A difference-in-differences analysis of China's green channel policy. *Applied Economics*, 1-15. <https://doi.org/10.1080/00036846.2026.2697058>
+
 **[13]** Li, S., Liu, Q., Bao, X., & Yang, J. (2026). Speed up civil institutional connectivity: Evidence from China's high-speed rail network and non-local chambers of commerce. *Journal of Transport Geography*, 134, 104706. <https://doi.org/10.1016/j.jtrangeo.2026.104706>
 
 **[12]** Zheng, L., Wu, S., Zhang, A., & Zhou, Z. (2026). High-speed rail and employment disparity: A sectoral perspective. *Transportation Research Part A: Policy and Practice*, 209, 105014. https://doi.org/10.1016/j.tra.2026.105014
