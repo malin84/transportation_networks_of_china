@@ -2,7 +2,7 @@
 
 This document tracks academic publications that have used the dataset in analysis.
 
-Last updated: [2026-04-27]
+Last updated: [2026-07-03]
 
 ---
 
