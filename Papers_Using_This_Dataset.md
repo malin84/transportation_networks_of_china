@@ -7,6 +7,8 @@ Last updated: [2026-07-03]
 ---
 
 ### 2026
+**[15]** Xue, C., & Zhang, L. (2026). Greasing the wheels of collaboration: Evidence from transfers of university presidents in China. *Journal of Urban Economics*, 154, 103890. <https://doi.org/10.1016/j.jue.2026.103890>
+
 **[14]** Yan, D., Xu, H., Song, W., Cheng, W., & Li, X. (2026). Trade cost reductions, food affordability, and child underweight: A difference-in-differences analysis of China's green channel policy. *Applied Economics*, 1-15. <https://doi.org/10.1080/00036846.2026.2697058>
 
 **[13]** Li, S., Liu, Q., Bao, X., & Yang, J. (2026). Speed up civil institutional connectivity: Evidence from China's high-speed rail network and non-local chambers of commerce. *Journal of Transport Geography*, 134, 104706. <https://doi.org/10.1016/j.jtrangeo.2026.104706>
