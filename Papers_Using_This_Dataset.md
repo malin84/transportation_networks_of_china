@@ -2,11 +2,13 @@
 
 This document tracks academic publications that have used the dataset in analysis.
 
-Last updated: [2026-07-03]
+Last updated: [2026-07-27]
 
 ---
 
 ### 2026
+**[16]** Qiu, Z. (2026). Information consumption and economic agglomeration: Evidence from the national information consumption pilot policy in China. *Tropical Geography*, 46(7), 1289-1303. <https://doi.org/10.13284/j.cnki.rddl.20260153> **(Article in Chinese)**
+
 **[15]** Xue, C., & Zhang, L. (2026). Greasing the wheels of collaboration: Evidence from transfers of university presidents in China. *Journal of Urban Economics*, 154, 103890. <https://doi.org/10.1016/j.jue.2026.103890>
 
 **[14]** Yan, D., Xu, H., Song, W., Cheng, W., & Li, X. (2026). Trade cost reductions, food affordability, and child underweight: A difference-in-differences analysis of China's green channel policy. *Applied Economics*, 1-15. <https://doi.org/10.1080/00036846.2026.2697058>
