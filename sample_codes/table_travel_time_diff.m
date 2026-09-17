@@ -3,6 +3,8 @@
 % summary-statistics tables and a detailed positive-change table
 % as a fully compilable LaTeX document.
 
+% The code only generates diagnostic graphs, not end results
+
 clear;
 
 % Path to the pref_pair folder

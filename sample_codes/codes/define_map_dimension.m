@@ -1,5 +1,5 @@
 % --------------------------------------------------
-% This block of codes define the map dimensions
+% This block of code defines the map dimensions
 % --------------------------------------------------
 
 xmax = 12669;

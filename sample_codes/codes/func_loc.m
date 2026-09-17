@@ -144,7 +144,7 @@ function output = func_loc(long,lat,id,fname,outpath,draw_map)
             pos = pos_xy(i,:);
 
             [pos_x pos_y];
-            % The position here needs to be inversed
+            % The position here needs to be inverted
             % xmax = 8829
             % ymax = 12669
             pos_x = pos(2);

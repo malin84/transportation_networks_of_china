@@ -23,4 +23,4 @@ The file contains the following columns:
     4. `cityclass` = 4: Type-II Large City (II型大城市), with an urban population between 1 and 3 million.
     5. `cityclass` = 3: Medium City (中等城市), with an urban population between 500 thousand and 1 million.
     6. `cityclass` = 2: Type-I Small City (I型小城市), with an urban population between 200 and 500 thousand.
-    7. `cityclass` = 1: Type-II Small City (II型小城市), with an urban population smaller than 200 thousand.     
+    7. `cityclass` = 1: Type-II Small City (II型小城市), with an urban population smaller than 200 thousand.
