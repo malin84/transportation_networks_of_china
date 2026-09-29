@@ -2,11 +2,13 @@
 
 This document tracks academic publications that have used the dataset in analysis.
 
-Last updated: [2026-08-29]
+Last updated: [2026-09-29]
 
 ---
 
 ### 2026
+**[18]** Du, J. (2026). Together or apart? Migration, education access, and intergenerational mobility in China. **Journal of Development Economics**, 103948. <https://doi.org/10.1016/j.jdeveco.2026.103948>
+
 **[17]** Ma, L., Mei, Y., Wu, Q., & Xu, M. (2026). Connectivity and selective rural migration. **International Economic Review**. <https://doi.org/10.1111/iere.70102>
 
 **[16]** Qiu, Z. (2026). Information consumption and economic agglomeration: Evidence from the national information consumption pilot policy in China. **Tropical Geography**, 46(7), 1289-1303. <https://doi.org/10.13284/j.cnki.rddl.20260153> **(Article in Chinese)**
