@@ -2,11 +2,13 @@
 
 This document tracks academic publications that have used the dataset in analysis.
 
-Last updated: [2026-09-29]
+Last updated: [2026-11-07]
 
 ---
 
 ### 2026
+**[19]** Shi, Z., Chen, M., Cai, J., & Li, Y. (2026). Road connectivity and relative market accessibility in Chinese cities: Spatial inequality and long-run decomposition. **Sustainability**, 18(21), 11337. <https://doi.org/10.3390/su182111337>
+
 **[18]** Du, J. (2026). Together or apart? Migration, education access, and intergenerational mobility in China. **Journal of Development Economics**, 103948. <https://doi.org/10.1016/j.jdeveco.2026.103948>
 
 **[17]** Ma, L., Mei, Y., Wu, Q., & Xu, M. (2026). Connectivity and selective rural migration. **International Economic Review**. <https://doi.org/10.1111/iere.70102>
