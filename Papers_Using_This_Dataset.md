@@ -2,11 +2,13 @@
 
 This document tracks academic publications that have used the dataset in analysis.
 
-Last updated: [2026-11-07]
+Last updated: [2026-11-20]
 
 ---
 
 ### 2026
+**[20]** Hong, H., Shi, Y., Li, Z., & Chen, K. (2026). Harvesting the concrete: Urban expansion and agricultural land productivity. **Regional Science and Urban Economics**, 104303. <https://doi.org/10.1016/j.regsciurbeco.2026.104303>
+
 **[19]** Shi, Z., Chen, M., Cai, J., & Li, Y. (2026). Road connectivity and relative market accessibility in Chinese cities: Spatial inequality and long-run decomposition. **Sustainability**, 18(21), 11337. <https://doi.org/10.3390/su182111337>
 
 **[18]** Du, J. (2026). Together or apart? Migration, education access, and intergenerational mobility in China. **Journal of Development Economics**, 103948. <https://doi.org/10.1016/j.jdeveco.2026.103948>
